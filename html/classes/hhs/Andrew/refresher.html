@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <style>
+      .inner {
+        background-color:yellow;
+        width:100px;
+        height:100px;
+        margin:20px;
+      }
+      body{
+        background-color:pink;
+      #outer {
+        display:flex;
+      }
+      </style>
+    </head>
+  <body>
+   	<div id="outer">
+      
+      <div id="left" class="inner">
+        
+        </div>
+      <div id="right" class="inner">
+          </div>
+      </div>
+    <a id="link" href="http://www.espn.com/" target="blank"><center>ESPN</center></a>
+        <script src="../jquery.js"></script>
+        <script>
+          document.getElementById("left").style.backgroundColor = "purple";
+          $("#right").css("background-color","blue");
+          $("#link").attr("href", "https://www.google.com/?safe=active&ssui=on");
+          document.getElementById("left").innerHTML = "1<br>2";
+          $("#right").html("1<br>2");
+          var test = 0;
+          if (test === 0) {
+             $("#right").css("background-color","green");
+          }
+          var newP = $("<p>");
+          newP.text("new text<br>Hi");
+          newP.addClass("inner");
+          $("body").append(newP);
+          $("<p>").text("New Text").appendTo("body");
+          
+          for (i = 1; i <11; i++) {
+            $("<p>").text("1").addClass("inner").appendTo("body");
+          }
+          </script>
+    </body>
+</html>

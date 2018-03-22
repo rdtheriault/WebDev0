@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <title>money</title>
+    <style>
+      #div {
+       display:none; 
+      }
+      
+    </style>
+  </head>
+  
+  
+  
+  <body id="body">
+    <div id="div">
+    <img id="photo" src="http://a.abcnews.com/images/Business/GTY_stock_cash_pile_money_dollar_bills-thg-130726_33x16_1600.jpg" width ="100px">
+   
+      <img id="img1" src=" http://media.boingboing.net/wp-content/uploads/2015/09/o-PILES-OF-AMERICAN-MONEY-facebook.jpg" width="100px">
+      <button id="money"> money </button>
+         </div>
+    
+    <button id="Money">Show me the Money</button>
+    <script>
+      function change() {
+      document.getElementById("div").style.display = "block";
+      
+      }
+      document.getElementById("Money").addEventListener("click", change);
+      function again() {
+       document.getElementById("img1").src="https://i.forbesimg.com/media/2009/12/16/1216_cash-dollars_650x455.jpg";
+        document.getElementById("body").style.background="blue";
+        
+      }
+       document.getElementById("money").addEventListener("click", again);
+      
+    </script>
+  </body>
+</html>

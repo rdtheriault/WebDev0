@@ -1,0 +1,149 @@
+<html>
+  <head>
+    <style>
+      body { 
+        background-color: gray;
+        color: purple;
+      }
+      #main {
+        display: flex;
+      }
+      #twitter {
+        margin: 50px;
+      }
+      #lit {
+        width: 500px;
+        height: 250px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id='main'>
+      <div id='left'>
+        <h1 class="text" id="h1">Zack Tovey- Welcome to my page!<h1>
+          <a href="https://www.khanacademy.org/" target="_blank"><strong>Khan Acadamy</strong></a>
+          <br>
+          <a href="https://classroom.google.com/c/MTk1MDYwMDU2NFpa" target="_blank"><strong>Classroom</strong></a>
+          <br>
+          <a href="http://powerschool.hermiston.k12.or.us/public/" target="_blank"><strong>Powerschool</strong></a>
+          <br>
+          <a href="https://scratch.mit.edu/" target="_blank"><strong>scratch</strong></a>
+        <h2 class="text" id="h2"><strong>Here are some of my projects.</strong><h2>
+          <a id="1" href="quizprog.html" style="color:red;">QuizProg</a>     
+          <br>
+          <a id="2" href="guess.html" style="color:orange;">Guessing Game</a>
+          <br>
+          <a id="3" href="quiz2.html" style="color:yellow;">Quiz</a>
+          <br>
+          <a id="4" href="practice.html" style="color:green;">Practice</a>
+          <br>
+          <a id="5" href="programming.html" style="color:blue;">Programming</a>
+          <br>
+          <a id="6" href="loops.html" style="color:indigo;">Loops</a>
+          <br>
+          <a id="7" href="quiz4.html" style="color:violet;">Quiz 4</a>
+          <br>
+          <a id="8" href="jquery.html" style="color:red;">jQuery</a>
+          <br>
+          <a id="9" href="newyear.html" style="color:orange;">New Year</a>
+          <br>
+          <a id="10" href="project4.html" style="color:yellow;">Project 4</a>
+          <br>
+          <a id="11" href="scramble.html" style="color:green;">scramble</a>
+          <br>
+          <a id="12" href="empty.html" style="color:blue;">empty project</a>
+          <br>
+          <a id="13" href="proc.html" style="color:indigo;">html</a>
+          <br>
+          <a id="14" href="proc.pde" style="color:violet;">pde</a>
+          <br>
+          <a id="00" href="blank.html" style="color:red;">blank</a>
+          <br>
+          <a id="15" href="game" style="color:orange">Game File</a>
+          <br> 
+          <a id="16" href="js.html" style="color:yellow">js/html</a>
+          <br> 
+          <a id="17" href="gametest.pde" style="color:green">gametest.pde</a>
+          <br>
+          <a id="18" href="review.html" style="color:blue">Review</a>
+          <br>
+          <a id='19' href="news.html" style='color: indigo'>NEWS</a>
+          <br>
+          <a id="20" href="showmedamoney.html" style="color:red">Gimme da money</a>
+          <br> 
+          <a id='21' href='snake' style='color: orange'>Snake File</a>
+          <br>
+          <a href="htmlquiz.html" style='color: yellow'>HTML Quiz</a>
+          <br>
+          
+          <button onclick="color()" id="btn">Click</button>
+          <button onclick="reset()" id="btn1" style="display:none;">Reset</button>
+          </div>
+          
+          <div id='twitter'>
+            <br><br><a class="twitter-timeline" data-height="600" data-width='500' data-theme="dark" href="https://twitter.com/t0v3y?ref_src=twsrc%5Etfw">Tweets by @t0v3y</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          </div>
+      </div>
+  <script src="../jquery.js"></script>
+  <script>
+    var x = 0;
+    function color() {
+      document.body.style.backgroundColor = "purple";
+      document.getElementById("btn1").style.display = "block";
+      document.getElementById("btn").style.display = "none";
+      $(".text").css("color", "white");
+      $("#h1").html("type in the following sequence: (up)(up)(down)(down)(left)(right)(left)(right)(B)(A)");
+      $("#h2").html("hit reset for more.");
+      
+      
+    }
+    function reset() {
+      document.body.style.backgroundColor = "gray";
+      document.getElementById("btn1").style.display = "none";
+      document.getElementById("btn").style.display = "block";
+      $(".text").css("color", "black");
+      $("#h1").html("Zack Tovey- Welcome to my page!");
+      $("#h2").html("Here are some of my projects.");
+    }
+    
+    
+    
+    
+    
+    
+    // Cheat Codes
+    neededkeys = [38,38,40,40,37,39,37,39,66,65], started = false, count = 0;
+    $(document).keydown(function(e) {
+      key = e.keyCode;
+      if (!started) {
+        if (key == 38) {
+          started = true;
+        }
+      }
+    if (started) {
+        if (neededkeys[count] == key) {
+            count++;
+        } else {
+            doover();
+        }
+        if (count == 10) {
+            doover();
+            // Do your stuff here
+            alert('TURN UP!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!');
+            $('body').css('background-color', '#FFA8A8');
+            // Turn down for what
+            var s=document.createElement('script');
+            s.setAttribute('src','https://nthitz.github.io/turndownforwhatjs/tdfw.js');
+            document.body.appendChild(s);
+          }
+            } else {
+                doover();
+            }
+        });
+        function doover() {
+            started = false;
+            count = 0;
+        }
+  </script>
+  </body>
+</html>  

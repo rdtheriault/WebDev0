@@ -1,0 +1,63 @@
+<html>
+<head>
+  <style>
+    #title {
+      color:green;
+    }
+    span.dis{
+      
+    }
+  </style>
+    
+  
+  </head>
+  <body id="body">
+  <h1 id="title" class= "dis">Title of page</h1>
+    <p> <span class="dis">This</span> is paragraph</p>
+    <p> <span class="dis">This</span> is paragraph</p>
+    <p> <span>This</span> is paragraph</p>
+    <div id="array"></div>
+  <img id="picture"src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Basketball.png/170px-Basketball.png">
+    <a id="link" href="https://web.hermiston.k12.or.us:10000"> web</a>
+    <button id= "btn">click here</button>
+         <input type="text" id="num">
+   <script>
+  //document.body.innerHTML = "i just jaked your site";
+    
+     var elspan = document.getElementsByClassName("dis");
+    for (var i = 0;i < elspan.length; i =  i + 1){
+       elspan[i].style.color = "green";
+     }
+     function doSomething() {
+                document.getElementById("title").innerHTML = "you got hacked";
+       document.getElementById("body").style.background="green";
+       document.getElementById("link").href="https://www.nitrotype.com";
+       document.getElementById("title").style.color="blue";
+            
+
+     }
+     document.getElementById("btn").addEventListener("click",press);
+    function press() {
+         var input = document.getElementById("num").value;
+      if(isNaN(input)){
+        document.getElementById("array").innerHTML="<h1>that is not a number";
+      }
+     else if (input < 20){
+      document.getElementById("link").href="https://www.nitrotype.com";
+       document.getElementById("picture").src="http://cdn.shopify.com/s/files/1/0257/6087/products/48-Soccer-Ball-Solo_Single_Front_grande.png?v=1484173769";
+      }
+       
+     else{
+       document.getElementById("array").innerHTML ="no stop";
+     }
+     
+    }
+    
+    
+ 
+     
+     
+    </script>
+  </body>
+</html>
+  

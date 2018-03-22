@@ -1,0 +1,88 @@
+<html>
+  <head>
+    <link href="favicon.ico" rel="icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Home</title>    
+    <style>
+    #slider {
+      height: 350px;
+      width: 75%;
+    }
+      .myslides{
+      width:100%;
+      height:350px;
+      }
+
+    #middle {
+
+      display: flex;
+    }
+    </style>
+  </head>
+  <body>
+    <div id="konami">
+      <div id='main'>
+        <img id='banner' src='pics/dawg-banner.png'>
+        <div id='nav'>
+          <div id='home' class='btn'>
+          	Main
+          </div>
+          <div id='shop' class='btn'>
+          	Shop
+          </div>
+          <div id='custom' class='btn'>
+          	Custom
+          </div>
+          <div id='contact' class='btn'>
+          	Contact Us
+          </div>
+          <div id='cart' class='btn'>
+          	Cart
+          </div>
+        </div>
+			
+        <div id='middle'>
+          <div id="slider">
+                	<div class="w3-content w3-section">
+                      		<img class="mySlides" src="pics/meme3.png" style="width:100%">
+              				<img class="mySlides" src="pics/HHS-Banner.png" style="width:100%">
+              				<img class="mySlides" src="pics/final1.jpg" style="width:100%">
+              				<img class="mySlides" src="pics/final2.jpg" style="width:100%">
+                      		<img class="mySlides" src="pics/final3.jpg" style="width:100%">
+                      		<img class="mySlides" src="pics/front.jpg" style="width:100%">
+      			      </div>
+                  <div id="buttons">
+					<div class="sort-buttons" id="sort-hats">Hats</div>
+					<div class="sort-buttons" id="sort-shirts">Shirts</div>
+					<div class="sort-buttons" id="sort-sweaters">Sweaters</div>
+					<div class="sort-buttons" id="sort-mugs">Mugs</div>
+
+
+
+                    
+                  </div>
+          </div>
+          <div id="left-right">  	
+              <div id='twitter'>
+                <a class="twitter-timeline" data-height="450" data-theme="light" href="https://twitter.com/PrintsDawg?ref_src=twsrc%5Etfw">Tweets by Dawg @Prints</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                <a class="twitter-timeline" data-height="450" data-theme="light" href="https://twitter.com/hhsdawghouse?ref_src=twsrc%5Etfw">Tweets by @hhsdawghouse</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+              </div>
+        </div>  
+		</div>
+        <div id="f_holder"><div id="footer">
+        	<img id="footer_s" src="pics/footer_statement.png">
+          </div></div>
+    </div>    
+      <script src="konami.js"></script>
+      <script src="hey.js"></script>
+      <script>
+        var easter_egg = new Konami();
+        easter_egg.code = function() { hey(); }
+        easter_egg.load();
+      </script>
+      <script src="scripts.js"></script>
+      <script src="scripts2.js"></script>
+      <script src="slide.js"></script>
+      </div>
+    </body>
+</html>

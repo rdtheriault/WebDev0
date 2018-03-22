@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Learning Programming 101</title>
+</head>
+<style>
+body {
+  text-align: center;
+  color: white;
+  background-color: black;
+  border: double 50px orange;
+}
+.tres {
+  color: yellow;
+}
+#loop {
+  color: red;
+  background-color: gray;
+}
+#loopArray {
+  color: blue;
+  background-color: gray;
+}
+</style>
+<body>
+<h1>Variables</h1>
+<div id="vars">
+	Number Variable = <span id="varsNum"></span><br>
+	String Variable = <span id="varsString"></span><br>
+	Test Variable = <span id="varsTest"></span><br>
+</div>
+<br>
+<h1>Iterate</h1>
+<div id="iter">
+	Up one = <span id="iterOne"></span><br>
+	Up more = <span id="iterMore"></span><br>
+	Up many = <span id="iterMany"></span><br>
+</div>
+<br>
+<h1>Functions</h1>
+<div id="func">
+	Answer 1 = <span id="varsNum"></span><br>
+	Answer 2 = <span id="varsNum"></span><br>
+</div>
+<br>
+<h1 class="tres">Loops</h1>
+<div id="loop">
+	Array from variable section = <div id="loopArray"></div>
+</div>
+<br>
+<h1>If/Else</h1>
+<div id="elif">
+	Strings = <span id="elifString"></span>
+	Numbers = <span id="elifNum"></span>
+</div>
+<br>
+<script>
+var nums = 0;
+var stringy = "";
+var words = ["one", "two", "three", "four"];
+var x = function (holder) {
+	var stringy = document.getElementById("loop").textContent;
+  	if (stringy.includes("variable")) {
+   	  words.push("stringy");
+    } else {
+      words.push("That is not the string you are looking for");
+    }
+  	for (i = 0; i < words.length; i++) {
+      var array = words[0];
+      document.getElementById("loopArray").innerHTML += words[i]+"<br>";
+      nums += 5;
+    }
+  	document.getElementById("varsNum").textContent = nums;
+};
+x("words");
+ 
+</script>
+</body>
+
+</html>

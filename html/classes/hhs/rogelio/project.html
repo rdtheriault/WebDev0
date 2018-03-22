@@ -1,0 +1,192 @@
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  body{
+  background:url(flag.png);
+  }
+  #all{
+  position:relative; left:20%; width:60%; height:684px;
+  }
+  #header{
+  height:20%; background:rgb(53,89,99); text-align:center;
+  }
+  #table{
+  height:100%;
+    }
+  table{
+  background-color:rgb(53,89,99); height:100%; width:30%;
+  }
+  #middle{
+  height:60%; background:blue; display:flex;
+  }
+  #end{
+  height:20%; background:rgb(53,89,99); display:flex;
+  }
+  #paragraphs{
+  background:blue; width:50%; height:100%; padding:none;
+  }
+  #pic-div{
+  background:red; width:50%;
+  }
+  #pic{
+  width:100%; height:100%;
+  }
+  #list{
+    background-color:rgb(53,89,99); overflow:auto; color:black; height:100%; width:20%; text-align:center;
+  }
+  td{
+  border:blue ridge;
+  }   
+  .writing{
+  height:100%
+  }
+  #button{ 
+    margin: auto;
+    width: 60%;
+    border: 3px solid blue;
+    padding: 10px;
+    text-align:center;
+  }
+  .padding{
+  padding-left:10px;
+  }
+  .color{
+  border:lime ridge;
+  }
+  
+  #table-color{
+  background:blue:
+  }
+</style>
+</head>
+<body>
+	<div id="all"> 
+		<div id="header">
+        	<h1 id="title">Leonardo Da Vinci</h1>
+		</div>
+		<div id="middle">
+        	<div id="pic-div">
+        	 <a id="link" href="https://en.wikipedia.org/wiki/Leonardo_da_Vinci">
+          <img id="pic" src="http://www.leonardodavinci.net/images/leonardo-da-vinci.jpg" height="500px"></a>
+             </div> 
+          	<div id="paragraphs">
+
+            <h2 class="padding">Brief info</h2>
+          <p class="padding">Leonardo was born on 15 April 1452 in the Tuscan hill town of Vinci, 
+            in the lower valley of the Arno river in the territory of the Medici-ruled Republic of Florence.
+            Leonardo is widely considered one of the greatest painters of all time. Sometimes credited
+            with the inventions of the parachute, helicopter and tank
+            </p>
+      
+        
+          <h2 class="padding">What he is know for</h2>
+          <p class="padding">Leonardo was, and is, renowned primarily as a painter. Among his works, the Mona Lisa is the most famous and most parodied portrait
+            and The Last Supper the most reproduced religious painting of all time. Leonardo is revered for his technological ingenuity.
+            He conceptualised flying machines, a type of armoured fighting vehicle, concentrated solar power, an adding machine
+        	
+              	
+      		</div>
+          
+          
+      
+      
+      
+		</div>
+		<div id="end">
+         
+          <div id="list">
+            <h4>studied</h4>
+         <ol>   
+         <li>invention</li>
+          <li>painting</li>
+          <li>sculpting</li> 
+          <li>architecture</li>
+          <li>science</li>
+          <li>music</li>
+          <li>mathematics</li>
+          <li>engineering</li>
+          <li>literature</li>
+          <li>anatomy</li>
+          <li>geology</li>
+          <li>astronomy</li>
+          <li>botany</li>
+          <li>writing</li>
+          <li>history</li>
+          <li>cartography</li>
+          <li>palaeontology</li>
+          <li>ichnology</li>
+          <li>architecture</li>
+            </ol>          
+            </div> 
+          
+          <div id="button">
+        <button id="button-clicker">Button</button>
+          </div>
+          
+          <div id="table">
+			<table>
+              <tbody><tr>
+                <td style="font-weight:bold;">Leonardo</td>
+                <td style="font-weight:bold;">when</td>
+                <td style="font-weight:bold;">where</td>
+              </tr>
+
+              <tr>
+                <td style="font-weight:bold;">Born</td>
+                <td>1452</td>
+                <td>Vinci</td>
+              </tr>
+
+              <tr>
+                <td style="font-weight:bold;">Lived</td>
+                <td>1476</td>
+                <td>Florence</td>
+              </tr>
+
+              <tr>
+                <td style="font-weight:bold;">Died</td>
+                <td>1519</td>
+                <td>Amboise</td>
+              </tr>
+
+              </tbody></table>
+         
+          </div>
+		</div>
+
+</div>
+<script>
+var clickerButton = document.getElementById("button-clicker");
+var image = document.getElementById("pic");
+var header = document.getElementById("header");
+var mid = document.getElementById("paragraphs");
+var end = document.getElementById("end");
+var buttonColor = document.getElementById("button");
+var list = document.getElementById("list");
+var title = document.getElementById("title");
+var link = document.getElementById("link");
+var table = document.getElementById("table");
+var color = document.getElementsByTagName("td");
+var tableColor = document.getElementsByTagName("table");  
+  var onButtonClick = function() {
+	image.src = "leo.jpg";
+  document.body.style.background = "url(tmnt.jpg)";
+  document.body.style.backgroundColor = "darkGreen";
+  header.style.backgroundColor = "blue";
+  mid.style.backgroundColor = "lime";
+  mid.innerHTML =  "<h1 class ='padding'>Brief Info</h1><p class ='padding'>leo wears a blue bandana. His signature weapons are two swords. Leonardo is the most spiritual, the most disciplined, and the most in-line with Splinters  teachings and thoughts, and is generally (and popularly) seen as the leader of the Turtles. He is named after Leonardo da Vinci.<p> <h1 class='padding'>What he is know for</h1><p>Leonardo is the most serious, mature and focused of the team. Being the designated leader of the group, Leonardo is very enthusiastic about his role. he tries to be the mature and responsible sibling, but there are occasional times where he can be as childish as his brothers.</p>";
+  end.style.backgroundColor = "blue";
+  buttonColor.style.border = "lime solid"; 
+  title.textContent = "Leonardo da turtle";
+  link.href = "https://en.wikipedia.org/wiki/Leonardo_(Teenage_Mutant_Ninja_Turtles)";
+  list.style.background ="blue";
+  list.innerHTML ="<h4>Skills</h4><ul><li>ninjutsu</li><li>Olympic-level agility, speed, and strength</li><li>Keen strategist</li><li>Master of stealth</li><li>Mastery of kenjutsu and iaidō</li><li>Master swordsman</li><li>Mastery of various forms of hand-to-hand combat</li><li>Enhanced slashing & slicing (via ninjato)</li><li>Exceptional leadership skills</li></ul>"
+  table.innerHTML ="<table><tbody><tr><td style=’font-weight: bold;’>Movie</td><td style=’font-weight: bold;’>Date</td></tr><tr><td style=’font-weight: bold;’>TNMT</td><td>1990</td></tr><tr><td style=’font-weight: bold;’>TMNT2</td><td>1991</td></tr><tr><td style=’font-weight: bold;’>TMNT3</td><td>1993</td></tr></tbody></table>";
+  tableColor[0].style.backgroundColor = "lime";
+  };  
+clickerButton.addEventListener("click", onButtonClick);  
+  
+</script>
+</body>  
+</html>

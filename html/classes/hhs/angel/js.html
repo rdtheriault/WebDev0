@@ -1,0 +1,58 @@
+<html>
+  <head>
+    <style>
+      #title {
+       color:red; 
+      }
+      span.dis {
+        
+      }
+    </style>
+ 
+  </head>
+  <img  class="dis" id="picture" src ="https://static.pexels.com/photos/27714/pexels-photo-27714.jpg" width="300px"/>
+  <body id ="body">
+    <h1 id="title">Title of page </h1> 
+    <p> <span class="dis">This</span> is paragraph 1 </p>
+     <p><s (pan class="dis"> This</span> is paragraph 2 </p>
+     <p> <span>This</span> is paragraph 3</p>
+    <div id="array"></div>
+     <a id="link" href ="http://www.google.com"> google</a>
+    <button id="btn">click me </button>
+    <input type="text" id="num">
+   
+     <script>
+       var elDis = document.querySelectorAll("span.dis");
+      for (var i=0; i < elDis.length; i++) {
+       elDis[i].style.display = "none" ; 
+        
+      }
+      
+       function press() {
+          var input = document.getElementById("num").value;
+         if (isNaN(input)) {
+            document.getElementById("array").innerHTML="<h1>no stop</h1>";
+         }
+           
+        else if (input < 11){
+          document.getElementById("link").href="http://yahoo.com";
+          document.getElementById("picture").src="https://cdn.pixabay.com/photo/2014/04/10/11/24/red-rose-320868_960_720.jpg";
+        }
+            
+         else{
+           document.getElementById("array").innerHTML="no stop";
+         }
+         
+       }
+		
+         
+       //document.querySelector("span.dis").style.display="none";
+       document.getElementById("btn").addEventListener("click",press);
+ 
+    </script>
+      
+   
+  </body>
+</html>
+
+    

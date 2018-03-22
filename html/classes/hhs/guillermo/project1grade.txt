@@ -1,0 +1,10 @@
+1) file name needs .html at the end  -1
+
+2) You are missing the title section (title and picture)   -2
+
+3) You are missing the left and right main sections (picture in one, text in the other) -3
+
+4) You reference a css file that does not exist -1
+
+
+total 5/12

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <title>Empty Project</title>
+        <script src="code.js" type="text/javascript" charset="utf-8"></script>        
+        <link href="style.css" rel="stylesheet" type="text/css">
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+          <style>
+            h1 {
+    color: #F5B041;
+    background-color:black;
+}
+#pic {
+    
+}
+#main {
+    display:flex;
+}
+#words {
+    color: #F5B041;
+    background-color:black;
+}
+table {
+    background-color: #F5B041;
+    color:black;
+}
+thead {
+    background-color: #F5B041;
+    color:black;
+}
+.line {
+    border-right:black solid;
+    margin:0px;
+}
+tr {
+    margin:0px;
+    padding:0px;
+}
+hr {
+    color: #F5B041;
+}
+            </style>
+    </head>
+    <body>
+        <h1><center>A.J Green.</center></h1>
+        <h1><center>By:Andrew Earl</center></h1>
+        <div id="main">
+            <center><div id="pic"><img src="http://a.espncdn.com/photo/2013/0930/nfl_u_green_a_400.jpg"/></div></center>
+            <div id="words">
+                    <h1><center><b>Biography</b></center></h1>
+                    <hr>
+                <p>A.J also known as Adriel Jeremiah, is a NFL football wide receiver that plays for the Cincinnati Bengals. He was born July 31, 1988 in Summerville, South Carolina. In his first three years of his career in the NFL A.J had the most catches than any NFL wide reciever in history.</p>
+                    <p>Biography was found at <a href="http://www.espn.com/nfl/player/stats/_/id/13983/aj-green">Wikipedia</a></p>
+                        <hr>
+                <h1><center><b>2015 Stats</b></center></h1>
+                    <hr>
+                <table>
+                    <tbody>
+                        <tr>
+                        <td class="line">Reseptions:</td>
+                        <td>89 times</td>
+                        
+                        </tr>
+                        <tr>
+                            <td class="line">Targets:</td>
+                            <td>132 times</td>
+                            </tr>
+                            <tr>
+                                <td class="line">Yards:</td>
+                                <td>1,297 yards</td>
+                                
+                            </tr>
+                            <tr>
+                                <td class="line">Average Yards:</td>
+                                <td>15.6 yards</td>
+                                
+                            </tr>
+                            <tr>
+                                <td class="line">Longest Reception:</td>
+                                <td>80 yards</td>
+                                
+                            </tr>
+                            <tr>
+                                <td class="line">Touchdowns:</td>
+                                <td>10</td>
+                            </td>
+                            <tr>
+                                <td class="line">Receiving First Downs:</td>
+                                <td>63</td>
+                                
+                            </tr>
+                            <tr>
+                                <td class="line">Fumbles:</td>
+                                <td>1</td>
+                            </tr>
+                            <button id="but">Click Me</button>
+                		<script>
+                              $("#pic").on("click", function(e) {
+                              var pic = $("<p>")
+                             .html("A.J Green")
+                             .appendTo("body");
+                              for (var i = 0; i < array; i++) {
+                                var $p = $("<p>")
+                                .html(array[i])
+                                }
+                              x++;
+                            
+                            });
+                              </script>
+                    
+                </table></div>
+        </div>
+    </body>
+</html>

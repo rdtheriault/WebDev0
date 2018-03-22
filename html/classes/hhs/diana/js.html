@@ -1,0 +1,67 @@
+ <html>
+  
+  <head>
+    
+    <style>
+      #title {
+        color: red;
+      }
+      #array {
+        color: white;
+      }
+      #what {
+        color: blue;
+      }
+      span.dis {    
+
+}
+    </style>
+    
+  </head>
+  
+  <body>
+    
+    <h1 id='title' class='dis'>Title</h1>
+    <hr noshade id='what'>
+    <p><span class='dis'>This is a</span> Paragraph</p>
+    <p><span class='dis'>This is a</span> paragraph</p>
+    <p><span>tHiS iS a</span> PaRaGrApH</p>
+    <div id="array">
+    </div>
+    <img id='pic' src='http://www.animalfactguide.com/wp-content/uploads/2013/01/koala2.jpg'><br>
+    <a id='link' href="https://www.teamvisionary.com/" target='_blank'><h2>Team Visionary!</h2></a>
+    <button id='btn'><h1>Click meeee:)</h1></button><br>
+    
+    <input type='text' id='input'>
+    
+    <script>
+		var elDis = document.querySelectorAll("span.dis");
+      for (var i=0; i < elDis.length; i++) {
+        elDis[i].style.display = "none";
+      }
+      document.getElementById('btn').addEventListener('click', buttonClick);
+      
+      function buttonClick() {
+        
+    var input= document.getElementById("num").value;
+        if(input<11){
+          
+        
+         document.getElementById('array').innerHTML = input;
+         for (var i = 0; i < input+1; i++) {
+         document.getElementById('array').innerHTML += i;
+         }
+          else{
+           document.getElementById('array').innerHTML='that is not less than 11'; 
+          }
+         }
+          
+         
+        
+      }
+         
+    </script>
+    
+  </body>
+  
+</html>

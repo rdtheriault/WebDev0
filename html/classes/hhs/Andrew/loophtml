@@ -1,0 +1,65 @@
+<html>
+  <head>
+	<Style>
+  h1 {
+    color:yellow;
+  }
+#three {
+  color:yellow;
+}
+body {
+  background-color:blue;
+}
+  </style>
+  </head>
+	<body>
+  <h1><center>Loops</center></h1>
+  <center><div id="d2"></center>
+    </div>
+  <center><div id="one"></center>
+    </div>
+  <div id="d2">
+    </div>
+  <h1><center><div id="three"></center></h1>
+    </div>
+  <center><select id="name"></center>
+    <option value="1"><center>Andrew</center</option>
+    <center><option value="Zack">Zack</option></center>
+    <center><option value="Joe">Joe</option></center>
+    <center><option value="Shmo">Shmo</option></center>
+    </select>
+    <button id="but">Touch Me</button>
+  <script>
+    var num = "Andrew";
+  if (num == "Andrew"){
+    document.getElementById("three").innerHTML = "one";
+    num = "Michael";
+  }
+else if (num === "Michael"){
+  document.getElementById("three").innerHTML = "two";
+}
+else if (num == "Zack"){
+  document.getElementById("three").innerHTML = "three";
+}
+else{
+  document.getElementById("three").innerHTML = "False";
+}
+	document.getElementById("but").addEventListener("click",test);
+function test() {
+  var name = document.getElementById("name").value;
+  document.getElementById("one").innerHTML  +=name + "<br>";
+}
+var text = "";
+var i;
+for (i = 1; i < 11; i++) {
+  text += "" + i + "<br>";
+  if (num === 5){
+    document.getElementById("d2").innerHTML = "d2";
+      num = "thats not it";
+  }
+}
+	document.getElementById("d2").innerHTML = text;
+	
+  </script>
+  </body>
+  </html>

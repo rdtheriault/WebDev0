@@ -1,0 +1,18 @@
+#sidebar {
+  width:25%;
+  height:100%;
+  background:#00ffb2;
+  color:black;
+  padding-top:300px;
+  text-align:center;
+}
+
+#main {
+display:flex;
+}
+.design {
+  color: blue;
+}
+.zox {
+  border: 1px solid pink;
+}

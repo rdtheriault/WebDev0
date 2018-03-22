@@ -1,0 +1,71 @@
+<html>
+  <head>
+    
+    <title>
+    </title>
+  </head>
+  <body>
+    <select id="name">
+      <option value ="1">Robert</option>
+        <option value="Angel">Angel</option>  
+        <option value="Zack">Zack</option>
+        <option value="Steve">Steve</option>
+    </select>
+    <button id="button">Click here</button>
+    
+    <div id="hello">
+    </div>
+    <div id="welcome">
+    </div>
+    <div id="goodbye">
+    </div>
+    <script>
+      /*var nums =1;
+      for (var i = 0;i<10;i++){
+        document.getElementById("hello").innerHTML +=i.toString()+nums.toString()+"<br>";
+      }
+      var array = ["test1","test2","test3","test4"];
+      for (var i = 0; i < array.length; i++) {
+        document.getElementById("welcome").innerHTML += array[i]+"<br>";
+           }
+      var goodbye = ["tet1","tet2","tet3","tet4"];
+      for (var i = 0; i < goodbye.length; i++) {
+        document.getElementById("goodbye").innerHTML += goodbye[i]+"<br>";
+      }*/
+      var num = "Robert"; 
+        if (num=== "Robert") {
+          document.getElementById("goodbye").innerHTML = "one";
+          num++;
+         
+        }
+     else if (num== "Angel") {
+        document.getElementById("goodbye").innerHTML= "two";
+      }
+        else if (num== "Zack") {
+        document.getElementById("goodbye").innerHTML= "three";
+      }
+      document.getElementById("button").addEventListener("click",test);
+     
+      function test() {
+          var name = document.getElementById("name").value;
+  
+      	  for ( var i =0; i<10;i++){
+        		document.getElementById("goodbye").innerHTML+= name+"<br>";
+      	  }
+  
+      }
+        for ( var i=1; i<11;i+=1){
+          		document.getElementById("goodbye").innerHTML+= i+"<br>";
+        
+            if ( i=== 5) {
+               document.getElementById("goodbye").innerHTML = "you got it right";
+          
+        	}
+        }
+      //test();
+      </script>
+    
+  </body>
+  
+    </html>
+    

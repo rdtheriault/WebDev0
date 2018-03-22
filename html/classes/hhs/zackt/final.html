@@ -1,0 +1,82 @@
+<html>
+  <head>
+    <style>
+      table, th, td {
+        border: 2px solid yellow;
+      }
+      body {
+        background-color: navy;
+        color: white;
+      }
+      div {
+        color: orange;
+      }
+      #pic {
+        border: 3px dashed white;
+        border-radius: 5%;
+      }
+    </style>
+  </head>
+  
+  
+  
+  
+  <body>
+    <h1>Zack's Final</h1>
+    <table>
+      <thead>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Eye Color</th>
+      </thead>
+      <tbody>
+      <tr>
+        <td>Zack</td>
+        <td>15</td>
+        <td>Hazel</td>
+      </tr>
+        <tr>
+          <td>Junior</td>
+          <td>16</td>
+          <td>Black</td>
+        </tr>
+      </tbody>
+    </table>
+    <div id='one'> <img id='pic' src='https://media2.giphy.com/media/I3g7UXRR4xhuw/giphy.gif'></div>
+    <div id='two'></div>
+    <hr>
+    <p>What's the number I am thinking of? [one-four, lowercased and spelled out(:]</p>
+    <input type='text' id='input'>
+    <button id='btn'>Enter</button>
+    <div id='three'></div>
+    
+    
+    
+    <script>
+      var array = ['one', 'two', 'three', 'four'];
+      document.getElementById('pic').src = 'https://media.giphy.com/media/54Vj1kxvgyF4k/giphy.gif';
+      document.getElementById('two').style.width = '100px';
+      document.getElementById('two').style.backgroundColor = 'forestgreen';
+      document.getElementById('two').innerHTML = 'this is div 2';
+      
+      document.getElementById('btn').addEventListener('click', loop);
+      
+      function loop() {
+        var input = document.getElementById('input').value;
+        //document.getElementById('three').innerHTML = input;
+		for (var i = 0; i < array.length; i++) {
+          //document.getElementById('three').innerHTML += array[i] + "<br>";
+          if (input == array[i]) {
+            document.getElementById('three').innerHTML += 'you got it<br>';
+          } else {
+            document.getElementById('three').innerHTML += array[i] + "<br>";
+          }
+          //if (input !== array[i]) {
+            //document.getElementById('three').innerHTML = 'not an option. try again:)';
+          //}
+        }
+        
+      }
+    </script>
+  </body>
+</html>

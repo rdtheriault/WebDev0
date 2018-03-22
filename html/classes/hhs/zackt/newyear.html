@@ -1,0 +1,49 @@
+<html>
+<head>
+	<style>
+        #outer{
+          display: flex;
+        }
+
+		.inner {
+          background-color: gray;
+          width: 200px;
+          height: 200px;
+          margin: 10px;
+        }
+      	body {
+			background-color: black;
+        	color: white;
+      	}
+	</style>
+</head>
+<body>
+  <div id="outer">
+  	<div id="left" class="inner">
+  	</div>
+  	<div id="right" class="inner">
+  	</div>
+  </div> 
+  </div>
+  <a id="link" href="http://www.espn.com/" target="_blank">ESPN</a>
+  <script src="../jquery.js"></script>
+  <script>
+    document.getElementById("left").style.backgroundColor = "red";
+    $("#right").css("background-color","red");
+    $("#link").attr("href","http://google.com/search?q=Matt Ryan")
+    document.getElementById("left").innerHTML = "1<br>2";
+    $("#right").html("1<br>2");
+    var text = 0;
+    if(text === 0) {
+		document.getElementById("left").style.backgroundColor = "green";
+    }
+    var newP = $("<p>");
+    newP.text("hi");
+    newP.html("new text");
+    newP.addClass("inner");
+    $("body").append(newP);
+    $("<p>").text("whaddup")addClass("inner").appendTo("body");
+
+  </script>
+</body>
+</html>

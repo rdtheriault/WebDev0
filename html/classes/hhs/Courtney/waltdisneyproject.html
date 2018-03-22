@@ -1,0 +1,127 @@
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+        <title>Empty Project</title>
+        <script src="code.js" type="text/javascript" charset="utf-8"></script>        
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <style>
+          
+				body{
+    				background-image: url("http://www.designbolts.com/wp-content/uploads/2013/02/Cute-Grey-Tilable-Pattern-For-Website-Background.jpg");
+				}
+          
+               h1{
+                  text-align:Center; 
+               }
+          
+               #WaltDisney{
+                 text-align:center;
+               }
+
+               h1{
+                 color: white;
+                 background-color:rgb(0, 162, 255);
+               }
+
+          		#outer {
+                  justify-content:center;
+                  display:flex;
+                  margin-left:30px; 
+            	}
+
+                li{
+                  text-align:center;
+                }
+
+                h3{
+                  text-align:center;
+                }
+
+            	div{
+                	margin:5px;
+                  	justify-content:center;
+            	}
+
+				#WaltDisney{ 
+    				border: 20px double rgb(0, 162, 255);
+  					position:absolute;
+  					top:125px;
+  					left:170px;
+				}
+
+				.box{
+                  width:300px;
+                  margin-left:15px;
+                  border:2px solid rgb(0,162, 255); 
+                  border-radius:5px;
+                  margin-top:30px;
+				}
+
+				#walt{
+                  background-color:rgb(0, 162, 255);
+                  height:"100px";
+                  color:white;
+                  font-size:20px; 
+                  font-family:fantasy;
+				}
+          
+				#mickey1{
+    				position:absolute;
+					top:30px;
+    				left:20px;
+				}
+          
+				#mickey2{
+    				position:absolute;
+    				top:30px;
+    				right:20px;
+				}
+          
+        </style>
+    </head>
+    <body>
+     	 <div id="walt"><h1 id="wd"><strong>Walt Disney</strong></h1></div>
+      
+      	 <br>
+      
+		 <img id="mickey1" src="http://cliparts.co/cliparts/8T6/8Rp/8T68Rpeac.gif" width="35px">
+		 <img id="mickey2" src="http://cliparts.co/cliparts/8T6/8Rp/8T68Rpeac.gif" width="35px">
+      
+         <div id="outer">
+         	<div> <img id=WaltDisney onclick="changecolor()" src="http://www.notablebiographies.com/images/uewb_04_img0239.jpg" alt="Walt Disney" width="280px" ></div>
+         	<div class="box"><h3>Early Life</h3>  <p><strong>W</strong>alt Disney was born on December 5th, 1901, in Chicago.Walt's family moved between Kansas City and Chicago throughout his childhood. While he was young he developed an intrest in art, and later studied at the Kansas City Institute and the Chicago Art Institue. While in college he became the cartoonist for the schools newspaper.</p>
+    	 	<p><strong>D</strong>uring the First World War, Disney dropped out of school in attempt to inlist in the army but was later rejected for being underage. After the rejection he was able to enlist in the Red Cross to drive an ambulance in France from 1918-1919.</p> <br></div>
+    	 </div>
+      
+      	 <br>
+    
+         <h3 class="fun">Fun Facts</h3>
+  			 <li class="fun">From 1928 until 1947, Disney himself did the voice of Mickey Mouse.</li>
+   			 <li class="fun">Between 1932 and 1969 Walt Disney won 22 Academy Awards and nominated 59 times.</li>
+   			 <li class="fun"> Walt Disney held the patent for Technicolor for two years, making him the only animator allowed to make color animated films.</li>
+      
+   		 <br>
+      
+      	 <button type="change" id="change">Do Something </button>
+      
+      
+      <script src="../jquery.js"></script>
+      <script>
+        
+        	var color =["Red", "Blue", "Pink","purple", "green", "orange", "black", "yellow",];
+        
+			var counter =0;
+        
+			function changecolor() {
+    			document.getElementById("WaltDisney").style.backgroundColor = color[counter];
+              	counter++;
+            };
+              
+    		if (counter=== color.length){
+       			counter=1;
+        	};
+        
+  
+      </script>
+  </body>
+</html>

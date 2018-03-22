@@ -1,0 +1,76 @@
+<html>
+  <head>
+  <style>
+  		body {
+  			background-color: cyan;
+    	}
+	</style>
+  </head>
+<body>
+  <h1>Barrel racing<h1>
+  <table style="width:50%" border="1px solid black">
+    <tr>
+    <th>first</th>
+  <th>second</th>
+  <th>third</th>
+  </tr>
+  <tr>
+    <td>first</td>
+  <td>second</td>
+  <td>third</td>
+  </tr>
+  <tr>
+    <td>first</td>
+  <td>second</td>
+  <td>third</td>
+  </tr>
+  </table>
+   
+  <div id="one">
+    <img class"dis" src="http://ricebullridingcompany.com/attachments/Image/20130811-1781-8x10-ZF-4199-47181-1-009.jpg?template=generic" height="400px;" style="border:10px solid black;">
+    </div>
+  <div id="two" style="color:orange;">Font color</div>
+  <div id="three" style="color:violet;">Font color</div>
+  
+   <input id="in" type="text">
+    <button id=btn">Press Me</button>
+   
+  <p><h2>Sorry i gave up on the javascrpt</h2></p>
+  
+  <!-- 
+ 
+HTML -
+ 
+(2pts) Header with page title (hint - not located in head)
+(2pts) Three row three column table
+(2pts) Three divs with different ids
+	Div 1 - has picture in it
+	Div 2 - empty
+	Div 3 - empty
+(1pts) Input text box
+(2pts) Button
+ 
+CSS - 
+ 
+(1pts) Background colour
+(1pts) Divs - change the font colour   > -1
+(1pts) Give the picture a border   > -1
+ 
+JS - script: - 8
+ 
+(2pts) Create array with 4 strings  
+(2pts) Change the picture of div one
+(2pts) Set height & width div two=100px & background to different colour than page background
+ 
+(2pts) On Button press loop through array
+	In the loop
+		Put each item in div three with a break between them
+		If the input is the same as array item instead display “Found me”
+-->
+  
+  
+  
+  
+  
+  </body>
+</html>

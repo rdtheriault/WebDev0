@@ -1,0 +1,58 @@
+<html>
+  <head>
+    <style>
+      #title {
+       color:red; 
+      }
+      span.dis {
+        
+      }
+    </style>
+ 
+  </head>
+  <img  class="dis" id="picture" src ="https://static.gamespot.com/uploads/screen_kubrick/1574/15746725/3192990-gameplay_injustice2_bluebeetle_newgear_gs.jpg" width="300px"/>
+  <body id ="body">
+    <h1 id="title">Title of page </h1> 
+    <p> <span class="dis">This</span> is paragraph 1 </p>
+     <p><s (pan class="dis"> This</span> is paragraph 2 </p>
+     <p> <span>This</span> is paragraph 3</p>
+    <div id="array"></div>
+     <a id="link" href ="http://www.google.com"> google</a>
+    <button id="btn">click me </button>
+    <input type="text" id="num">
+   
+     <script>
+       var elDis = document.querySelectorAll("span.dis");
+      for (var i=0; i < elDis.length; i++) {
+       elDis[i].style.display = "none" ; 
+        
+      }
+      
+       function press() {
+          var input = document.getElementById("num").value;
+         if (isNaN(input)) {
+            document.getElementById("array").innerHTML="<h1>no stop</h1>";
+         }
+           
+        else if (input < 11){
+          document.getElementById("picture").src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSD1IGwGsznovwIRPS7tSjafVZOvI5RVY5xnJlwxxrv3dW7ZJVR";
+          document.getElementById("link").href="http://dc.wikia.com/wiki/Blue_Beetle";
+          }
+           
+         else {
+           document.getElementById("array").innerHTML="no stop";
+         }
+         
+       }
+		
+         
+       //document.querySelector("span.dis").style.display="none";
+       document.getElementById("btn").addEventListener("click",press);
+ 
+    </script>
+      
+   
+  </body>
+</html>
+
+    

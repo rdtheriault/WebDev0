@@ -1,0 +1,184 @@
+<html>
+  <head>
+    <style>
+      #head {
+      	color:pink;
+      }
+      h1{
+      	color:blue;
+      }
+      .notMain{
+      	color:green;
+      }
+      
+    
+    </style>
+    <script src="../jquery.js"></script>
+    <script>
+
+       $(document).ready(function() {
+        $("#head").text("Hello World");
+      	$("h1").text("TEST");
+      });	
+     
+    </script>
+  </head>
+  <body>
+    <div id="head">Hello World</div>
+    <div id="result"></div>
+    <h1>Header 1 </h1>
+    <h1 class="notMain">Header 2</h1>
+    <h1 class="notMain">Header 3</h1>
+    <h2 class="notMain">End</h2>
+    
+    
+
+    <form>
+      <select>
+        <option value="information">Option 1</option>
+      </select>
+      Enter Name<input type="text">
+    </form>
+    <form id="quiz">
+      <label>
+        What is this? <br>
+        <img id="img" src="../smile.jpg" alt="Reptile"> <br>
+         <select id="quiz-answer">
+           <option value="smile">Smile</option>
+           <option value="Frown">Frown</option>
+           <option value="cry">Cry</option>
+        </select>
+      </label><br>
+      <button type="submit">Check Answer</button>
+                                
+    </form>
+    
+    
+    <form id="croc-form">
+      <label>
+        Species?
+      <select name="species">
+        <option value="freshwater"> Freshwater Crocodile</option>
+        <option value="saltwater"> Saltwater Crocodile</option>
+        <option value="american"> American Crocodile</option>
+      </select>
+      </label>
+      <button type="submit">Order</button>
+    </form>
+    
+      
+   
+    
+	<script>
+      
+      $("#head").hide();
+      $(".notMain").hide();
+      
+      $(".notMain").slideDown(1500, function() { $("#head").show();
+                                               });
+      
+      
+        var crocImages = {
+        	"american": "data:image/jpeg;base64,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",
+        	"saltwater": "https://aos.iacpublishinglabs.com/question/aq/700px-394px/how-does-a-crocodile-defend-itself_8a99d6ca-7b36-4886-bb2d-a9def159e433.jpg?domain=cx.aos.ask.com",
+        	"freshwater": "http://i4.mirror.co.uk/incoming/article4959193.ece/ALTERNATES/s615/Crocodile.jpg"
+      };
+      
+      
+      $("#croc-form").on("submit", function(e) {
+        e.preventDefault();
+        
+        var $crocSpecies = $(this).find("[name=species]");
+        var crocSpecies = $crocSpecies.val();
+        var $img = $("<img>");
+        $img.width = (100);
+        $img.attr("src", crocImages[crocSpecies]);
+        $img.appendTo("body");
+      });
+      
+      
+    
+   		$("#quiz").on("submit", function(e) {
+     		e.preventDefault();
+     		var $answer = $("#quiz-answer");
+    		var answer = $answer.val();
+     		if(answer=== "smile") {
+       		$("#result").text("Good Job!");
+     	}
+     	else { 
+       		$("#result").text("Try Again...");
+     	}
+   	});
+                        
+      var $heading=$("#head");
+      $heading.html("Using jQuery again"); 
+      var headingD = $heading[0]; //now a DOM node AKA JavaScript
+      
+      var $headingJ=$(headingD); //back to jQuery Collection
+      $headingJ.text("Next Try");
+   
+      var newP = $("<span>");
+      	newP.text("Courtney");
+      	$("body").append(newP);
+     	newP.addClass("notMain");
+      
+      var $h1s =$("h1");
+      for (var i =0; i < $h1s.length; i++){
+      	var element = $h1s[i];
+        var $h1 = $(element);
+      	
+      
+      };
+      
+     var header1 =$("#head").text();
+      console.log(header1);
+      if (header1.includes("Hello")) {
+          $("h2").text(" TEST"+ header1);
+          };
+      $("h2").css("color","red");
+    
+      
+      var changeMe = function() {
+        $(".notMain").css("color","purple")
+      };
+      
+      $("#btn").on("click",function() {
+           	console.log("you clicked me!!");
+        	changeMe();
+      });
+      
+      
+      
+      $("#img").animate({
+        width: "400px",
+        marginLeft: "30px",
+        boderWidth: "10px"
+      },1500);
+        
+      
+     /*$("body").on("click",function(event) {
+        	var $img = $("<img>")
+            .attr("src","../smile.jpg")
+            .css("position", "absolute")
+            .css("top", event.pageY + "px")
+            .css("left", event.pageX + "px")
+            .width(100)
+            .appendTo("body");
+        	
+      });
+     
+      
+       $("img").attr("https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwivuLf30fTQAhVP0mMKHXsgBToQjRwIBw&url=https%3A%2F%2Fwww.royalcanin.com%2Fproducts%2Fcat%2Fadult&psig=AFQjCNEDtIUYO23t2AcQw5F4Mw_lom_KxQ&ust=1481837748853039")
+      header1.text(header1.text()+"!!");
+      
+      $("h2").text(header1 + "!!!");
+      
+      NOTES
+      .text changes text
+      to change css put .css
+      Use $ to indicate jQuery
+      
+     */
+    </script>
+  </body>
+</html>

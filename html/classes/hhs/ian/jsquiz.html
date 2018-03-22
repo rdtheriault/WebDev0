@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <style>
+    </style>
+  </head>
+  <body id="body">
+    <h1> title of page</h1>
+    <div id="one"></div>
+    <div id="two"></div>
+    <div id="three"></div>
+   
+         <input type="text" id="num">
+    <button id= "btn">click here</button>
+    <a href="https://google.com" id="link">click</a>
+   <script>
+     
+     for (var i = 0; i < 10; i++) {
+       document.getElementById("one").innerHTML +=(i+1)*2+"<br>";
+        
+     }
+     document.getElementById("two").innerHTML="<ul><li>item 1</li><ul><li>item 2</li><ul><li>item 3</li></ul>";
+     
+     
+    document.getElementById("btn").addEventListener("click",doSomething);
+                                                     
+     
+     function doSomething() {
+       var input = document.getElementById("num").value;
+      
+       document.getElementById("three").style.backgroundcolor="blue";
+       document.getElementById("link").href="https://www.nitrotype.com";
+       if (input === "10") {
+         document.getElementById("three").innerHTML="that was ten";
+       }
+     }
+     
+   
+      
+
+       
+     
+    </script>
+  </body>
+</html>
+     

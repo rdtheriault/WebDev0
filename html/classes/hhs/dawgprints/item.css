@@ -1,0 +1,69 @@
+    
+      .outeri {
+        display: flex;
+        border: 2px solid black;
+        border-radius: 5px;
+        width: 600px;
+        margin: 10px;
+        background-color: black;
+      }
+      .conti {
+        display: flex;
+        
+      }
+      .colouri {
+        height: 50px;
+        border-radius: 5px;
+        width: 50px;
+        margin: 5px;
+      }
+      #color1 {
+        background-color: purple;
+      }
+      #color2 {
+        background-color: #bf9b30;
+      }
+      #color3 {
+        background-color: white;
+      }
+      #color4 {
+        background-color: black;
+      }
+      .dropdowni {
+        text-align: center;
+        font-size: 40px;
+        font-family: 'san-serif';
+        color: #bf9b30;
+        
+      }
+      .infoi {
+        width: 300px;
+        
+        
+      }
+      .roundedi {
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 20px;
+      }
+      
+      .styled-selecti {
+   background: url(http://i62.tinypic.com/15xvbd5.png) no-repeat 96% 0;
+   height: 29px;
+   overflow: hidden;
+   width: 240px;
+        margin-left: 10px;
+}
+      
+      .styled-selecti select {
+   background: transparent;
+   font-family: impact;
+   border: none;
+   font-size: 18px;
+   height: 29px;
+   padding: 5px; /* If you add too much padding here, the options won't show in IE */
+   width: 268px;
+	}
+      
+      .blacki   { background-color: #663399; }
+      .blacki select   { color: #f35858; }

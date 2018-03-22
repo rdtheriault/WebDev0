@@ -1,0 +1,50 @@
+.square {
+      		width: 150px;
+        	height: 150px;
+          border-radius: 5px;
+          font-size: 50px;
+          font-style: bold;
+          text-align: center;
+          padding-top: 25px;
+  		  border: 2px solid black;
+        }
+.square2 {
+  width: 150px;
+  height: 150px;
+  
+}
+        #up {
+          background-color: white;
+        }
+        #down {
+          background-color: white;
+        }
+        #left {
+          background-color: #FFFFFF;
+        }
+        #right {
+          background-color: white;
+        }
+        #master {
+          //color: yellow;
+        }
+        #middle {
+          display: flex;
+          width: 100%;
+          justify-content: center;
+        }
+        #btn {
+          font-size: 40px;
+          font-family: sans;
+        }
+        body {
+            display: table-cell;
+            vertical-align: middle;
+        }
+        html, body {
+           height: 100%;
+        }
+        html {
+            display: table;
+            margin: auto;
+        }

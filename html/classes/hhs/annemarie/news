@@ -1,0 +1,12 @@
+<html>
+  <head>
+  </head>
+  <body>
+  before 
+  <?php
+  echo "hello world";
+  
+  ?>
+    after
+  </body>
+  </html>

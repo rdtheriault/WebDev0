@@ -1,0 +1,50 @@
+<html>
+  	<head>
+      <style>
+        .inner {
+          background-color:blue;
+          width:250px;
+          height:50px;
+          margin:10px;
+        }
+        #outer
+        {
+          display:flex;
+      </style>
+    </head>
+  	<body>
+      <div id="outer">
+        <div id="left" class="inner"></div>
+         <div id="right" class="inner"></div>
+        </div>
+      
+      <a id ="link" href= "https://powerschool.hermiston.k12.or.us/public/" target="_blank"> ps </a>
+      
+      <script src="../jquery.js"></script>
+      <script>
+        document.getElementById("left").style.backgroundColor="purple";
+        $("#right").css("background-color","red");
+        $("link").attr("href","https://classroom.google.com/h");
+        
+        document.getElementById("left").innerHTML = "1<br>2";
+        $("right").html("1<br>2");
+        var test = 0;
+        if (test === 0) {
+          $("#right").css("background-color","purple");
+        }
+        var newP = $("p");
+        newP.text("new text<br>hi");
+        $("body").append(newP);
+        $("<p>").text("New text").appendTo("body");
+        newP.addClass("inner");
+        
+        for (i = 0; i < 11; i++){
+                document.getElementById("left").innerHTML += i;
+       			 $("<p>").text(i).appendTo("body");
+
+        }
+        
+      </script>
+      
+    </body>
+</html>

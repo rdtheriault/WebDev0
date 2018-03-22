@@ -1,0 +1,108 @@
+<html>
+<head>
+<style>
+  body{
+  background:blue;
+  }
+  #banana{
+  color:yellow; background:white; width:520px;
+  } 
+  #apple{
+  color:red;
+  }
+  #orange{
+  color:orange;
+  }
+  #doge{
+  border:yellow ridge 10px;
+  }
+  
+</style>
+</head>  
+<body>
+<h1>Banana</h1> 
+<table>  
+  <tr>
+    <td>banana</td>
+    <td>banana</td>
+    <td>banana</td>
+  </tr>
+  <tr>
+    <td>apple</td>
+    <td>apple</td>
+    <td>apple</td>
+  </tr>
+  <tr>
+    <td>orange</td>
+    <td>orange</td>
+    <td>orange</td>
+  </tr>
+</table>  
+<div id="banana">  
+<img id="doge" src="doge.png" width="500px"> 
+</div>  
+  
+<div id="apple">  
+  
+</div>    
+  
+<div id="orange">  
+  
+</div>    
+<input Id="input" type="text">  
+<button id="button">button</button>  
+<script>
+
+var doge = document.getElementById("doge");
+doge.src = "DancingBanana.gif";
+var apple = document.getElementById("apple");
+apple.style.width="100";
+apple.style.height="100";
+apple.style.background="purple";
+var orange = document.getElementById("orange");
+var input = function(){
+for(i=0 ; i<4 ; i++){
+var array = ["banana", "apple", "orange", "strawberry"] //this should go outside the loop 
+var inputBox = document.getElementById("input").value;
+if (inputBox == array[i]){
+orange.innerHTML += "Found Me"+"<br>";
+}else{
+orange.innerHTML += array[i]+"<br>";
+}
+}
+}  
+var button = document.getElementById("button")
+    button.addEventListener("click",input);  
+</script>
+</body>
+  <!-- 
+ 
+HTML -
+ 
+(2pts) Header with page title (hint - not located in head)
+(2pts) Three row three column table
+(2pts) Three divs with different ids
+	Div 1 - has picture in it
+	Div 2 - empty
+	Div 3 - empty
+(1pts) Input text box
+(2pts) Button
+ 
+CSS - 
+ 
+(1pts) Background colour
+(1pts) Divs - change the font colour
+(1pts) Give the picture a border
+ 
+JS - script:
+ 
+(2pts) Create array with 4 strings  
+(2pts) Change the picture of div one
+(2pts) Set height & width div two=100px & background to different colour than page background
+ 
+(2pts) On Button press loop through array
+	In the loop
+		Put each item in div three with a break between them
+		If the input is the same as array item instead display “Found me”
+-->
+</html>

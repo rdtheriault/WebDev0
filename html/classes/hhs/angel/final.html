@@ -1,0 +1,100 @@
+<html>
+  <head>
+  </head>
+ <body id="body">
+   <table style="width:100%">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th> 
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td> 
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td> 
+    <td>94</td>
+  </tr>
+</table>
+   			<div id="one"><img id ="imgo" src="https://upload.wikimedia.org/wikipedia/commons/c/c4/Anthidium_February_2008-1.jpg" width="200px"/></div>
+   			<div id="two"></div>
+    		<div id="three"> </div>
+   			<button id="btn">press me</button>
+   		 <input type="text" id="dos"> 
+   		
+   <script>
+     
+    		var spongebob = ["patrick","plankton","pearl","krabs"];
+    	 var arrayLength = spongebob.length;
+		for (var i = 0; i < arrayLength; i++) {
+         
+           document.getElementById("three").innerHTML += spongebob[i]+"<br>";
+          
+}
+    
+       
+ 	document.getElementById("imgo").src="http://farm9.static.flickr.com/8796/18369692971_3d233fd14c.jpg";
+     
+     
+         document.getElementById("clickme").addEventListener("click",after);
+ 
+
+    
+  </script>
+  </body>
+  
+  
+  <style>
+    body{
+      background-color:blue;
+    }
+    img {
+   padding:1px;
+   border:1px solid #021a40;
+   background-color:#ff0;
+}
+     #one {
+    height: 200px;
+    width: 200px;
+    background-color: gold;
+  }
+    
+    
+  </style>
+  <!-- 
+ 
+HTML -
+ 
+(2pts) Header with page title (hint - not located in head)
+(2pts) Three row three column table
+(2pts) Three divs with different ids
+	Div 1 - has picture in it
+	Div 2 - empty
+	Div 3 - empty
+(1pts) Input text box
+(2pts) Button
+ 
+CSS - 
+ 
+(1pts) Background colour
+(1pts) Divs - change the font colour
+(1pts) Give the picture a border
+ 
+JS - script:
+ 
+(2pts) Create array with 4 strings  
+(2pts) Change the picture of div one
+(2pts) Set height & width div two=100px & background to different colour than page background
+ 
+(2pts) On Button press loop through array
+	In the loop
+		Put each item in div three with a break between them
+		If the input is the same as array item instead display “Found me”
+-->
+  
+  
+  
+</html>

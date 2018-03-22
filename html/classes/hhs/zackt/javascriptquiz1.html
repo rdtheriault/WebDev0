@@ -1,0 +1,29 @@
+<html>
+  <head>
+  </head>
+  <body>
+    <h1 id='title'>"It's Gonna Be Me -N*Sync"</h1>
+    <ol>
+      <li class='list'>"I Want It That Way -Backstreet Boys"</li>
+      <li class='list'>"Cry Me A River -Justin T"</li>
+      <li class='list'>"Bye Bye Bye -N*Sync"</li>
+    </ol>
+    <button id='btn'>Click</button>
+    <div id='empty'>
+    </div>
+    <script>
+      function btn() {
+        document.getElementById('title').innerHTML = "Songs I Like:";
+        document.body.style.backgroundColor = 'pink';
+        document.getElementById('empty').innerHTML = "<p>I like these songs because they remind me of my childhood.</p>";
+        var col = document.getElementsByClassName('list')
+        for (i = 0; i < col.length; i++) {
+          col[i].style.color = 'forestgreen';
+        }
+        
+        
+      }
+      document.getElementById('btn').addEventListener("click", btn);
+    </script>
+  </body>
+</html>

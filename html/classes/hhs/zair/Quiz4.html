@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <title>
+      hi
+    </title>
+  </head>
+  <body>
+    <div id="nice">
+    </div>
+    <div id="welcome">
+      </div>
+   <div id="bye">
+    </div>
+    <script>
+    function test (){/no space after test
+        var hello = document.getElementById("nice").value;//this is not needed
+      		for ( i=2 ; i<25 ; i+=2 ) {//using 25 will put you to 24
+              document.getElementById("nice").innerHTML+= i+;// no + after i
+    		   if (i===10)
+                 document.getElementById("welcome").innerHTML = "you are 1/2 way there";
+              
+            }
+          
+    }
+      //didn't call test():
+     //great start, -1 for syntax, -1 for not calling function, -0.1 for going to 24 7.9/10
+    </script>
+  </body>
+</html>

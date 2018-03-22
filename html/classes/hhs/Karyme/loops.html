@@ -1,0 +1,64 @@
+<html>
+  <head> 
+		</head>
+  <body> 
+	<div id = "first"> </div>
+    <div id = "second"> </div>
+    <div id = "ahh"> </div>
+    <div id = "nth"> </div>
+    
+  <select id = "name"> 
+      <option value = " Karyme"> Karyme </option>
+      <option value = "Angel"> Angel </option>
+      <option value = "Jer"> Jer </option>
+      <option value = "carol"> carol </option>
+  </select>
+     <button id = "btn"> Click me </button>
+		<script>
+	var nums = 1;
+    var array = ["zero","one","two","three"];
+    var ahar = ["test","testing1","testing10","testing101"];
+          for(var i = 0; i < 10; i++){
+			document.getElementById("first").innerHTML += i.toString()+ nums.toString() + "<br>";
+          }
+   		for (var i = 0; i < array.length; i++) {   
+   		 document.getElementById("second").innerHTML += array[i] + "<br>";
+          }
+          
+      for (var i = 0; i < ahar.length; i++){
+        document.getElementById("ahh").innerHTML += ahar[i] + "<br>";
+          }
+          
+          var num = "u";
+          if (1 === 1){
+    	document.getElementById("nth").innerHTML = "one"; 
+            num = "angel";
+          }
+          
+     	/* else {
+           	document.getElementById("nth").innerHTML = "false"; 
+      }
+	   */
+       
+          if (num === "angel"){ 
+          document.getElementById("nth").innerHTML= "two";
+         }
+       
+      else if (num === "me"){ 
+        document.getElementById("nth").innerHTML= "three";
+         }
+          
+      	document.getElementById("btn").addEventListener("click", test);
+          function test() { 
+            var name = document.getElementById("name").value;  
+            
+          for (var i = 0; i < 10; i+= 1){  
+            
+         document.getElementById("nth").innerHTML += name + "<br>" ;  
+          }
+          }
+          test();
+      
+</script>    
+</body>    
+</html>

@@ -1,0 +1,10 @@
+
+1) file needs </html> at the end and you have a <p> inside of a <ul>  -1
+
+2) You are missing the title section (title and picture)   -2
+
+3) You are missing the left and right main sections (picture in one, text in the other) -3
+
+
+
+total 6/12

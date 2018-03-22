@@ -1,0 +1,41 @@
+<html>
+<head>  
+  
+  
+
+</head>  
+<body>  
+<h1>song name</h1> 
+
+<ul id="list">
+<li>song like other song</li>  
+  
+<li>song like other song</li>  
+  
+<li>song like other song</li>  
+  
+</ul>
+<button id="button">Button</button>
+<div> 
+  
+</div>  
+<script> 
+var clickerButton = document.getElementById("button");
+var list = document.getElementsByTagName("li");
+var onButtonClick = function() {
+document.body.style.background ="blue"
+for(var i = 0; i < list.length; i++){
+// almost there, list[i].style.color = "hot pink"; -0.1
+
+};
+};  
+  
+  
+  
+  
+  
+  
+clickerButton.addEventListener("click", onButtonClick);
+</script>  
+</body>
+</html>

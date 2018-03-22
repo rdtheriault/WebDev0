@@ -1,0 +1,55 @@
+<html>
+<head>
+  <style>
+    #head{
+    color : red;
+    }
+    h1 {
+      color : blue;
+    }
+    .notMain {
+    color : green;
+    }
+  </style>
+ </head>
+<body>
+  <div id = "head"> </div>
+  <h1> Header 1 </h1>
+  <h1 class = "notMain"> Header 2 </h1>
+  <h1 class ="notMain"> Header 3 </h1>
+  <h2 class = "notMain"> End </h2>
+
+  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+  //document.getElementById("").textContent = "Hello World";
+  $("#head").text("Hello World");
+  $("h1").text("test");
+  $(".notMain").text("not main");
+    //dollar signs indicate that its Jquery
+  var newP = $("<span>");
+  newP.text("new text");
+  newP.addClass("notMain");
+  $("body").append("newP   words ");
+  
+  var $heading = $("#head");
+  $heading.html("using Jquery again");
+  
+  var heading0 = $heading[0];
+  
+  var $headingJ = $(heading0);//back to Jquery collection
+  $headingJ.text("Nice try");
+  
+ 
+  var $h1s = $("h1");
+  for ( var i= 0;i < $h1s.length; i ++) {
+  var element = $h1s[i]; // DOM node
+  var $h1 = $(element);
+  $h1.html($h1.html() + ".huzzah");
+  
+  }
+  
+ 
+  </script>
+  </body>
+</html>

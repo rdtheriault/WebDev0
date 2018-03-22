@@ -1,0 +1,155 @@
+<html>
+  <head>
+    <style>
+      #head {
+        color : red;
+      }
+    </style>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  </head>
+  
+  <body>
+    <div id="head"></div>
+    <h1> header 1 </h1>
+    	<h1 class="notMain">Header 2</h1>
+    	<h1 class="notMain">Header 3</h1>
+    <h2 class="notMain">hello </h2>
+    <button id ="btn" > do something</button>
+     <img src="../smile.jpg" alt="reptile" id="img"> <br>
+    <script>
+      $("#head").hide();
+      $(".notMain").hide();
+        
+        
+      $(".notMain").slideDown(1500,function() {
+        $("#head").show();
+      });
+      $("#img").animate({
+        width : "400px",
+        marginLeft: "30px",
+        borderWidth: " 10px"
+      } , 1500);
+      
+    </script>
+    
+    <?php 
+echo "hello everyone"; 
+
+
+?>
+     <form id="quiz">
+        	<label>	
+        	what is this<br>
+             
+                <select id="quiz-answer">
+                  	<option value ="smile"> Smile </option>
+                    <option value ="frown"> Frown </option>
+                    <option value ="cry"> Cry </option>
+                    </select>
+                    </label> <br>
+                    <button type="submit"> Check Answer </button>
+    </form>
+     <div id="result"></ div>
+    <form id="croc-form">
+      <label>
+        species?
+        <select name="species">
+          <option value="freshwater"> freshwater croc </option>
+          <option value="saltwater"> saltwater croc </option>
+          <option value="american"> american croc </option>
+        </select>
+      </label>
+        <button type="submit">orders</button>
+        </form>
+    
+  
+    <script>
+      var crocImages = {
+        "american": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Crocodylus_acutus_mexico_02-edit1.jpg/220px-Crocodylus_acutus_mexico_02-edit1.jpg",
+        "saltwater": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Saltwater_crocodile.jpg/220px-Saltwater_crocodile.jpg",
+        "freshwater":"http://cdn.reptilepark.com.au/wp-content/uploads/2015/12/crocodiles_freshwater2-1030x579.jpg"
+      };
+      $("#croc-form").on("submit",function(e) {
+        e.preventDefault();
+ 		  var $answer = $("#croc-form[name=species]");
+      	var answer = $answer.val();
+      var $crocSpecies = $(this).find("[name=species]");
+      var crocSpecies = $crocSpecies.val();
+        
+        var $img = $("<img>");
+        $img.width(100);
+        $img.attr("src",crocImages[ crocSpecies ]);
+        $img.appendTo("body");
+      });
+       
+      
+      
+                         
+        
+        
+        
+    	  $("#head").text("hello world");
+    	  $("h1").text("TEST");
+    	  $(".notMain").text("not main");
+      	  var header1 = $("#head");
+      	  $("h2").css("color","red");
+      	  $("#link").attr("href","http://yahoo.com");
+      	  //$("#img").attr("src","image2.png");
+      var newP = $("<span>");
+      	newP.text(" kasjhdf ");
+     	 newP.addClass("notMain");
+      	$("body").append(newP);
+      var $heading = $("#head");
+      	$heading.html("hello");
+      var headingD = $heading[0];
+      
+      var $headingJ = $(headingD);
+     	 $headingJ.text("next try");
+      var $h1s = $('h1');
+      	for(var i=0; i < $h1s.length; i++){
+          var element = $h1s[i];
+          var $h1 = $(element);
+          $h1.html ($h1.html()+ "...huzahh!");
+        }
+      var changeMe = function() {
+      $(".notMain").css("color","blue")
+      };
+      
+      
+      $("#btn").on("click", function() {
+        console.log("you clicked me!!!");
+        changeMe();
+      });
+      
+      $("body").on("click", function(event) {
+        var $img = $("<img>")
+        .attr("src", "../smile.jpg")
+        .width(100)
+       // .appendTo("body");
+      });
+     
+      $("#quiz").on("submit",function(e) {
+        e.preventDefault();
+        var $answer = $("#quiz-answer");
+        var answer = $answer.val();
+        
+        if(answer === "smile"){
+          	$("#result").text("Good Job...");
+        }
+        else {
+          $("#result").text("Try Again...");
+        }
+        
+      });
+        
+     
+        
+        
+      
+          
+      
+      	
+    </script>
+    
+    
+    </html>

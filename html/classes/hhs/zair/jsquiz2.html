@@ -1,0 +1,40 @@
+<html>
+  <head>
+  </head>
+  <body id="body">
+    <div id="1"></div>
+    <div id="2"></div>
+    <div id="3"></div>
+    <input type="text" id="in">
+    <button id="btn">click me</button>
+    <a href = "https://www.google.com/" id="link">click</a>
+    <script>
+      for (var i = 0;i < 10; i ++){
+document.getElementById("1").innerHTML += (i+1)*2+"<br>";
+      }
+      document.getElementById("2").innerHTML = "<ul><li>soccer</li><li>hi</li><li>hello</li></ul>";
+      
+      
+      document.getElementById("btn").addEventListener("click",doSomething);
+      
+      function doSomething(){
+        var input = document.getElementById("in").value;
+        document.getElementById("3").innerHTML = "<h1>input</h1>"
+        document.getElementById("3").style.background = "blue";
+        document.getElementById("link").href = "https://www.youtube.com/";
+        if (input === "10"){
+          document.getElementById("3").innerHTML = "That was ten";
+      }
+        
+        
+        
+      }
+
+
+        
+
+    </script>
+    
+    </body>
+   
+</html>

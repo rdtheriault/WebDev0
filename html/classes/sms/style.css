@@ -1,0 +1,18 @@
+table {
+    border : 0.3em solid black;
+}
+td {
+    border: 0.1em dashed green;
+}
+th {
+    border: 0.1em dashed black;
+}
+body {
+    border: 0.5em solid black;
+}
+div {
+    border: 0.5em dashed black;
+}
+img {
+    border: 0.5em solid green;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+            }
+            form {
+                font-size: 1.5em;
+            }
+            .scrambled, input, button {
+                font-family: monospace;
+                font-size: 2em;
+            }
+            
+        </style>
+    </head>
+    <body>
+    
+    <h1>Word game!</h1>
+    
+    <form id="joke-form">
+    
+        <label>
+        
+            Unscramble these letters to form a word:<br>
+            
+            <span class="scrambled">REYJUQ</span>
+            <br>
+            
+            <input type="text" size="10" name="haha" />
+            
+        </label>
+        
+        <button type="submit" id="btn">Check</button>
+    </form>
+        <div id="space"></div>
+        
+    <script src="../jquery.js"></script>
+    <script>
+    $("#joke-form").on("submit", function(e) {
+      e.preventDefault();
+        var $answer = $(this).find("[name=haha]");
+        var answer = $answer.val();
+        
+        if(answer==="jquery") {
+    $("#space").html("<p style='color:green;'>Yes</p>");
+        }
+        else {
+            $("#space").html("<p style='color:red;'>No</p>");
+        }
+        
+    });
+    </script>
+    </body>
+</html>
+
+  

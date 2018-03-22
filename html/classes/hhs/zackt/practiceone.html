@@ -1,0 +1,30 @@
+<html>
+  <head>
+  </head>
+  <body>
+    <h1><strong>Is School Out?</strong></h1>
+    <div id='holder'></div>
+    <hr>
+    <p>How old are you?</p>
+    <input type='text' id='input'>
+    <button id='btn'>Enter</button>
+    <div id='answer'></div>
+    <script>
+      var school = 3*27;
+      var  out = 162/2;
+      if (school == out) {
+		document.getElementById('holder').innerHTML = "<h1>Yes, WhooHoo</h1>";
+        document.body.style.backgroundColor = 'gray';
+      } else {
+        document.getElementById('holder').innerHTML = 'not yet:(';
+      }
+      
+      document.getElementById('btn').addEventListener('click', doSomething);
+      
+      function doSomething() {
+        var input = document.getElementById('input').value;
+        document.getElementById('answer').innerHTML = "I am " + input + " years old.";
+      }
+    </script>
+  </body>
+</html>

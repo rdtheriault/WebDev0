@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <title></title>
+    <style>
+      
+    </style>
+    <body>
+      <div id="zack">
+      </div>
+        <div id="tysen">
+         
+      </div>
+          <div id="G">
+           
+      </div>
+      <input type="text" id="input">
+      <button id="btn">JUICE</button>
+      <script>
+        for (var i=0;i < 10; i++) {
+          document.getElementById("zack").innerHTML += (i+1)*2+"<br>";
+        }
+       document.getElementById("tysen").innerHTML = "<ul> <li>Kyle</li> <li>Chance</li> <li>PnB</li> </ul>";
+        
+        function doSomething() {
+          var input = document.getElementById("input").value;
+          document.getElementById("G").innerHTML = "<h1>"+input+"</h1>";
+          document.getElementById("G").style.backgroundColor = "cyan";
+        }
+        document.getElementById("btn").addEventListener = ("Click", doSomething);
+      </script>
+      
+    </body>
+    </html>

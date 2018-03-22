@@ -1,0 +1,78 @@
+<html> <!--rogelio was here and nice page-->
+    <head>
+        <meta charset="utf-8">
+      <title>Web project</title>
+      <link rel="stylesheet" type="text/css" href="/classes/hhs/pablo/style.css">
+            <style>
+              h1{
+              font-size:40px;
+              text-align:center;
+                border:8px groove rgb(73, 245, 216);
+                color:white;
+                  
+              }
+              img{
+                float:left;
+                margin:90px;
+                margin-top:100px;
+                position:absolute;
+              }
+                  p{
+                    float:right;
+                    top:100px
+                    overflow:auto;
+                    width:50%;
+                    margin-left:50px;
+                    color:black;
+                    border:5px groove white;
+                    background-color:rgb(241,245,233);
+                    
+                  }
+              ul{
+                color:white;}
+             
+                     
+            </style>
+    </head>
+    <body>
+        
+      <h1 id="title"><strong>Steve Jobs</strong></h1>
+      <a id="fotoLink" href="https://en.wikipedia.org/wiki/Steve_Jobs"><img id="foto" src="https://pbs.twimg.com/media/C5e5HUcWQAAntPc.jpg"></a>
+  <p id= "text"><strong>Steven Paul "Steve" Jobs</strong> (/ˈdʒɒbz/; February 24, 1955 – October 5, 2011) was an American entrepreneur, businessman, inventor, and industrial designer. He was the co-founder, chairman, and chief executive officer (CEO) of Apple Inc.; CEO and majority shareholder of Pixar;[2] a member of The Walt Disney Company's board of directors following its acquisition of Pixar; and founder, chairman, and CEO of NeXT. Jobs and Apple co-founder Steve Wozniak are widely recognized as pioneers of the microcomputer revolution of the 1970s and 1980s.
+
+Jobs was born in San Francisco and adopted at birth; he was raised in the San Francisco Bay Area during the 1960s.[3] Jobs briefly attended Reed College in 1972 before dropping out.[4] He then decided to travel through India in 1974 seeking enlightenment and studying Zen Buddhism.[5] Jobs's declassified FBI report stated that an acquaintance knew that Jobs had used the illegal drugs marijuana and LSD while he was in college.[6] Jobs once told a reporter that taking LSD was "one of the two or three most important things" he did in his life.[7]
+
+Jobs and Wozniak co-founded Apple in 1976 to sell Wozniak's Apple I personal computer. The visionaries gained fame and wealth a year later for the Apple II, one of the first highly successful mass-produced personal computers. In 1979, after a tour of PARC, Jobs saw the commercial potential of the Xerox Alto, which was mouse-driven and had a graphical user interface (GUI). This led to development of the unsuccessful Apple Lisa in 1983, followed by the breakthrough Macintosh in 1984. In addition to being the first mass-produced computer with a GUI, the Macintosh introduced the sudden rise of the desktop publishing industry in 1985 with the addition of the Apple LaserWriter, the first laser printer to feature vector graphics. Following a long power struggle, Jobs was forced out of Apple in 1985.[8]
+
+After leaving Apple, Jobs took a few of its members with him to found NeXT, a computer platform development company specializing in state-of-the-art computers for higher-education and business markets. In addition, Jobs helped to initiate the development of the visual effects industry when he funded the spinout of the computer graphics division of George Lucas's Lucasfilm in 1986.[9] The new company, Pixar, would eventually produce the first fully computer-animated film, Toy Story—an event made possible in part because of Jobs's financial support.
+
+In 1997, Apple merged with NeXT. Within a few months of the merger, Jobs became CEO of his former company, reviving Apple at the verge of bankruptcy. Beginning in 1997 with the "Think different" advertising campaign, Jobs worked closely with designer Jonathan Ive to develop a line of products that would have larger cultural ramifications: the iMac, iTunes and iTunes Store, Apple Store, iPod, iPhone, App Store, and the iPad. Mac OS was also revamped into OS X (renamed “macOS” in 2016), based on NeXT's NeXTSTEP platform.
+
+Jobs was diagnosed with a pancreatic neuroendocrine tumor in 2003 and died on October 5, 2011 of respiratory arrest related to the tumor.
+          Learn more in <a id= "link" href="https://en.wikipedia.org/wiki/Steve_Jobs">Wikipedia</a> </p>
+  <ul id="list">
+    <li id= "1listEl"><strong>Born</strong>	Steven Paul Jobs
+February 24, 1955
+      San Francisco, California, U.S.</li>
+    <li id="2ListEl">
+      <strong>Died</strong>	October 5, 2011 (aged 56)
+      Palo Alto, California, U.S.</li>
+  </ul>
+      <button id="btn">Click</button>
+      <script>
+        document.getElementById("btn").addEventListener("click", change);
+        function change(){
+      var biography = document.getElementById("text");
+      biography.innerHTML="Stephen William Hawking, CH, CBE, FRS, FRSA (Listeni/ˈstiːvən ˈhɔːkɪŋ/; born 8 January 1942) is an English theoretical physicist, cosmologist, author and Director of Research at the Centre for Theoretical Cosmology within the University of Cambridge.[16][17] His scientific works include a collaboration with Roger Penrose on gravitational singularity theorems in the framework of general relativity and the theoretical prediction that black holes emit radiation, often called Hawking radiation. Hawking was the first to set out a theory of cosmology explained by a union of the general theory of relativity and quantum mechanics. He is a vigorous supporter of the many-worlds interpretation of quantum mechanics.";
+        biography.style.backgroundColor= "rgb(153, 255, 153)";
+        var imageEl= document.getElementById("foto");
+        imageEl.src= "http://www.carmencitta.me/En/wp-content/uploads/2016/08/Carmencitta-The-New-Einstein-Stephen-Hawking-2.jpg";
+        imageEl.width= "100";
+        var newLink = document.getElementById("fotoLink");
+        newLink.href= "https://en.wikipedia.org/wiki/Stephen_Hawking";
+          var newTitle= document.getElementById("title");
+          newTitle.innerHTML = "Stephen Hakings";
+        }
+      </script>
+    </body>
+</html>

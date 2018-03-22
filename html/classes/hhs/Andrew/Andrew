@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <title>Empty Project</title>
+        <script src="code.js" type="text/javascript" charset="utf-8"></script>        
+        <link href="style.css" rel="stylesheet" type="text/css">
+            <style>
+                #main {
+                    background-color:black;
+                }
+                h1 {
+                    background-color:black;
+                    color:orange;
+                    
+                }
+                    #main {
+                        display:flex;
+                    }
+                    #words {
+                        color:F5B041;
+                    }
+                p {
+                    color:orange;
+                }
+                td {
+                    color:orange;
+                }
+                thread {
+                    background-color:orange;
+                    color:black;
+                }
+                #two {
+                    background-color:orange;
+                }
+                b {
+                    color:black;
+                }
+                #mybtn {
+                    text-align:center;
+                }
+                #andrew {
+                    font-size:30px;
+                    background-color:blue;
+                    color:yellow;
+                }
+                #green {
+                    font-size:30px;
+                    background-color:blue;
+                    color:yellow;
+                }
+                #pro {
+                    font-size:30px;
+                    background-color:blue;
+                    color:yellow;
+                }
+                .lines {
+                    background-color:blue;
+                    color:yellow;
+                }
+                #right {
+                    background-color:blue;
+                    color:yellow;
+                }
+                #kevin {
+                    background-color:blue;
+                }
+                #year {
+                    background-color:blue;
+                    color:yellow;
+                }
+               
+            </style>
+    </head>
+    <body>
+        <div id="pro">
+        <h1><center><span class ="tag">Project 3</span></center></h1>
+        </div>
+        <div id="green">
+        <h1><center>A.J Green.</center></h1>
+        </div>
+        <div id="andrew">
+        <h1><center>By:Andrew Earl</center></h1>
+        </div>
+        <div id="main">
+            <div id="pic"><img src="http://a.espncdn.com/photo/2013/0930/nfl_u_green_a_400.jpg"/></div>
+            <div id="words">
+                    <h1><center><b>Biography</b></center></h1>
+                    <hr>
+                <p id="about">A.J also known as Adriel Jeremiah, is a NFL football wide receiver that plays for the Cincinnati Bengals. He was born July 31, 1988 in Summerville, South Carolina. In his first three years of his career in the NFL A.J had the most catches than any NFL wide reciever in history.</p>
+                    <p id="biography">Biography was found at <a href="http://www.espn.com/nfl/player/stats/_/id/13983/aj-green">Wikipedia</a></p>
+                        <hr>
+                <h1 id="two"><center><b id="m">2015 Stats</b></center></h1>
+                    <hr>
+                    <div id="stats">
+                <table>
+                    <tbody>
+                        <tr>
+                        <td class="line">Reseptions:</td>
+                        <td>89 times</td>
+                        
+                        </tr>
+                        
+                        <tr>
+                            <td class="line">Targets:</td>
+                            <td>132 times</td>
+                            </tr>
+                            <tr>
+                                <td class="line">Yards:</td>
+                                <td>1,297 yards</td>
+                                
+                            </tr>
+                            <tr>
+                                <td class="line">Average Yards:</td>
+                                <td>15.6 yards</td>
+                                
+                            </tr>
+                            <tr>
+                                <td class="line">Longest Reception:</td>
+                                <td>80 yards</td>
+                                
+                            </tr>
+                            <tr>
+                                <td class="line">Touchdowns:</td>
+                                <td>10</td>
+                            <tr>
+                                <td class="line">Receiving First Downs:</td>
+                                <td>63</td>
+                                
+                            </tr>
+                            <tr>
+                                <td class="line">Fumbles:</td>
+                                <td>1</td>
+                            </tr>
+                            
+                    </tbody>
+                    
+                </table></div></div>
+        </div>
+        <button id="myBtn" onclick"displayDate(">Kevin</button>
+
+<p id="demo"></p>
+        <script>
+            document.getElementById("myBtn").addEventListener("click", displayDate);
+
+function displayDate() {
+    //document.getElementById("demo").innerHTML = Date();
+    document.getElementById("about").innerHTML = "<p id='kevin'>Kevin Dwayne Durant is a 7 foot small forward professional basketball player that plays for the the Golden State Warriors. He was born in September 29 of 1988. He was born in Washington D.C. He's one of the highest paid athletes of today, he makes roughly about 20.16 million dollars a year.</p> ";
+    document.getElementById("two").innerHTML = "newdata";
+    //document.getElementById("").innerHTML = "newdata";
+    document.getElementById("green").innerHTML = "<center>Kevin Durant</center>";
+    document.getElementById("pro").innerHTML = "<center>Project 3 </center>";
+    document.getElementById("andrew").innerHTML = "<center>By: Andrew Earl </center>";
+    document.getElementById("pic").innerHTML = '<img src="http://i.cdn.turner.com/drp/nba/warriors/sites/default/files/20160707-durant-12.jpg" width="320px" />';
+    document.getElementById("two").innerHTML = "<p id='year'>Stats this year</p>";
+    document.getElementById("biography").innerHTML = '<a href="http://kevindurant.com/">I got the info here Wikipedia</a>';
+    document.getElementById("")
+    document.getElementById("stats").innerHTML = "<table>"+
+                    "<tbody><tr>"+
+                        "<td class='lines'>Minutes Per Game:</td>"+
+                        "<td id='right'>35.2 Minutes</td>"+
+                        
+                        "</tr>"+
+                        
+                        "<tr>"+
+                            "<td class='lines'>Point Per game:</td>"+
+                            "<td id='right'>30.0 Points</td>"+
+                            "</tr>"+
+                            "<tr>"+
+                                "<td class='lines'>Field Goal %:</td>"+
+                                "<td id='right'>.593 %</td>"+
+                                
+                            "</tr>"+
+                            "<tr>"+
+                                "<td class='lines'>3-Point %:</td>"+
+                                "<td id='right'>.429 %</td>"+
+                                
+                            "</tr>"+
+                            "<tr>"+
+                                "<td class='lines'>Free Throw %:</td>"+
+                                "<td id='right'>.851 %</td>"+
+                                
+                            "</tr>"+
+                            "<tr>"+
+                                "<td class='lines'>Most Points Scored This Year:</td>"+
+                                "<td id='right'>39 Points</td> <tr>"+
+                                "<td class='lines'>Free Throws Made A Game:</td>"+
+                                "<td id='right'>7.8</td>"+
+                            "</tr>"+
+                            "<tr>"+
+                                "<td class='lines'>3's Made A Game:</td>"+
+                                "<td id='right'>4.7</td>"+
+                            "</tr>"+
+                    "</tbody></table>";
+                    
+}
+
+
+        </script>
+       
+    </body>
+</html>

@@ -1,0 +1,66 @@
+<html>
+	<head>  
+  		<style>
+        	.outer {
+             	display:flex; 
+            }
+          	body 
+            {
+                display: table-cell;
+                vertical-align: middle;
+            }
+            html, body 
+            {
+               height: 100%;
+            }
+            html 
+            {
+                display: table;
+                margin: auto;
+            }
+          	.inner {
+             	padding:10px; 
+            }
+      	</style>
+  	</head>
+  	<body>
+  		<div class="outer">
+          	<div class="inner"><img src="pics/water.png" onclick="play(1)"></div>
+  			<div class="inner"><img src="pics/shoes.png" onclick="play(2)"></div>
+          	<div class="inner"><img src="pics/bathroom.png" onclick="play(3)"></div>
+      	</div>
+      	<div class="outer">
+  			<div class="inner"><img src="pics/pencil.png" onclick="play(4)"></div>
+  			<div class="inner"><img src="pics/hungry.png" onclick="play(5)"></div>
+          	<div class="inner"><img src="pics/break.png" onclick="play(6)"></div>
+      	</div>
+      	<div class="outer">
+  			<div class="inner"><img src="pics/paper.png" onclick="play(7)"></div>
+          	<div class="inner"><img src="pics/sad.png" onclick="play(8)"></div>
+  			<div class="inner"><img src="pics/mad.png" onclick="play(9)"></div>
+      	</div>
+      	<div class="outer">
+  			<div class="inner"><img src="pics/happy.png" onclick="play(10)"></div>
+          	<div class="inner"><img src="pics/like.png" onclick="play(11)"></div>
+  			<div class="inner"><img src="pics/play.png" onclick="play(12)"></div>
+      	</div>
+  		<script>
+          	var audio;
+  			function play(num) {
+              	if (num === 1) {audio = new Audio('sound/water.mp3');}
+              	else if (num === 2) {audio = new Audio('sound/shoes.mp3');}
+              	else if (num === 3) {audio = new Audio('sound/bathroom.mp3');}
+              	else if (num === 4) {audio = new Audio('sound/pencil.mp3');}
+              	else if (num === 5) {audio = new Audio('sound/hungry.mp3');}
+              	else if (num === 6) {audio = new Audio('sound/break.mp3');}
+              	else if (num === 7) {audio = new Audio('sound/paper.mp3');}
+              	else if (num === 8) {audio = new Audio('sound/sad.mp3');}
+              	else if (num === 9) {audio = new Audio('sound/mad.mp3');}
+              	else if (num === 10) {audio = new Audio('sound/happy.mp3');}
+              	else if (num === 11) {audio = new Audio('sound/like.mp3');}
+              	else if (num === 12) {audio = new Audio('sound/play.mp3');}
+              	audio.play();
+            }
+     	</script>
+  	</body>
+</html>

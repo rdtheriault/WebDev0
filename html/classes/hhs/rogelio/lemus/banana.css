@@ -1,0 +1,61 @@
+  	@font-face{
+  font-family:banana;
+  src:url(BANAAN.TTF);
+  }
+  body{
+  text-align:center;
+  background:url(background.jpg);
+  }
+  #main_banana{
+  background:yellow;
+  width:50%;
+  position: fixed;
+  right:25%;
+  height:75%;
+  font-family:banana;
+  border:rgb(51, 102, 204) double 20px
+  }
+  .size{
+   height:100%;
+   
+  }
+  .yellow{
+  background:yellow; 
+  height:8.8%;
+  display:flex;
+  color:blue;
+  }
+  .blue{
+  background:blue;
+  height:8.8%;
+  display:flex;
+  color:yellow;
+  }
+  .pic{
+        -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+  }
+    #toc-div{
+    height:8.8%;
+    color:blue;
+    }
+  .text{
+  font-size:vmin;
+  }
+  #one{
+    text-align:center;
+    background:blue;
+    height:4.5%;
+  }
+  #two{
+    text-align:center;
+    background:blue;
+    height:4.5%;
+  }
+  a{
+  text-decoration:none;
+  }

@@ -1,0 +1,63 @@
+<html>
+  <head>
+  <title>Compton California</title>  
+    
+    <h1 style="color:red"><center><em>The City Of Compton</em></center></h1> <!--  the header goes in the body -->
+    
+    </head>
+  <body background="https://ak6.picdn.net/shutterstock/videos/11594534/thumb/1.jpg?i10c=img.resize(height:160)">
+  
+    
+    
+    <h2 style="color:orange"><center>Compton is a city south of Los Angeles, in California. It is one of the oldest 
+    cities in Los Angeles county. As of 2010 the population is 96,455. It is known as the "hub city" because of how central
+    it is in the county. Compton is home to a relitivly young community as most of the residents are on average 25, compared
+    to America median age of 35.</h2>
+    
+    <h2 style="color:red">Attractions</h2>
+    <ul style="list-style-type:disc">
+      <li style="color:orange">Crystal Casino</li>
+      <li style="color:red">Wilson Park</li>
+      <li style="color:orange">Burrell Mc Donald Park</li>
+      <li style="color:red">Cesar Chavez Park</li>
+      </ul>
+      
+      <table cellspacing="10" border="1">
+        <tr>
+        <th><h2 style="color:orange">Key Event</h2></th>
+          <th><h2 style="color:orange">Date</h2></th>
+            </tr>
+          <tr>
+            <td><h2 style="color:red">Kendrick Lamar getting a key to the city</h2></td>
+              <td><h2 style="color:red">Feb. 13 2016</h2></td>
+                
+                <!-- you didn't close the table tag or the second <tr> tag -->
+                
+    	<img src="https://sevenbgeography.wikispaces.com/file/view/compton.jpg/380620350/448x298/compton.jpg" alt="Compton">
+          </body>
+          
+          
+          <!-- you have to get used to closing the </html> right away -->
+          
+
+    <!--   
+Which includes:
+
+    A header with the city name > -0.1 wrong location
+    A paragraph about that city
+    An HTML list of attractions in that city
+    A table with “Key Event” and “Date” as header and at least 3 rows > -0.3 not complete need one more row
+        -ie    KEY EVENT        |     DATE
+      Boston Tea Party        |     December 16, 1773
+    A picture of the city which is also a link to the cities wiki page > -0.25 missing link
+
+
+CSS that:
+
+    Sets the background to an image related to the city (ex. sports team logo, landmark)
+    Changes the font color of the list items using a class > -0.25 did not use clas
+    Changes the background color of the table elements > -0.5
+    Puts a border around the table rows
+    Makes the header italics 
+-->
+  

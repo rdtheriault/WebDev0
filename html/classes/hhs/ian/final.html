@@ -1,0 +1,99 @@
+<html>
+  <head>
+    <style>
+      table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+body {
+  background-color:blue;
+}
+img {
+padding: 5px soild black;
+}
+
+    </style>
+  </head>
+  <body id="body">
+    <h1> Title</h1>
+    <table>
+    <tr>
+    <th>.......</th>
+    <th>.......</th> 
+    <th>.......</th>
+  </tr>
+  <tr>
+    <td>......</td>
+    <td>......</td> 
+    <td>......</td>
+  </tr>
+  <tr>
+    <td>......</td>
+    <td>......</td> 
+    <td>......</td>
+  </tr>
+</table>
+ 
+    <div id="one">   <img id="picture"src="https://static.ylilauta.org/files/ti/thumb/lapewxxv.jpg">
+ </div>
+        <div id="two"></div>
+    <div id="three"></div>
+    <input type="text" id="num">
+    <button id="btn"> click here</button>
+      
+      <script>
+         
+    for (var i = 0; i < 20; i++) {
+       document.getElementById("three").innerHTML +=(i+1)+"<br>";
+        
+    }
+        
+        function doSomething() {
+            var input = document.getElementById("num").value;
+         if (input === "11") {
+            document.getElementById("three").innerHTML="found me";
+                  document.getElementById("picture").src="https://i.ytimg.com/vi/86ubpx33PaQ/hq720.jpg?custom=true&w=168&h=94&stc=true&jpg444=true&jpgq=90&sp=68&sigh=FL8rqJ_wLdz2YTIrWdW8zsh-Zm4";
+				document.getElementById("two").style.height="100px";
+          document.getElementById("two").style.width="100px";
+          document.getElementById("two").style.background.color="red";
+         }
+        }
+           document.getElementById("btn").addEventListener("click",doSomething);
+       
+         
+        
+        
+    </script>
+        
+<!-- 
+ 
+HTML -
+ 
+(2pts) Header with page title (hint - not located in head)
+(2pts) Three row three column table
+(2pts) Three divs with different ids
+	Div 1 - has picture in it
+	Div 2 - empty
+	Div 3 - empty
+(1pts) Input text box
+(2pts) Button
+ 
+CSS - 
+ 
+(1pts) Background colour
+(1pts) Divs - change the font colour
+(1pts) Give the picture a border
+ 
+JS - script:
+ 
+(2pts) Create array with 4 strings  > -2
+(2pts) Change the picture of div one > -0.5 should be outside of function
+(2pts) Set height & width div two=100px & background to different colour than page background
+ 
+(2pts) On Button press loop through array  > -2
+	In the loop
+		Put each item in div three with a break between them
+		If the input is the same as array item instead display “Found me”
+-->
+    
+  </body>

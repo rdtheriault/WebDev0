@@ -1,0 +1,33 @@
+<html>
+<head>
+  <style>
+    body {
+      background-color: red;
+      color: white;
+      border: ridge 20px gold;
+      margin: 150px;
+      text-align: center;
+    }
+  </style> 
+</head>
+<body>
+<div id="one">
+</div>
+<div id="two">
+</div>
+<div id="three">
+</div>
+<script>
+  for (var i = 2; i < 21; i += 2) {
+    document.getElementById("one").innerHTML += i + "<br>";
+    if (i == 10) {
+      document.getElementById("two").innerHTML = "<p style='color:gold'><strong>you're halfway there!</strong><p>";
+    }
+  }
+  function run() {
+    document.getElementById("three").innerHTML = "<h1 style='color:gold;'>Zack</h1>";
+  }
+  run();
+</script>
+</body>
+</html>

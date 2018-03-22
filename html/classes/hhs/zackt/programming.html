@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Learning Programming 101</title>
+<style>
+</style>
+</head>
+<body>
+<h1>Variables</h1>
+<div id="vars">
+	Number Variable = <span id="varsNum"></span><br>
+	String Variable = <span id="varsString"></span><br>
+	Test Variable = <span id="varsTest"></span><br>
+</div>
+<br>
+<h1>Iterate</h1>
+<div id="iter">
+	Up one = <span id="iterOne"></span><br>
+	Up more = <span id="iterMore"></span><br>
+	Up many = <span id="iterMany"></span><br>
+</div>
+<br>
+<h1>Functions</h1>
+<div id="func">
+	Answer 1 = <span id="fun1"></span><br>
+	Answer 2 = <span id="fun2"></span><br>
+</div>
+<br>
+<h1>Loops</h1>
+<div id="loop">
+	Array from variable section = <div id="loopArray"></div>
+</div>
+<br>
+<h1>If/Else</h1>
+<div id="elif">
+	Strings = <span id="elifString"></span>
+	Numbers = <span id="elifNum"></span>
+</div>
+<br>
+<script>
+var numbers = 1;
+var num2 = "21";
+var string = "1";
+var array = ["test1","test2","test3", "test4"];
+document.getElementById("varsNum").innerHTML = numbers;
+document.getElementById("varsString").innerHTML = array[0];
+document.getElementById("varsTest").innerHTML = string + 1;
+numbers++;
+document.getElementById("iterOne").innerHTML = numbers;
+numbers += 41;
+document.getElementById("iterMore").innerHTML = numbers;
+numbers *= 630;
+document.getElementById("iterMany").innerHTML = numbers;
+var fun1 = function() {
+	var func1 = document.getElementById("fun1");
+    func1.innerHTML += "";
+  	for (var i = 0; i < array.length; i++)  {
+      func1.innerhtml += ""+array[i]+"<br>";
+    }
+  	func1.innerHTML += "";
+  	if (num2 == 5) {
+      document.getElementById("elifnum").innerHTML = "yup";
+    } else {
+      document.getElementById("elifnum").innerHTML = "not what you are looking for.";
+    }
+};
+fun1();
+var fun2 = function(holder) {
+	numbers += holder;
+	document.getElementById("fun2").innerHTML = numbers;
+};
+fun2("num2");
+
+</script>
+</body>
+
+</html>

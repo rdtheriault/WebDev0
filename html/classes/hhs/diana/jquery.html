@@ -1,0 +1,158 @@
+<html>
+<head>
+ <style>
+  #head{
+   color:red; 
+  }
+   h1{
+   color: blue;  
+   }
+   .notMain{
+   color:green;  
+   }
+   
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script>
+ 
+    </script>
+
+  <button id="btn">Do something</button>
+</head>
+<body>
+  <div id= "head"></div>
+  <h1>Header 1</h1>
+  <h1 class= "notMain"> Header 2</h1>
+  <h1 class ="notMain">Header 3</h1>
+  <h2 class = "notMain">End</h2>
+  <a id="link" href="https://www.google.com">Link</a>
+
+  <form>
+    <select>
+      <option value="information">Option 1</option>
+      </select>
+    Enter Name<input type="text">
+  </form>
+ <form id="quiz">
+  <label>
+    What is this?<br>
+    <img src="../smile.jpg" alt="reptile" id="img"><br>
+    <select id="quiz-answer">
+      <option value="smile">Smile</option>
+      <option value="frown">Frown</option>
+      <option value="cry">Cry</option>
+    </select>
+   </label><br>
+   <button type="submit">Check Answer</button>
+   
+   
+   </form>
+  <form id= "croc-form">
+    <label>
+    Species?
+      <select name= "species">
+        <option value="freshwater">Freshwater Crocodile</option>
+        <option value="saltwater">Saltwater Crocodile</option>
+    	<option value="american">American Crocodile</option>
+        </select>
+      </label>
+    <button type="submit">Order</button> 
+    </form>
+   <div id="result"></div>
+  <script>
+      $("#head").hide();
+    
+    $(".notMain").hide();
+    $(".notMain").slideDown(1500, function(){
+        $("#head").show();
+    });
+    
+    
+    $("#img").animate({
+      width: "400px",
+      marginLeft:"30px",
+      borderWidth: "10px"
+    }, 1500);
+    //$("fakeEl").animate({CSS}, TIME);
+    
+    var crocImages={
+    "american": "https://www.nps.gov/ever/learn/nature/images/alligatorfullcolumn.jpg" ,
+      "saltwater":"http://i.dailymail.co.uk/i/pix/2015/12/20/13/2F86E5E800000578-0-image-a-1_1450617213295.jpg",
+      "freshwater":"http://cdn.reptilepark.com.au/wp-content/uploads/2015/12/crocodiles_freshwater2-1030x579.jpg"
+      
+    };
+    
+     $("#croc-form").on("submit",function(e) {
+        e.preventDefault();
+ 		  var $answer = $("#croc-form[name=species]");
+      	var answer = $answer.val();
+      var $crocSpecies = $(this).find("[name=species]");
+      var crocSpecies = $crocSpecies.val();
+        
+        var $img = $("<img>");
+        $img.width(100);
+        $img.attr("src",crocImages[ crocSpecies ]);
+        $img.appendTo("body");
+      });
+    $("#quiz").on("submit",function(e){
+   e.preventDefault();
+   var $answer= $("#quiz-answer");
+   var answer=$answer.val();
+	if(answer==="smile"){
+     $("#result").text("Good Job");
+    }
+   else{
+     $("#result").text("Try again...");
+   }
+ });
+ 
+   // var header1=$("#head").text();
+  // $("h2").text("Hello<br>world");
+    //console.log(header1);
+    //header1.text(header1.text()+"!!");
+    
+    //$("h2").text(header1+"!!");
+    //$(".notMain").text("not main");
+    var newp= $("<span>");
+    newp.text("new text");
+     newp.addClass("notMain");
+    $("body").append(newp);
+    var $heading= $("#head");
+    $heading.html("Hello world!");
+    var headingD=$heading[0];
+    var $headingJ=$(headingD);
+   // $headingJ.text("Next try");         
+    var $h1s= $("h1");
+    for(var i=0; i<$h1s.length;i++){
+    var element= $h1s[i];
+     var $h1=$(element);
+     // $h1.html($h1.html()+"..wowee!");
+    }
+    var changeMe= function(){
+      $(".notMain").css("color","purple");
+      
+    };
+    $("#btn").on("click",function(){
+     	changeMe();
+      
+      
+    });
+    $("body").on("click",function(event){
+      var $img=$("<img>")
+    // .attr("src","../smile.jpg")
+      .css("position","absolute")
+      .css("top",event.pageY + "px")
+      .css("left",event.pageX+"px")
+      .width(100)
+      .appendTo("body");
+    });
+    
+  </script>
+  
+  </body>
+  
+  
+  
+  
+  
+</html>

@@ -1,0 +1,42 @@
+<html>
+  <head>
+  
+  
+  </head>
+<body>
+  <div id="one"></div>
+  <div id="two"></div>
+  <div id="three"></div>
+  <input id="in" type="text">
+    <button id=btn">Press Me</button>
+    <a href="https://google.com" id="link">Click</a>
+    <script>
+      for (var i = 2; i < 21; i+=2) {
+        document.getElementById("one").innerHTML += i+"<br>";
+      }
+  document.getElementById("two").innerHTML = "<ul><li>Item 1</li><li>Item 2</li><li>Item 3</li></ul>";
+  
+  document.getElementById("btn").addEventListener("click",doSomething);
+
+function doSomething() {
+ var input = document.getElementById("in").value;
+
+  document.getElementById("three").style.backgroundColor = "cyan";
+  document.getElementById("link").href = "https://yahoo.com";
+  if (input === 10) {
+    document.getElementById("three").innerHTML = "that was ten";
+  
+}
+}
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </script>
+</body>
+</html>

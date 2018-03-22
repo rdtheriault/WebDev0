@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        div {
+            width :620px;
+            height:480px;
+            border-style: double ;
+            border-color: gold ;
+            border-radius: 10%;
+            border-width: 20px ;
+        }
+        body {
+            background-color: green ;
+            
+        }
+            hr {
+                width: 100;
+            }
+            
+        }
+        </style>
+    </head>
+    <body>
+
+        <button onclick="addColor()">Add Color</button>
+        <hr>
+        <div id="myCanvas"></div>
+        <script>
+            //document.getElementById("myCanvas").style.backgroundColor
+            //document.getElementById("color").value;
+            var colors = ["Fuchsia", "Aqua", "purple", "silver", "Orange", "White",
+            "Red", "Green", "Black", "Maroon"];
+            var counter = 0;
+            function addColor() {
+                document.getElementById("myCanvas").style.backgroundColor = 
+                colors[counter];
+                counter++;
+                if (counter === colors.length){
+                    counter = 0;
+                }
+                
+                }
+            
+            
+        </script>
+        
+
+        </body>
+        
+        </html>

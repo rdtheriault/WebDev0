@@ -1,0 +1,18 @@
+#sidebar {
+  width:250px;
+  height:100%;
+  background:black;
+  color:white;
+  padding-top:300px;
+  padding-bottom:300px;
+  text-align:center;
+  margin:0px;
+  border-radius:5px;
+}
+
+#main {
+ display:flex; 
+}
+#right {
+ padding-left:75px; 
+}

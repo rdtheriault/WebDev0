@@ -1,0 +1,43 @@
+<html>
+<head>
+
+
+</head>
+<body>
+<div id="banana">
+  
+</div>
+
+<div id="apple">
+  
+</div>
+
+<div id="orange">
+  
+</div>
+<input id="input" type="text">
+<button id="button">button</button>
+<script>
+banana = document.getElementById("banana"); 
+for(i=2;i<21;i+=2){
+banana.innerHTML += i;
+
+
+};
+  
+  var apple = document.getElementById("apple");
+  apple.innerHTML = "<ol><li>banana</li><li>apple</li><li>orange</li></ol>";
+
+    var orange = document.getElementById("orange");
+    function input(){
+    var inputBox = document.getElementById("input").value;
+    orange.innerHTML = inputBox;
+      //you forgot to change the background of the div -0.1
+    };  
+
+    var button = document.getElementById("button")
+    button.addEventListener("click",input);
+
+</script>
+</body>
+</html>

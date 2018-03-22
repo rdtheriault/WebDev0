@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <style>
+      body{
+        background-color: violet;
+      }
+#left {
+  background-color:white;
+   	border-style: dashed;
+height: 500px;
+    	width:500px;
+ 	margin:100px;
+  font-family: sans-serif;
+}
+  	 #right{
+ 	background-color:black;
+   	border-style: solid;
+    height: 500px;
+  	width: 500px;
+     margin:100px;
+}
+      #pic{
+        height : 200px;
+          width:200px;
+      }
+    </style>
+  </head>
+  <body>
+   		 <div id = "left">
+    I like being to make up whatever I feel like making.           
+           
+           
+    	 <div id = "right">
+           <img src = "http://americanbullydaily.com/wp-content/uploads/2016/01/Blue-Nose-Pitbull-Puppy.jpg">
+
+      </div>
+    </div>
+    
+    <button id= "bttn" onClick="bttn()"> Change </button> 
+    <script>
+      var left = document.getElementById("left");
+      var right = document.getElementById("right");
+       right.innerHTML = "<img src = 'https://s-media-cache-ak0.pinimg.com/originals/85/08/01/8508018e58de384772782e33fb93b8c1.png'/>                                   
+       
+       function show() {
+      right.innerHTML = "<img src = 'https://s-media-cache-ak0.pinimg.com/originals/85/08/01/8508018e58de384772782e33fb93b8c1.png'/>";
+    </script>
+  </body>
+</html>

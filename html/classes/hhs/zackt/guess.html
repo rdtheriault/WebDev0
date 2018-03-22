@@ -1,0 +1,73 @@
+<html>
+  <head>
+    <style>
+      body {
+        text-align: left;
+      }
+      #btn2 {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Guess a number between 1-1000</p>
+    <form>
+      <input id="guess" type="text">
+    </form>
+    <button id="btn1" onclick="work()">Guess</button>
+    <button id="btn2" onclick="reset()">Go again!</button>
+    <div id="info">
+    </div>
+    <div id="footer">
+    <div>
+    <script>
+      var x = Math.floor((Math.random() * 1000) + 1);
+      var score = 0;
+      function work() {
+        var number = document.getElementById("guess").value;
+        score ++;
+        if (isNaN(number)){
+			document.getElementById("info").innerHTML = "Not a number";
+			document.getElementById("footer").innerHTML = "score = "+ score;
+		}
+        else if (number > 1000) {
+          document.getElementById("info").innerHTML = "Number is greater than 1000. Try again.";
+			document.getElementById("footer").innerHTML = "score = "+ score; 
+        }
+        else if (number < 1) {
+          document.getElementById("info").innerHTML = "Number is less than 1. Try again.";
+			document.getElementById("footer").innerHTML = "score = "+ score;
+        }
+        else if (number == x) {
+          document.getElementById("info").innerHTML = "Congrats!";
+          document.getElementById("btn1").style.display = "none";
+          document.getElementById("btn2").style.display = "block";
+          document.getElementById("footer").innerHTML = "score = "+ score;
+          document.body.style.backgroundColor = "green";
+        }
+        else if (number < x) {
+          document.getElementById("info").innerHTML = "Too Low.";
+          document.getElementById("footer").innerHTML = "score = "+ score;
+          document.body.style.backgroundColor = "blue";
+        }
+        else if (number > x) {
+          document.getElementById("info").innerHTML = "Too High.";
+          document.getElementById("footer").innerHTML = "score = "+ score;
+          document.body.style.backgroundColor = "red";
+        }
+      }
+      function reset(){
+			document.body.style.backgroundColor = "white";
+			document.getElementById("info").innerHTML = "Pick a number 1-1000";
+			document.getElementById("footer").innerHTML = "";
+			x = Math.floor((Math.random() * 1000) +1);
+			document.getElementById("btn1").style.display="block";
+			document.getElementById("btn2").style.display="none";
+			document.getElementById("guess").value = "";
+			score = 0;
+	   }
+      
+        
+    </script>
+  <body>
+    

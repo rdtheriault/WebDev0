@@ -1,0 +1,82 @@
+<html>
+	<head>
+      <style>
+        #head{
+          color: red;
+        }
+        h1 {
+          color: maroon;
+        }
+        .notMain {
+          color: #999000;
+        }
+      </style>
+	</head>
+	<body>
+      <div id="head"></div>
+      <h1></h1>
+      <h1 class="notMain">Header 2</h1>
+      <h1 class="notMain">Header 3</h1>
+      <h2 class="notMain">Boom</h2>
+       <button id="but">Click Me</button>
+        <form id="quiz">
+          <label>
+          What is this?<br>
+            <img src="../smile.jpg" alt="reptile"> <br>
+              <select id="quiz-answer">
+                <option value="smile">Smile</option>
+                <option value="frown">Frown</option>
+                  <option value="cry">Cry</option>
+                  </select>
+                  </label> <br>
+                  <button type="submit">Check Answer</button>
+                  </form>
+                  <div id="result">
+                    </div>
+		<script src="../jquery.js"></script>
+		<script>
+          $("#quiz").on("submit", function(e) {
+          e.preventDefault();
+          var $answer = $("#quiz-answer");
+          var answer = $answer.val(); // or var answer = $("#quiz-answer")
+          if (answer === "smile") {
+            	$("#result").text("Good job!");
+          }
+          	else {
+              	$("#result").text("Try Again...");
+            }
+        });
+
+
+
+
+          $("#head").text("Hello World");
+          $("h1").text("TEST");
+          $(".notMain").text("not main");
+		var header1 = $("#head");
+		console.log(header1);
+		header1.text(header1.text()+"!!");
+
+			var changeMe = function() {
+              $(".notMain").css("color","purple")
+            };
+
+          $("#but").on("click", function() {
+            console.log("Good Job");
+            changeMe();
+            //btnillize();
+          });
+
+		$("body").on("click", function(e) {
+          var $img = $("<img>")
+          .attr("src", "../smile.jpg")
+          .width(100)
+          .css("position", "absolute")
+          .css("top", event.pageY + "px")
+          .css("left", event.pageX + "px")
+          //.appendTo("body");
+        });
+		
+        </script>
+	</body>
+</html>

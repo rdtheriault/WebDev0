@@ -1,0 +1,57 @@
+<html>
+  <head>
+    <style>
+      #title {
+       color:red; 
+      }
+      span.dis{
+        
+      }
+    </style>
+    <script>
+      document.body.innerHTML = "I just jacked your site bro ";
+    </script>
+    
+  </head>
+    <body id="body">
+    <h1 id="title">Title of page </h1> 
+    <p> <span class="dis">This</span> is paragraph 1 </p>
+     <p><span class="dis"> This</span> is paragraph 2 </p>
+     <p> <span>This</span> is paragraph 3</p>
+     <img class="dis" id="picture" width =300px src ="https://www.eastcobber.com/wp-content/uploads/2015/03/o-SOCCER-BALL-facebook1.jpg"/><br>
+    <div id="array"></div>
+     <a id="link" href ="https://www.youtube.com/"> youtube</a>
+      <button id="btn">click here</button>
+      <input type="text" id="num">
+     <script>
+       var elDis = document.querySelectorAll("span.dis");
+       for (var i = 0; i < elDis.length; i ++) {
+       elDis[i].style.display ="none";
+       }
+            
+       
+       
+       function press() {
+         var input = document.getElementById("num").value;
+         if (isNaN(input))
+           document.getElementById("array").innerHTML = "<h1>That's not a number";
+         else if (input < 11){
+         document.getElementById("link").href="https://www.google.com/";
+           document.getElementById("picture").src="https://s-media-cache-ak0.pinimg.com/736x/6f/b4/4a/6fb44a8e4d3576673251747ace7e5838.jpg";
+           
+         }
+         else{
+           document.getElementById("array").innerHTML = "no stop";
+         }
+           
+       }
+       document.getElementById("btn").addEventListener("click",press);
+
+       
+    </script>
+      
+   
+  </body>
+</html>
+
+    

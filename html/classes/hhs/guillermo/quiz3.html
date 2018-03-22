@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <style>
+    #title {
+      color:green;
+    }
+    </style>
+   <body id="body">
+<h1 id="title">Humble by Kendrick Lamar</h1>
+     <h2>similar songs</h2>
+     <!-- you need an <ul> around the <li> -0.1  -->
+     <li>Fear by Kendrick Lamar</li>
+     <li>Element by  Kendrick Lamar</li>
+     <li>xxx by Kendrick Lamar feat U2</li>
+    
+     <button id="btn">click here</button>
+     <div id="text"></div>
+     <script>
+       document.getElementById("btn").addEventListener("click",doSomething);
+       function doSomething() {
+         document.body.style.background = "red";
+         var elLi = document.getElementsByTagName("li");
+         for (var i = 0;i <elLi.length;i++){
+           elLi[i].style.color = "blue";
+         }
+         document.getElementById("title").innerHTML = "My Songs";
+       }   
+     </script>
+     
+    </body>
+  </head>
+    </html>
+    
+    
+    
+    
+    

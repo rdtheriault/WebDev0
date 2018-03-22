@@ -1,0 +1,54 @@
+    @font-face{
+  font-family:banana;
+  src:url(BANAAN.TTF);
+  }
+    @font-face{
+  font-family:apple;
+  src:url(AppleFont.ttf);
+  }
+  #toc{
+  font-family:banana; text-align:center; color:blue;
+  }
+	h1{
+      color:rgb(0, 0, 153); font-size:1.25em}    
+	.orange_letters{
+      color:yellow; font-size:1.25em;
+    }
+  .blue_letters{
+    color:blue;font-size:1.25em; 
+    }
+  .letters{text-decoration:none; font-family:banana;
+  
+  }
+	body{
+     text-align:center;  background:url(background.jpg)
+    }
+	.pic{
+      -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+}
+	.blue{
+background-color:blue;
+    }
+	.yellow{
+background-color:yellow;
+    }
+  .size{
+width:40px; height:40px;
+  }
+      #banana{
+   width:50%; position:fixed; right:25%; top:0%; text-align:left; background-color:yellow; border:rgb(51, 102, 204) double 20px;
+  }
+      #first{
+        text-align:center; background-color:blue;
+      }
+ #zero{
+        text-align:center; background-color:blue;
+      }    
+#oops {
+  width: 500px;
+}

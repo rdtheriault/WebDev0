@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+  
+  </head>
+  <body>
+    <button id= "btn">Click me<button> <!-- you didn't close the </button> i.e. you are missing the /  -->
+    <div id= "even"></div>
+    <div id = "numbers"></div>    
+    <div id= "Diana"></div>
+    
+    
+    
+  
+  
+  
+  </body>
+  <script>
+   
+   
+    if(numbers==10){//This needs to be inside the for loop or it will never happen.
+   document.getElementById("numbers").innerHTML="You are half way there";   //indent
+    }
+    function test(){
+       var name= document.getElementById("Diana").value;//this is getting a value not setting it
+       document.getElementById("numbers").innerHTML+=name+"<br>"//this sets value but you don't have anything to set
+       for(var i=2;i<21;i++){
+      document.getElementById("even").innerHTML="numbers";//indent, you do not have numbers defined var numbers = 0;
+       }
+    }
+    
+    test();
+    
+    
+    // 6.9/10 Good work overall, ther are a few things to hash out, -1 if statement not in for loop, -1 for not setting name correctly, -1 for loop will return 2-20 but not only evens. -0.1 for indent erros
+    
+    </script>
+  
+  </html>

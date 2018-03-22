@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <title>Extra Credit</title>
+    <style>
+      #junie {
+        width:200px;
+        height:500px;
+        background-color:cyan;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="junie">
+      <p>Guess my Name???</p>
+      <input type="text" id="input">
+      <button id="btn">Name</button>
+      <p id="para"></p>
+    </div>
+    <script>
+      var main = "junior";
+      var names = ["vaemu", "lale", "junebug", "junior"];
+      var num=Math.floor(Math.random() * 4); 
+      main = names[num];
+      document.getElementById("btn").addEventListener("click", doSomething);
+      function doSomething () {
+        var input = document.getElementById("input").value;
+        if(main == input){
+        document.getElementById("para").innerHTML = "That's me";
+          document.getElementById("para").style.backgroundColor = "lime";
+          num=Math.floor(Math.random() * 4);
+          main = names[num];
+        }
+        else
+        {
+         document.getElementById("para").innerHTML = "No,thats not ME!!!";
+  		 document.getElementById("para").style.backgroundColor = "crimson";   
+        }
+           }
+     
+      
+      
+    </script>
+  </body>
+</html>

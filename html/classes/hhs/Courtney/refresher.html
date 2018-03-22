@@ -1,0 +1,53 @@
+<html>
+  <head>
+    <style>
+      .inner{
+      	background-color:blue;
+      	width:50px;
+        height:50px;
+        margin:10px;
+      }
+        
+      #outer{
+      display:flex;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="outer">
+      <div id="left" class="inner">  </div>
+      <div id="right" class="inner"> </div>
+      
+    </div>
+    <div id="last"></div>
+    <a id="link" href="https://google.com" target="_blank">Google</a>
+    
+    <script src="../jquery.js"></script>
+    <script>
+      document.getElementById("left").style.backgroundColor="red";
+      $("#right").css("background-color","red");
+      $("#link").attr("href","https://bing.com")
+      
+      document.getElementById("left").textContent="1<br>2";
+      $("#right").html("1<br>2");
+      
+      var test = 0;
+      if(test===0){
+      	 $("#right").css("background-color","green");
+      }
+      
+      var newP = $("<p>");
+      newP.html("new text<br>Hi");
+      newP.addClass("inner");
+      $("body").append(newP);
+      
+    $("<p>").text("New Text").appendTo("body")
+    
+      for (var i=1; i < 11; i++){
+      	 $("<p>").text(i).addClass("inner").appendTo("body")
+      };
+      
+    </script>
+  </body>
+  </html
+  

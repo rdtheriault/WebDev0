@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+
+@font-face{
+  font-family:dawgs;
+  src:url(Something Strange.ttf);
+  }
+
+
+#flex {
+  
+  display: flex;
+}
+
+#main {
+  max-width: 1000px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.spacer {
+  height: 500px;
+}
+body 
+{
+  display: table-cell;
+  vertical-align: middle;
+  margin-bottom: 15vh;
+
+}
+
+
+html
+{
+   height: 100%;
+   background-image: url(background.jpg);
+}
+
+
+html 
+{
+    display: table;
+    margin: auto;
+}
+
+
+
+#nav {
+  display: flex;
+}
+
+
+
+.btn {
+  font-family: 'Ubuntu';
+  font-size: 25px;
+  width: 100%;
+  height: 3.5vh;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: solid 2px #c5b358;
+  background-color: #56009e;
+  color: #ffd700;
+}
+#checkout {
+
+  cursor: pointer;
+  transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+     width:200px;
+
+}
+
+
+#checkout:hover {
+
+opacity: 0.4;
+
+
+}
+
+
+
+#middle {
+  width: 100%;
+}
+
+
+
+
+#right {
+}
+
+
+#left {
+  text-align: center;
+}
+
+
+
+#main-logo {
+  width: 100%;
+  align-content: center;
+}
+
+
+
+#about {
+  font-family: dawgs;
+}
+
+
+
+#banner {
+    width: 100%;
+    background-color: black;
+}
+
+#footer {
+background-color: #292c30;
+position: relative;
+width: 100%;
+bottom: 0px;
+}
+
+
+#f_holder {
+ display: flex; 
+ align-items: flex-end;
+ align-self: stretch;
+  
+}
+
+
+#footer_s { 
+  padding-top: .5em;
+  height: 120px;
+  user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+
+}
+
+
+img{
+
+  user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  
+}
+.clothes-divs{
+height:80px;
+width:240px;
+background:#56009e;
+
+margin-top:10px;
+
+border: solid 2px #c5b358;
+text-align:center;
+}
+#left-right{
+width:25%;
+}
+.mySlides {
+display:none;
+}
+.sort-buttons{
+width:25%;
+border:solid 1px black;
+border-radius:10px;
+padding-top:10px;
+padding-bottom:10px;
+color:#56009e;
+background:#c5b358;
+}
+#buttons{
+display:flex;
+background:#56009e;
+}
+
+
+#items_wrapper {
+
+
+  display: flex;
+}
+
+
+.side_button_outer {
+
+width: 230px;
+height: 60px;
+  padding-left: 10px;
+
+}
+
+.side_button {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: #663399;
+  margin: 30 20 0 0;
+  border-radius: 5px;
+  font-family: Ubuntu;
+  cursor: pointer;
+}
+

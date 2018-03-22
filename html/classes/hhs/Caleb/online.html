@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <title>Empty Project</title>
+        <script src="code.js" type="text/javascript" charset="utf-8"></script>        
+      <style>
+      #main{ display: flex;}
+body { color: blue;}
+body { background-color: black;}
+body { font-family: monospace;}
+h1 { font-style: italic;}
+body {font-size: 15px;}
+      
+      </style>
+    </head>
+    <body>
+        <h1>Doctor Who </h1>
+        <h2>The Doctor and everything you need to know about him here</h2>
+        <div id="outer">
+            <div id="header">
+            </div>
+            <div id="main">
+                <div id="pic"><img src="the doctor .jpg" /></div>
+                <div id="par">
+                    <h1>The life of the Doctor</h1>
+                    <p>The Doctor is a alien. He is a timelord and the last of his kind to live. He has a tardis, which is his space and time traveling ship. It looks like an old blue police call box. He travels through time and space helping people he comes acorss on his adventures. He usually travels with a companpies. Someone he might have save and decided to stay with him. The Doctor also has live for almost a 1,000 years, timelords have a way to make it so they can survive for  a long time.</p>
+                    <h1>Facts about the Doctor</h1>
+                    <ul>
+                        <li>HE is a alien (timelord)</li>
+                        <li>He have a spcaeship that can travel through time</li>
+                        <li>He has 2 hearts</li>
+                        <li>He uses a sonic screwdriver to help people</li>
+                        <li>He's over 1,000 years old</li>
+                        <li>His spaceship is called the tardis and its a old blue police call box</li>
+                        
+                    </ul>
+                    </div>
+            </div>
+          
+            <div id="footer">
+            <h1>Things that made this possible</h1>
+            <ul>
+                <li>The classroom and helo from Mr. Theriault</li>
+                <li>The 50 facts about Doctor Who website (http://www.telegraph.co.uk/tv/2015/doctor-who-50-things-you-didnt-know)</li>
+                <li>The time and help put in by Caleb Jorgensen( website developer) and Mr. Theriault.</li>
+                
+            </ul>
+            <p>Thanks for reading my webpage, I hope that i helped you find what you where looking for and enjoyed it.</p>
+            </div>
+        </div>
+        <script>
+          
+            var click = document.getElementById("pic");
+            click.addEventListener("click",change);
+            function change(){
+              
+            
+              //http://www.space.ca/wp-content/uploads/2016/04/Doctor-Who-520x293.jpg
+              
+            
+              document.getElementById("outer").style.backgroundColor = "red";
+          
+              
+              document.getElementById("main").innerHTML = "<div> <h1> The New Doctor </h1> <p>This is also the doctor this is whats when he is about to die, this is how he lives for so long. Everything is the same but how he lookes. He is the same but just looks different. All timelords can do this 11 times but the doctor is different and this is his 12 time. He will always be hopefully and never give up on the human race. He is the hero the world needs because we will always need a hero to save the day. </p> <li>HE is a alien (timelord)</li>       <li>He have a spcaeship that can travel through time</li><li>He has 2 hearts</li><li>He uses a sonic screwdriver to help people</li><li>He's over 1,000 years old</li><li>His spaceship is called the tardis and its a old blue police call box</li> </div>";
+                        
+              
+              
+              
+              
+              
+              
+              
+              
+            
+            }
+              
+        </script>
+    </body>
+</html>

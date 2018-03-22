@@ -1,0 +1,41 @@
+<html>
+    <head>
+       
+      
+    </head>
+    <body>
+      <select id="name">
+        <option value="1">Robert</option>
+        <option value="Angel">Angel</option>
+        <option value="Zack">Zack</option>
+        <option value="Steve">Steve</option>
+      </select>
+      <button id="btn">Click me</button>
+    <div id="outer">
+      <div id="end">
+      </div>
+      <div id="middle">
+      </div>
+      </div>
+<br>
+      <script>
+        var nums = 1;
+        for (var i = 0; i<10; i++){
+         document.getElementById("end").innerHTML += i+  "<br>"; 
+        }
+      var array = ["test1","test2","test3","test4"];
+        
+        for (var i = 0; i<array.length; i++){
+          document.getElementById("middle").innerHTML += array[i]+"<br>";
+        }
+        document.getElementById("btn").addEventListener("click",test);
+       
+        function test()  {
+           var name = document.getElementById("name").value;
+          document.getElementById("three").innerHTML += name;
+        }
+      
+      </script>
+  </body>
+</html>  
+  

@@ -1,0 +1,107 @@
+<!DOCTYPE html> 
+    <html>
+	<head>
+    	<script src="http://www.sagefirellc.com/images/snowstorm-min.js" type="text/javascript"></script>
+  <script src="http://www.sagefirellc.com/images/konami.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    	<style>
+   body
+   {
+    display: table-cell;
+    vertical-align: middle;
+   }
+   html, body
+   {
+  	height: 100%;
+   }
+   html
+   {
+    display: table;
+    margin: auto;
+   }
+        	#outer {
+            	display:flex;
+        	}
+        	#right {
+            	background-color:blue;
+        	}
+        	.inner {
+            	height:500px;
+            	width:500px;
+            	margin:10px;
+        	}
+        	.inner{
+            	border-style:solid;
+        	}
+   img {
+    height:100%;
+            	width:100%;
+   }
+   #image {
+    position:absolute;
+    bottom:0px;
+    right:0px;
+    visibility:hidden;
+    height:50px;
+    width:50px;
+   }
+    	</style>
+    	
+	</head>
+	<body>
+  <div id="image"><img id="move" src=""></div>
+  <div id="all" style="display:none;">
+      <button onclick="goAway()"> Go Away </button>
+   <div id="title">
+   </div>
+   <div id="outer">
+    <div id="left" class="inner">
+    </div>
+    <div id="right" class="inner">
+    </div>
+   </div>
+   <div id="footer">
+   </div>
+   Enter your name: <input type="text" id="userName"><button id="change" onclick="check()">Make the Magic Happen</button>
+  </div>
+  <button id="change" onclick="show()">Show me the money</button>
+    	<script>
+        	var left = document.getElementById("left");
+   var right = document.getElementById("right");
+        	
+   function check(){
+    var userName = document.getElementById("userName").value;
+    
+    document.getElementById("title").innerHTML = userName + "Welcome";
+    right.innerHTML="<img src='https://scottalanturner.com/wp-content/uploads/2016/12/50-legitimate-ways-to-make-money-from-home-blog.jpg'>";
+    left.innerHTML="<br><br><br><div style= 'fontSize=60px'<strong>It's a baby Rottweiler</strong>"
+    if (userName === "Me")
+    {
+        document.body.style.backgroundColor = "purple";
+    }
+    if (userName === "Miranda")
+    {
+        document.body.style.backgroundColor = "red";
+    }
+    else
+    {
+        document.body.style.backgroundColor = "pink";
+    }
+   }
+   function show() {
+    left.innerHTML="<img src='http://az616578.vo.msecnd.net/files/2016/10/08/63611544510437076964939708_636016045463548403-1141137312_635935160236280609575526844_lottery-winner-money-stock-today-tease-160108_bf238d3c03a7005a50a6d6274d46083f.jpg'>";
+    right.innerHTML="<img src='https://mefminute.files.wordpress.com/2015/04/money1.jpg'>";
+    document.getElementById("all").style.display = "block";
+   }
+   
+   function goAway() {
+    document.getElementById("all").style.display="none";
+    document.body.style.backgroundColor="green"
+   }
+   
+   var easter_egg = new Konami();
+   easter_egg.code = function() { window.alert("Hello World"); }
+   easter_egg.load();
+    	</script>
+	</body>
+</html>

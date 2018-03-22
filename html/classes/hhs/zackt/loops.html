@@ -1,0 +1,91 @@
+<htmL>
+<head>
+ <style>
+  body {
+  background-color: purple;
+  border: 50px ridge white; 
+  margin: 20px;
+  color: lime;
+  text-align: center;
+  }
+  h1 {
+    color: white;
+  }
+
+</style>
+</head>
+
+<body>
+<div id="di">
+</div>
+<div id="id">
+</div>
+<div id="d1">
+</div>
+<div id="two">
+</div>
+<br>
+<br>
+<br>
+<select id="name">
+  <option value="Zack">Zack<option>
+  <option value="Andrew">Andrew<option>
+  <option value="Junebug">Junebug<option>
+  <option value="Joe">Joe<option>
+  <option value="Schmoe">Schmoe<option>
+</select>
+<button id="btn">Press</button>
+<div id="four">
+
+</div>
+  
+ <script>
+  var nums = 1; 
+  var array = ["microwave", "oven", "tv", "phone"];
+  var lit = ["fire", "fuego", "hot", "caliente", "cold", "frio"];
+  for(var i = 0; i < lit.length; i++) {
+  	document.getElementById("d1").innerHTML += lit[i] +"<br>";
+  }
+  for(var i = 0; i < array.length; i++) {
+    document.getElementById("id").innerHTML += array[i] +"<br><br><hr>";
+  }
+  for(var i = 0; i < 10; i++) {
+  	document.getElementById("di").innerHTML += i.toString() +"<hr><br><br>";
+  }
+  var num = "Steve";
+  if (1 == 1) {
+    document.getElementById("two").innerHTML = "<br><br><h1>true</h1>";
+  } else {
+    document.getElementById("two").innerHTML = "<br><br><h1>false</h1>";
+  }
+  if (num == "Zack") {
+    document.getElementById("two").innerHTML = "<br>One"
+    num = "Andrew";
+  }
+  else if (num == "Andrew") {
+    document.getElementById("two").innerHTML = "<br>Two"
+  }
+  else if (num == "Junebug") {
+    document.getElementById("two").innerHTML = "<br>Three"
+  }
+  else {
+    document.getElementById("two").innerHTML = "<br><h1>False<h1>"
+  }
+  document.getElementById("btn").addEventListener("click", test);
+  function test() {
+    var name = document.getElementById("name").value;
+  	document.getElementById("four").innerHTML += name + "<br>";
+    for (var i = 0; i < 10; i++) {
+      document.getElementById("four").innerHTML += name + "<br>";
+    }
+  }
+  for(i = 1; i < 11; i += 1) {
+     document.getElementById("four").innerHTML += "<strong style='color: yellow;'>" + i + "</strong>" + " <strong>one-thousand,</strong> ";
+   	 if (i == 5) {
+       document.getElementById("four").innerHTML += "<h3 style='color:skyblue;'>(you have found 5!)<h3>"
+     }
+  }
+      
+ </script>
+</body>
+</html>

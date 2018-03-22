@@ -1,0 +1,178 @@
+<html>
+  <head>
+    <style>
+      h1{
+        color:white;
+        position: relative;
+        bottom: 20px;
+      }
+      .meh{
+        color:white;
+        
+      }
+      body{
+        background-image: url("http://fayette-nml.org/sites/default/files/images/video-games-4.jpg");
+        background-repeat: repeat-;
+         background-size: 150px; 60px;
+        background-image:
+      }
+      p{
+        background-size: 500px; 70px;
+        color:white;
+        font-style:italic;
+      }
+      table {
+        color:white;
+      }
+      ol {
+        background-size: 500px; 70px;
+        font-style:italic;
+      }
+      .newspaper {
+    -webkit-columns: 100px 3; /* Chrome, Safari, Opera */
+    -moz-columns: 100px 3; /* Firefox */
+    columns: 100px 3;
+      } 
+      * {
+        box-sizing: border-box;
+      }
+      .container {
+        width:100%;
+        max-width:600px;
+        border:2px solid black;
+        margin: 0 auto;
+        padding:10px;
+        
+      }
+      .row {
+        background:purple;
+        height:100px; /*set height*/
+        border:2px solid blue;
+        width:100%;
+        margin-bottom:10px;
+        padding:10px;
+      }
+      
+        .row2 {
+        background:hotpink;
+        height:400px; /*set height*/
+        border:2px solid blue;
+        width:50%;
+        margin-bottom:10px;
+        padding:10px;
+        float:right;
+      }
+        .row3 {
+        height:100px; /*set height*/
+        border:2px solid blue;
+        width:100%;
+        margin-bottom:10px;
+        padding:10px;
+        float:left;
+      }
+      #col-xs-6 {
+        width:100%;
+        color:white;
+      }
+      .Image {
+        color:white;
+        background:black;
+        height:400px; /*set height*/
+        border:2px solid blue;
+        width:50%;
+        margin-bottom:10px;
+        padding:10px;
+      }
+      .row3 {
+        background:yellow;
+        height:100px; /*set height*/
+        border:2px solid blue;
+        width:100%;
+        margin-bottom:10px;
+        padding:10px;
+      }
+      a {
+        text-decoration: none;
+        display: inline-block;
+        padding: 8px 16px;
+      }
+
+      a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+
+      .previous {
+       background-color: #f1f1f1;
+        color: black;
+      }
+
+      .next {
+       background-color: #4CAF50;
+       color: white;
+      }
+
+      .round {
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+  <body><center>
+    <div class="row">
+    <h1 id = "Head">Anthony Zook</h1>
+    </div>
+    </center>
+    <div  class="row2">
+    <div  Id="col-xs-6"><p id = "P1"><strong>He doesn't have many hobbies or things that he likes to do however he has a few things that he's become fond of and trys to do on a daily bases if not more often and those hobbies and things about him include.</strong></p></div>
+      <ol>
+        <li id = "list1" class="meh"><strong>He likes to sleep</strong>
+        <li id = "list2" class="meh"><strong>He likes to play games</strong>
+        <li id = "list3" class="meh"><strong>He's a pretty quiet person</strong>
+        <li id = "list4" class="meh"><strong>He's pretty relaxed</strong><br>
+      </ol>
+    <div  class="col-xs-7"><p id = "P2"><strong>He is a very calm headed person and trys to go through life seeing things with a mindset that follows a logical line of thinking and prefers things that can be explained logically.</strong></p></div>
+    </div>
+    <div class="Image"><img id="yeet" width="230" height="370" src="https://scontent-sea1-1.xx.fbcdn.net/v/t1.0-9/17861775_734960836682355_2957723265376975996_n.jpg?oh=2284de64ec321258c60de9816db05865&oe=5A84A687"></div>
+    <center><br>
+    <div class="row3">
+      <a id= "YeetLink" style="text-decoration: underline" href="https://www.google.com/search?q=Anthony+Zook&rlz=1CADEAF_enUS761&oq=Anthony+Zook&aqs=chrome..69i57j0l4j69i61.2375j0j7&sourceid=chrome&ie=UTF-8&safe=active&ssui=on"><strong>Google Search</strong></a><br>
+      <a id = "Location" style="text-decoration: underline" href="https://www.hermiston.or.us/"><strong>Location</strong></a>
+      <button id="btn">Click me senpai</button>
+    </div>
+    </center>
+    <script>
+      document.getElementById("btn").addEventListener("click", process);
+      function process(){
+        document.body.style.backgroundImage = "url('https://cdn1.bigcommerce.com/n-ou1isn/ydriczk/products/86455/images/86012/donatello_TMNT_face_mask_buy_star_masks_at_starstills__60386__61493.1394515287.450.659.jpg?c=2')";
+        elements = document.getElementsByClassName("row2");
+        for (var i = 0; i < elements.length; i++) {
+          elements[i].style.backgroundColor="green";
+        }
+        document.getElementById("yeet").src = "https://vignette.wikia.nocookie.net/tmnt/images/e/e7/Donatello.png/revision/latest?cb=20100304001946&path-prefix=de";
+        document.getElementById("YeetLink").href = "https://en.wikipedia.org/wiki/Donatello_(Teenage_Mutant_Ninja_Turtles)";
+        document.getElementById("Location").href = "https://vignette.wikia.nocookie.net/tmnt/images/c/c1/Sewer_lair_%282%29.jpg/revision/latest?cb=20130825055215";
+        document.getElementById("P1").innerHTML = "Donatello is one of the four main protagonists in Teenage Mutant Ninja Turtles and a member of the TMNT. He is the tallest turtle and best friend of April O'Neil, younger adoptive brother of Karai, younger brother to Leonardo and Raphael, and the older brother of Michelangelo.";
+        document.getElementById("P2").innerHTML = "Donatello is the team inventor and weaponeer. He creates all their gadgets from the simplest bo-staff to their incredible vehicles. He's utterly brilliant, able to cobble together fantastic stuff from things he's literally scrounged from a trash heap. ";
+        document.getElementById("Head").innerHTML = "Donatello";
+        var element = document.getElementById("list1");
+        element.parentNode.removeChild(element);
+        var element = document.getElementById("list2");
+        element.parentNode.removeChild(element);
+        var element = document.getElementById("list3");
+        element.parentNode.removeChild(element);
+        var element = document.getElementById("list4");
+        element.parentNode.removeChild(element);
+        
+        
+      }  
+      
+      
+      
+      
+      
+      
+      
+      
+    </script>
+  </body>
+</html>

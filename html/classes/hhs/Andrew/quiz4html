@@ -1,0 +1,24 @@
+<html>
+  <head>
+  
+  <body>
+  <div id="even">
+    </div>
+  <div id="half">
+    </div>
+  <div id="name">
+    </div>
+  <script>
+    var text = "";
+var i;
+for (i = 1; i < 21; i++) {
+  text += "" + i + "<br>";
+    }
+	document.getElementById("even").innerHTML = even;//you do not have even declared i.e. var even = "";
+
+
+//the for loop is off to a good start, no if statement -2, no function -2, for loop does not put the text into a div -1 5/10. Keep practicing. You can continue to work on this page as you get time.
+    </script>
+  </body>
+  </head>
+  </html>

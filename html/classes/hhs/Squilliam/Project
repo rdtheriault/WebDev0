@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+  <style>
+  h1  { color: red; } body 
+{
+    display: table-cell;
+    vertical-align: middle;
+}
+html, body 
+{
+   height: 100%;
+}
+html 
+{
+    display: table;
+    margin: auto;
+} 
+}
+#main{display:flex;}
+</style>
+  <body>
+  <div id="main">
+  <div>
+  <h1> PROFIT </h1>
+<h2> Uncovered Dreamz </h2>
+<p> The "Hometown Hero" Profit, was born in Reedly, CA<br> and raised in Fresno, CA. On August 14 of the ye-<br>ar 2000
+Stephanie(Mom) and William Felipe Sr(Dad) <br>had only been married for 5 months and were about <br>be gifted with a little boy.
+7 pounds, 9 ounces W-<br>Illiam Felipe Jr(Profit) was born. At a young age <br>William showed interest in music, rap to be more <br>s
+pecific. WIth his parents music listening habbi-<br>ts a young William was exposed to huge names in r-<br>ap including 2pac, 
+Notorious B.I.G, N.W.A, Nas, <br>Eminem, Jay Z, Kanye West, and a whole lot more. <br>After 12 years and 2 beautiful girls Mom 
+and Dad <br>decided it was time for a change and moved the fa-<br>mily to Umatilla, OR to live with the Dad's older <br>brother, Danny.
+It was at this time that William <br>began developing his own musical interests. Openi-<br>ng his ear to more newschool hip hop artist
+such <br>as Kendrick Lamar, J. Cole, Mac Miller, A$AP Rocky,<br> Big Sean, Ab-Soul, Jay Rock, Chance the<br/> Rapper, Lil Wayne, 2 Chainz,
+The Game, Rick Ross,<br/> Drake and others that we can not reember at the m<br/>oment. It wasn't long before he began to bob his h<br/>ead to beats
+and pick up flows. Writing down lyric<br/>s and becoming better at staying on beat and wordp<br/>lay. With punchlines that seemed to just get more <br/>
+clever and compicated the more he practiced. It w<br/>as a gift. Just 4 years after moving to Oregon and<br/> 3 years after leaving Umatilla to 
+move to Irrigo-<br/>n, Profit recorded and released his first single, <br/>"Hometown (ft. Kid A)", which became a sensation <br/>in Irrigon and some small 
+towns around it. A few s-<br/>hort months later and another single was release-<br/>d, "On That", following that was his first projec-<br/>t, an EP, "Uncovered Dreamz". 
+That EP was the last<br/> we heard of Profit for another year and 2 months<br/> when Kid A's track "State of Mind Ft. Profit" w-<br/>as realeased on soundcloud
+to some good response <br/>from fans waiting to hear Profit's new album with<br/> rumors going around that it's going to release sometime i-<br/>n Summer of 2017.
+  </p>
+<a href="https://soundcloud.com/profithiphop/sets/uncoverd-dreamz"> 
+<img style="width:400px;heigth:200px;" src="https://i.ytimg.com/vi/2K79ikiPgPA/maxresdefault.jpg">
+</a> 
+<h3> Hobbies as a Kid </h3>
+<ul>
+  <li>Rapping</li>
+  <li>Drawing</li>
+  <li>Football</li>
+  <li>Video Games</li>
+</ul>
+</div> 
+</div>
+  </body>
+</head>
+</html>

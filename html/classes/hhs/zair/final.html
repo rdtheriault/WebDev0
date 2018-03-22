@@ -1,0 +1,96 @@
+<html>
+  <head>
+    <style>
+      div {
+        color:red;
+        
+        
+        
+      }
+      th{
+        color:pink;
+      }
+      tr{
+        color:yellow;
+      
+      
+    </style>
+    </head>
+      <body id="body" style="background-color:green;">
+        <h1>soccer</h1>
+        <table style="width:20%">
+  			<tr>
+    	<th>Favorite International Team</th>
+    <th>Favorite European Team</th> 
+   	 	<th>Favorite overall Team</th>
+  </tr>
+  
+          <tr>
+    <td>Mexico</td>
+    	<td>Barcelona</td> 
+    <td>Club America</td>
+  	
+          </tr>
+  <tr>
+    <td>Brazil</td>
+    	<td>A.C Milan</td> 
+    <td>CLub America</td>
+ 
+          </tr>
+</table>
+        <div id="div1">
+          <img id="picture" src="https://i2.wp.com/alsafatnews.net/wp-content/uploads/2017/03/c06cc5a8-2a4b-42c7-9d17-d9786fe69ac4.jpeg?fit=360%2C240&ssl=1" border="10px">
+               </div>
+        <div id="div2"></div>
+        <div id="div3"></div>
+        <input type="text" id="in">
+        <button id="btn">click me</button>
+        <script>
+          
+          
+          
+           
+          function doSomething(){
+            var soccer = ["club america","Barcelona","A.C Milan"];
+            var img = document.getElementById("picture").src="http://msnoticias.com/upload/foto/8/6/4/11_1_1.jpg";
+            document.getElementById("body").style.background = "blue";
+            
+          }
+    
+    
+    
+    document.getElementById("btn").addEventListener("click",doSomething);
+        </script>
+  
+      </body>
+  <!-- 
+ 
+HTML -
+ 
+(2pts) Header with page title (hint - not located in head)
+(2pts) Three row three column table
+(2pts) Three divs with different ids
+	Div 1 - has picture in it
+	Div 2 - empty
+	Div 3 - empty
+(1pts) Input text box
+(2pts) Button
+ 
+CSS - 
+ 
+(1pts) Background colour
+(1pts) Divs - change the font colour
+(1pts) Give the picture a border > -1
+ 
+JS - script:
+ 
+(2pts) Create array with 4 strings  > -2
+(2pts) Change the picture of div one
+(2pts) Set height & width div two=100px & background to different colour than page background >-1
+ 
+(2pts) On Button press loop through array > -2
+	In the loop
+		Put each item in div three with a break between them
+		If the input is the same as array item instead display “Found me”
+-->
+</html>

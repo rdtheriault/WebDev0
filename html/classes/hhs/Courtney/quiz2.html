@@ -1,0 +1,55 @@
+<html>
+  <head>
+    <style>
+      #outer {
+      justify-content:center;
+      display:flex;
+      }
+      body{
+      background-color:black;
+      }
+      #left {
+      width:500px;
+      height:500px;
+      margin:100px;
+      border:2px solid rgb(0,162, 255);
+      color:white;
+      font-family:cursive;
+      }
+       #right{
+      width:500px;
+      height:500px;
+      margin:100px;
+      border:2px solid rgb(0,162, 255);
+      }
+      img{
+      width:500px;
+        height:500px;
+      }
+      button {
+         position:absolute;
+         bottom:200px;
+         right:950px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="outer"> 
+    <div id="left"> What I like about HTMl is that theres such an extensive variety of code that you can use in it and that there is so many different peices to it. Theres the head, style, body, script, and the list goes on. My favorite part of HTML is using the style section.The style section is the part that brings the entire web page together and lets you be creative. Typing in all of this code and then clicking a button and watching your work come alive is so interesting. When you struggle with learning everything at the begining its such an amazing feeling to finally understand more of it.</div>
+      <div id="right"> <img src="https://iso.500px.com/wp-content/uploads/2014/06/For-500px-Blog-1500x1000.jpg" width="500px" height="500px"> </div>
+    </div>
+    <button id="change" onclick="show()"> Click Me!</button>
+    <script>
+      var left = document.getElementById("left");
+      var right = document.getElementById("right");
+      
+      function show() {
+    left.innerHTML = "<img src='http://manninghamvet.com.au/sites/default/files/styles/large/public/images/article/cats.jpg'>";
+    right.innerHTML = "<img  src='https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSXo4S6sR8ATDJCcSOvL3F4_dYvKASuFuQDRSN1SgNB9qcLelKd'>";
+    document.getElementById("all").style.display="block"
+   }
+      
+      
+    </script>
+  </body>
+</html>

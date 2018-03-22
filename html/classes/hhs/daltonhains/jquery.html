@@ -1,0 +1,116 @@
+<html>
+<head>
+	<style>
+  		#head {
+         	color: red; 
+        }
+  </style>
+</head>
+<body>
+  <div id="head"></div>
+  <h1>Header 1</h1>
+  <h1 class="notMain">Header 2</h1>
+  <h1 class="notMain">Header 3</h1>
+  <h2 class="notMain">End</h2>
+  <a id="link" href="https://google.com">Link</a>
+  <img src="image.png" id="img">
+  <div id="results">Here</div>
+  <button id="btn" >Do Something</button>
+  
+  <form>
+    	<select>
+          <option value = "information">Option 1</option>  
+    	</select>
+    	Enter name<input type="text">
+  </form>
+    
+  <form id = "quiz">
+    <label>
+       What is this? <br>
+  	   <img src="../smile.jpg" alt ="Reptile"> <br>
+       <select id="quiz-answer">
+         <option value="smile">Smile</option>
+         <option value="frown">Frown</option>
+         <option value="cry">Cry</option>
+      </select>
+    </label>
+    <button type="submit">Check Answer</button>
+  </form>
+        <div id="#result"><div>
+      
+  <script src="../jquery.js"></script>
+  
+  <script> 
+  var changeMe = function() {
+  
+  };
+  
+  $("$btn").on("click", function() {
+  	console.log("you clicked me!!");
+  	changeMe();
+  
+  });
+    
+  $("body").on("click", function(event) {
+    //console.log(event);
+     var $img = $("<img>")
+    .attr("src", "../smile.jpg")
+    .width(100)
+    .css("position", "absolute")
+    .css("top", event.pageY = "px")
+    .css("left", event.pageX + "px")
+    .appendTo("body");
+    
+  });
+    
+  </script>
+  
+  
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+    </script>
+  	<script>
+      
+     var newP = $("<span></span>");
+     newP.text("new text")
+     $("body").append(newP);
+     newP.addClass("notMain");
+      
+     var $heading = $("#head");
+     $heading.html("Using jQuery again!");
+     var headingD = $heading[0]; 
+      
+     var $headingJ = $(headingD);
+     $headingJ.text("Nice Try");
+      
+     var $h1s = $('h1');
+     for (var i = 0; i < $h1s.length; i++) {
+      	var element = $h1s[i];
+        var $h1 = $(element);
+        $h1.html( $h1.html() + "...hezzah!");
+      };
+      
+      
+      $("#quiz").on("submit", function() {
+        o.preventDefault();
+        var $answer = $("#quiz-answer");
+        var answer = $answer.val();
+        if (answer === "smile") {
+         $("#result").text("Good Job!");
+        } else{
+         $("#result").text("Try Again...");
+        }
+      });
+       
+      
+    //document.getElementById("head").textContent = "Hello World";
+  //  $("#head").text("Hello World"); 
+    //$("h1").text("TEST");
+    //$(".notMain").text("not main"); 
+    //var header1 = $("#head").text();
+      //console.log(header1);
+      //header1.text(header1.text()+"!!");
+    //$("h2").text(header1+"!!");
+  	</script>  
+  
+</body>  
+</html>  

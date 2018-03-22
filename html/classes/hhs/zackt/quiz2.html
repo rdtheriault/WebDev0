@@ -1,0 +1,66 @@
+<html>
+  <head>
+    <style>
+      body {
+        background-color: navy;
+      }
+      #two {
+        width: 500px;
+        height: 500px;
+        border: 20px ridge yellow;
+        margin: 100px;
+        color: #FFF;
+        font-family: cursive;
+      }
+      #one {
+        float: right;
+        width: 500px;
+        height: 500px;
+        border: 20px ridge orange;
+        margin: 100px;
+      }
+      #zero {
+        display: flex;
+      }
+    </style>
+  </head>
+  <body>
+   <div id="zero">
+    <div id="one">
+      <img src="https://i.ytimg.com/vi/rb8Y38eilRM/maxresdefault.jpg" style="width:500px;" id="img">
+    </div>
+    <div id="two">
+      <h2><u>My favorite things about HTML:</u></h2>
+      <p>I like HTML for many reasons. It was the first kind of code I learned, and came easy to me. I like it because it is readable, and fairly organized. I also like it because it is the code that shows up on the screen.<p>
+    </div>
+     <button onclick="change()" id="button">New Image<button>
+   <script>
+     var counter = 0;
+     function change() {
+       if (counter == 0) {
+       document.getElementById("img").src = "http://www.kidsmathgamesonline.com/images/pictures/shapes/circle.jpg";
+       document.getElementById("one").style.borderRadius = "100%";
+       document.getElementById("img").style.borderRadius = "100%";
+       document.getElementById("one").style.border = "20px groove white";
+       counter = 1;
+       }
+       else if (counter == 1) {
+       document.getElementById("img").src = "http://cdnl.accucutcraft.com/media/catalog/product/cache/2/image/9df78eab33525d08d6e5fb8d27136e95/H/G/HG200.jpg";
+       document.getElementById("one").style.borderRadius = "0%";
+       document.getElementById("img").style.borderRadius = "0%";
+       document.getElementById("one").style.border = "20px double lightblue";
+       counter = 2;
+       }
+       else if (counter == 2) {
+       document.getElementById("img").src = "https://i.ytimg.com/vi/rb8Y38eilRM/maxresdefault.jpg";
+       document.getElementById("one").style.borderRadius = "0%";
+       document.getElementById("img").style.borderRadius = "0%";
+       document.getElementById("one").style.border = "20px ridge orange";
+       counter = 0;
+       }
+     }
+   </script>
+   </body>
+ </html>
+ 
+    

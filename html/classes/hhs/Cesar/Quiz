@@ -1,0 +1,51 @@
+<html> 
+<head>
+<style>
+  <back <!-- for changing css you start with element i.e. body {     } then add the change background-color:green;  -->
+
+</style>
+<title>Seattle!!</title>
+    
+    </head>
+  <body>
+<h1>Seattle!!</h1>
+
+ <img src="http://www.bekinsmovingandstorage.com/wp-content/uploads/2016/03/SeattleCity2.jpg" (1688×1125)"/ 
+   alt="http://www.bekinsmovingandstorage.com/wp-content/uploads/2016/03/SeattleCity2.jpg" (1688×1125)" width="450" Height="600">
+  <!-- You already have a h1, use <p> for paragraph tags  -->
+  <p> Seattle is a big city of about 688,342 people living in it. But also can be heard of as the "queen city," and "emerald city," 
+       Seattle is well known for lots of things and is a very big city and can be hard to get around but it is known for it's big buildings 
+       and wierd people, simliar like Portland. Seattle's growth rate of population is 2.1% which is top five in the world.<p>
+       
+       <ul> <li> the great gum wall</li>
+            <li> space needle</li>
+            <li> pike place market</li>
+       </ul>
+ 
+
+ 
+</body>
+
+
+</html>
+            
+          <!--   
+            Which includes:
+
+    A header with the city name
+    A paragraph about that city> -0.25 incorrect <p> tag
+    An HTML list of attractions in that city
+    A table with “Key Event” and “Date” as header and at least 3 rows> -0.5
+        -ie    KEY EVENT        |     DATE
+      Boston Tea Party        |     December 16, 1773
+    A picture of the city which is also a link to the cities wiki page> -0.25 no link
+
+
+CSS that:
+
+    Sets the background to an image related to the city (ex. sports team logo, landmark)> -0.5
+    Changes the font color of the list items using a class>-0.5
+    Changes the background color of the table elements>-0.5
+    Puts a border around the table rows>-0.5
+    Makes the header italics>-0.5
+    -->

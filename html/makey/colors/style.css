@@ -1,0 +1,45 @@
+ 	.square {
+      		width: 150px;
+        	height: 150px;
+          border-radius: 5px;
+          font-size: 50px;
+          font-style: bold;
+          text-align: center;
+          padding-top: 25px;
+      		color: white;
+        }
+        #up {
+          background-color: yellow;
+        }
+        #down {
+          background-color: purple;
+        }
+        #left {
+          background-color: #663300;
+        }
+        #right {
+          background-color: black;
+        }
+        #master {
+          color: yellow;
+        }
+        #middle {
+          display: flex;
+          width: 100%;
+          justify-content: center;
+        }
+        #btn {
+          font-size: 40px;
+          font-family: sans;
+        }
+        body {
+            display: table-cell;
+            vertical-align: middle;
+        }
+        html, body {
+           height: 100%;
+        }
+        html {
+            display: table;
+            margin: auto;
+        }

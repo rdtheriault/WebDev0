@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <style>
+    </style>
+  </head>
+  <body id="body">
+    <h1 id="title"> Saint Pablo-Kanye west</h1>
+    <h2> Songs that are similar</h2>
+    <ul>
+      <li> father stretch my hands pt.1</li>
+      <li>ultralight beam</li>
+      <li> freestyle 4</li>
+      <li>real friends</li>
+    </ul>
+    <div id=div>
+      <p id="p1">
+
+      </p>
+    </div>
+   
+    
+    
+    <button id="btn"> click here</button>
+    <script>
+      function doSomething() {
+        document.getElementById("title").innerHTML="Songs i like";
+        document.getElementById("body").style.background="blue";
+        document.getElementById("p1").innerHTML="i like these songs because I like what the artist says in these songs and i think they are catchy.";
+        // -0.2 not looping through <li> to change color
+        var eLI = document.getElementsByTagName("li");
+        for(var I =0;I <eLI.length;I++){
+        eLI[I].style.color = "white";
+        }
+      }
+           document.getElementById("btn").addEventListener("click",doSomething);
+     
+    </script>
+  </body>
+</html>
+      
+      

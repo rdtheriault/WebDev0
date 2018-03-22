@@ -1,0 +1,91 @@
+<html>
+  <head>
+    <style>  
+   body {
+    background-color: blue;
+}
+      div {
+    font-color: yellow;
+}
+    </style>
+  </head>
+  <body>
+    <h1>Soccer</h1>
+    <table style="width:100%">
+      <div style="color:orange">  <!-- don't but divs inside of tables, and if you do they only go in cells -->
+      <h2>Popular legues and teams</h2>
+      <tr>
+        <th>La liga(Spanish)</th>
+        <th>Seria A(Italian)</th>
+        <th>Premier League(English)</th>
+      </tr>
+      <tr>
+        <td>Barcalona FC</td>
+        <td>Juventus</td>
+        <td>Arsenal</td>  
+        </tr>
+     <tr>
+        <td>Real Madrid</td>
+        <td>Napoli</td>
+        <td>Manchester United</td>  
+        </tr>
+      
+     <tr>
+        <td>Athletico Madrid</td>
+        <td>Roma</td>
+        <td>Chelsea</td>  
+        </tr>
+      </div>
+      </table>
+    <div id="container">
+    <img id="picture" src="https://upload.wikimedia.org/wikipedia/commons/d/d3/Soccerball.svg" border="3px">
+</div>
+    <div id="one"></div>
+    <div id="two"></div>
+      
+    <button id="btn">click here</button>
+    <input type="text" id="num">   
+    <script>
+      for (var i = 0; i < 4; i++){
+      document.getElementById("one").innerHTML += i+"<br>";
+    }
+    var leagues = ["SD1","ID1","EPL"];
+      leagues.toString();
+      
+     function doSomething(){
+    document.getElementById("picture").src="http://a.espncdn.com/combiner/i/?img=/photo/2015/0219/soc_a_etihad_mb_1296x729.jpg&w=738&site=espnfc";
+      
+      }
+    </script>
+    <!-- 
+ 
+HTML -
+ 
+(2pts) Header with page title (hint - not located in head)
+(2pts) Three row three column table
+(2pts) Three divs with different ids
+	Div 1 - has picture in it
+	Div 2 - empty
+	Div 3 - empty
+(1pts) Input text box
+(2pts) Button
+ 
+CSS - 
+ 
+(1pts) Background colour
+(1pts) Divs - change the font colour
+(1pts) Give the picture a border > -1
+ 
+JS - script:
+ 
+(2pts) Create array with 4 strings  
+(2pts) Change the picture of div one > -0.5 inside of function
+(2pts) Set height & width div two=100px & background to different colour than page background > -2
+ 
+(2pts) On Button press loop through array > -1.5 good loop, wrong info
+	In the loop
+		Put each item in div three with a break between them
+		If the input is the same as array item instead display “Found me”
+-->
+  </body>
+</html>

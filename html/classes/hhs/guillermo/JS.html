@@ -1,0 +1,50 @@
+<html>
+<head>
+  <style>
+    #title {
+      color:green;
+    }
+    span.dis {
+      
+    }
+  </style>
+    
+  </head>
+  <body id="body">
+  <h1 id="title" class= "dis">Title of page</h1>
+    <p> <span class="dis">This</span> is paragraph</p>
+    <p> <span class="dis">This</span> is paragraph</p>
+    <p> <span>This</span> is paragraph</p>
+    <div id="array"></div>
+  <img class="dis" id="picture"src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Basketball.png/170px-Basketball.png">
+    <a id="link" href="https://web.hermiston.k12.or.us:10000"> web</a>
+    <button id= "btn">click here</button>
+    <input type="text" id="num">
+    <script>
+    var elDis = document.querySelectorAll("span.dis");
+       for (var i = 0; i < elDis.length; i ++) {
+       elDis[i].style.display ="none";
+       }
+            
+       
+       
+       function press() {
+         var input = document.getElementById("num").value;
+         if (isNaN(input))
+           document.getElementById("array").innerHTML = "<h1>That's not a number";
+         else if (input < 11){
+         document.getElementById("link").href="https://www.google.com/";
+           document.getElementById("picture").src="http://lsuchurch.org/images/uploads/Soccer.jpg";
+           
+         }
+         else{
+           document.getElementById("array").innerHTML = "no stop";
+         }
+           
+       }
+       document.getElementById("btn").addEventListener("click",press);
+      
+    </script>
+  
+  </body>
+</html>

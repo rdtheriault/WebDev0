@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <style>
+      #empty {
+        color: green;
+      }
+      #pic {
+        width: 800px;
+        border: groove purple 10px;
+        outline: ridge gold 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id='empty'>cool</div>
+    <img src='https://s3media.247sports.com/Uploads/Assets/883/82/5082883.gif' id='pic'>
+    <script>
+      var cloud = 1;
+      if (cloud == 1) {
+        document.getElementById('empty').innerHTML = "<h1>what's up fella?!</h1>";
+      } else {
+        document.getElementById('empty').innerHTML = "<p>You're <strong>NOT</strong> welcome.</p>";
+      }
+    </script>
+  </body>
+</html>

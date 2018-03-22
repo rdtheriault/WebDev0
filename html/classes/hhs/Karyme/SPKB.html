@@ -1,0 +1,89 @@
+    <html> <head> <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <title>Snow nd Kodak</title>
+        <script src="../jquery.js" type="text/javascript" charset="utf-8"></script>        
+        <link href="style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+       <div align="center"> <img id="imgABC" src="http://res.cloudinary.com/thefader/image/upload/Snow_Tha_Product_Press_Image_edamxl.jpg" height="190px">
+      </div>
+          
+       <div align = "center"> <h1 id="title">
+             
+            Snow Tha Product </h1></div> 
+        <div id="outer"> 
+            <div class="inner">
+              
+             <p div align="center" id = "headerr">Snow Tha Product:</p>
+              
+          </div> <div align="center"> <img id = "imgtwo" src="https://pbs.twimg.com/media/BinmeBdCUAAJjiG.jpg" width="250px"></div>
+        
+      
+        <p div align="center" id = "crew">Snow and some members of her crew:</p>
+        
+        <div align="center"><img id = "third" src="https://i.ytimg.com/vi/coTTobSni6M/maxresdefault.jpg" width="250px">
+</div>
+            
+             </div> <div>
+            <div class="inner"><h2  class="about"><div align="center">About them</div></h2> 
+            <p div align="center"  id="about2">Snow Tha Product, actual name Claudia Alexandra Feliciano, is a Mexican hip hop artist who made something of herself, with the help of her family and true friends aka the Woke Crew. Snow got the idea for her name from the Disney princess snow white, so her stage name was originally Snow white the product, until Disney claimed it was copyright so she had to  change it. Snow tha product has her own website, where she sells clothing and such, you can click <a href="http://wakeyagameup.com/">here</a> to go on it.</p>
+             <h3 div align="center">Their Career</h3>
+        <p div align="center" id = "career"> In 2013 she released Good nights & Bad mornings, which helped her catch the attention of 3 record labels, in which she ended up signing with Atlantic Records. </p>
+        <div align="center"><ul id="list"><strong>Her albums released</strong>
+                  <div> <li>Unorthadox</li>
+                    <li>Good Nights & Bad Mornings</li>
+                    <li>The hangover </li>
+                    <li>The Rest Comes Later</li>
+                    <li>Half Way There pt.1</li>
+               </div> </ul> </div>
+         <p id = "last"> Snow also has a youtube channel : <a href="https://www.youtube.com/user/WOKEProductions"> Woke Productions</a></p>
+        
+         
+              
+    </div>    
+            
+      </div>
+            
+           
+             <button id="change" onclick="changed()">Change</button>
+      <button id ="twob" onclick="appendText()"> More </button>
+            <script>
+             var firstpic = document.getElementById("imgABC");
+             var secpic = document.getElementById("imgtwo");
+             var thpic = document.getElementById("third");
+             var title = document.getElementById("title");
+             var headd = document.getElementById("headerr");
+             var about = document.getElementById("about2");
+             var career = document.getElementById("career"); 
+              var list = document.getElementById("list"); 
+               var last = document.getElementById("last"); 
+            var crew = document.getElementById("crew"); 
+             
+        function changed(){
+
+            firstpic.src = "http://www.xxlmag.com/files/2016/06/kodakblackxxl.jpg";
+            title.innerHTML = "Kodak Black";
+            headd.innerHTML = "Kodak:"
+            about.innerHTML = "Kodak Black is only a stage name his real name is Dieuson Octave, Kodak is a hip hop artist who got his stage name from being called 'Black' and 'Lil Black', but when he began rapping he decided to use the stage name Kodak Black with the name being favored by his fans. Kodak is also currently in jail for many reasons.";
+            secpic.src = "http://cdn.realcoolvideos.com/wp-content/uploads/2016/07/ChF8la6WUAEPawG.jpg";
+            thpic.src = "https://i.ytimg.com/vi/ZfFtR1Y7ORc/maxresdefault.jpg";
+              career.innerHTML = "In October 2015, Kodak got a lot of attention due to the artist Drake posting a video of himself dancing to one of Kodak's songs 'skrt', he then signed with Atlantic Records that same month. 'Skrt' then got number 10 on Billboard's 'Bubbling Under R&B/Hip-Hop Singles'. ";
+            list.innerHTML = "";
+            last.innerHTML = "";
+            crew.innerHTML = "Kodak from the freshman XXL freestyle cypher";
+        }
+              var array = ["In 2011, Snow released her independent album Unorthodox with two of her songs becomes hit singles. When she released Good nights & Bad mornings 2: The hangover she had guest appearances from Tech N9ne, The Cataracts, Ty Dolla Sign, and others. Then in 2015 she released her latest mixtape, The Rest Comes Later, followed by a tour with Audio Push. ", "Besides her YouTube channel she also has 2 different websites and The Woke App where you can listen to her music, look at posts, post yourself, interact with Snow and buy from her clothing line. Before dropping out of college Snow was in San Diego Mesa College for a short time studying to become a social worker but decided to do her music instead.","Some of Snow’s influences were Tech N9ne, Tupac Shakur, Eminem, Maria Felix, Aaliyah, Missy Elliot and others. Snow is bilingual so she does have songs in both languages and switches languages through some songs."];
+                           
+                           
+  function appendText() {
+     for (var i = 0; i < array.length; i++)   {                   
+                           
+var txt2 = $("<p></p>").text(array[i]);
+       txt2.innerHTML = "enter other snow paragraphs";
+    $("body").append(txt2);
+                           }
+         }
+
+              
+            </script>
+    </body>
+</html>

@@ -1,0 +1,25 @@
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <div id='one'></div>
+    <div id='two'></div>
+    <div id='three'></div>
+    <input type='text' id='input'>
+    <button id='btn1'>Click</button>
+    <script>
+      for(var i = 0; i < 21; i+=2) {
+        document.getElementById('one').innerHTML += i + "<br>";
+      }
+      document.getElementById('two').innerHTML = "<ol><li>Bananas</li><li>Coconuts</li><li>Grapes</li></ol>";
+      document.getElementById('btn1').addEventListener("click", btnClick);
+      function btnClick() {
+        document.getElementById('three').style.backgroundColor = 'red';
+        document.getElementById('three').style.color = 'white';
+        var input = document.getElementById('input').value;
+        document.getElementById('three').innerHTML = input;
+      }
+    </script>
+  </body>
+</html>

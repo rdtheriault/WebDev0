@@ -1,0 +1,345 @@
+<html>
+  <head>
+<style>
+  #canvas {
+    background-image: url("images.png");
+    width:400px;
+    height:200px;
+    background-size:cover;
+    position:relative;
+   
+  }
+   #cbleft{
+   position:absolute;
+    bottom:0px;
+    right:0px;
+  } 
+  #cbright{
+   position:absolute;
+    bottom:0px;
+    left:90px;
+    display:none;
+  } 
+  #player {
+   position:absolute;
+    bottom:0px;
+    left:0px;
+  }
+  .scores{
+   width:20px;
+    
+  }
+  #score{
+   display:flex; 
+    background-color:turquoise;
+  }
+  body 
+{
+   background-image: url("charlie.jpeg");
+  position:stretch;
+   top:50%;
+  left:50%;
+  background-size:cover;
+    display: table-cell;
+    vertical-align: middle;
+}
+html, body 
+{
+   height: 100%;
+}
+html 
+{
+    display: table;
+    margin: auto;
+}
+  #gamestart {
+   background-color:white;
+    border-radius:5px;
+    
+  }
+  
+</style>
+
+  </head>
+  <body>
+    <div id="gamestart">
+      <h1>Welcome to Merica!Ready to Play?</h1>
+    <button id="start">Let's Play</button>
+    </div>
+    <div id="canvas" >
+    <div id="player" >
+      <img src="lucy.jpg" width="80px">
+      </div> 
+      <div id="cbright">
+        <img src="cbright.jpg"
+                  width="40px">
+                            
+      </div>
+        <div id="cbleft">
+        <img src="cbleft.jpg"
+                  width="40px">
+                            
+      </div>
+    </div>
+    <div id="score"> 
+      <div id="health" class="scores"> <img src="download.jpg" width="20px"><br><span id="healthscore"> 5</span></div>
+      <div id="security"class="scores"> <img src="security.gif" width="20px"><br><span id="securityscore"> 5</span> </div> 
+       <div id="happiness"class="scores"> <img src="happy.png" width="20px"><br><span id="happinessscore"> 5</span></div>
+         <div id="money"class="scores"> <img src="money.jpg" width="20px"><br><span id="moneyscore">5 </span></div>
+
+      
+      <div id="question"> </div>
+         </div>
+    <div id="buttons">
+    <button id="yes">Yes</button>
+    <button id="no">No</button>
+    </div>
+    <div id="endgame"> </div>
+    <div id="scoring"> </div>
+    <script>
+      
+       var player = document.getElementById("canvas");
+      var score = document.getElementById("score");
+      var gaemstart = document.getElementById("gamestart");
+      var buttons = document.getElementById("buttons");
+      buttons.style.display = "none";
+      player.style.display = "none";
+      score.style.display = "none";
+      document.getElementById("start").addEventListener("click", start);
+      var move = 90;
+      var scoring = 0;
+      var movetwo = 0;
+      var totalQs = 21;
+      var ques = 0;
+      var health = 5;
+      var happiness = 5;
+      var security = 5;
+      var money = 5;
+      var questions = ["Do we build a wall?",
+                         "Do we improve security?",
+                         "Theres a protest will you stop it?",
+                         "Can we build a mega mall?",
+                         "Do we allow immigrants?",
+                         "Accept my donation?",
+                         "Do we cancel school?",
+                         "Can we not go to work?",
+                         "Can math be illegal?",
+                         "Do we build a bigger soccer stadium?",
+                         "Should we Train the Police harder?",
+                         "Is Diversity allowed in Merica?",
+                         "Can we skip Immunizations?",
+                         "Can I have $1,000,000?",
+                         "Can we have more Freedom?",
+                         "Do we have to eat our Veggies?",
+                         "Policemen are getting scared!Can we have bigger weapons?",
+                         "Can we have a Raise?",
+                         "Should we build a Football Stadium?",
+                         "Can we rob a bank?",
+                         "I am going to teach people how to Hack.Can i please?"];
+  document.getElementById("yes").addEventListener("click",function() {answer("yes"); });
+       document.getElementById("no").addEventListener("click",function() {answer("no"); });
+      function start() {
+         ques = (Math.floor(Math.random() * totalQs) + 1)-1;
+        gamestart.style.display = "none";
+        player.style.display = "block";
+        //buttons.style.display = "block";
+        score.style.display = "flex";
+        moveIn();
+      }
+      function answer(anw) {
+         buttons.style.display = "none";
+        document.getElementById("question").innerHTML=" ";
+        if (ques===0) { //build a wall
+          if (anw == "yes"){happiness-=1;money-=1;security+=1;}
+          if (anw == "no") {happiness+=1;security-=1;}
+        }
+        else if (ques === 1){ //improve security
+          if (anw == "yes"){security+=2;money-=1;happiness-=1;health+=1;}
+          if (anw == "no"){security-1;money+=1;health-=1;}
+        }
+         else if (ques === 2){//protest
+          if (anw == "yes"){security+=1;happiness-=2}
+          if (anw == "no"){security-=2;}
+        }
+         else if (ques === 3){//mega mall
+          if (anw == "yes"){money-=2;happiness+=2}
+          if (anw == "no"){money+=2;happiness-=1}
+        }
+         else if (ques === 4){//immigrants
+          if (anw == "yes"){security-=1;happiness+=2}
+          if (anw == "no"){security+=1;happiness-=2}
+        }
+          else if (ques === 5){//accept my donation
+          if (anw == "yes"){money+=2;}
+          if (anw == "no"){}
+        }
+          else if (ques === 6){//do we cancel school
+          if (anw == "yes"){money+=2;happiness-=2}
+          if (anw == "no"){money-=1;happiness+=1}
+        }
+          else if (ques === 7){//can we not go to work
+          if (anw == "yes"){security-=1;happiness+=2;money+=2;health-=2}
+          if (anw == "no"){security+=1;money-=1;happiness-=1}
+        }
+          else if (ques === 8){ // can math be illegal
+          if (anw == "yes"){money+=1;happiness+=2}
+          if (anw == "no"){money-=1;happiness-=1}
+        }
+          else if (ques === 9){ //build a bigger soccer stadium
+          if (anw == "yes"){money-=2;happiness+=2;health+=1}
+          if (anw == "no"){money+=1;happiness-=2}
+        }
+          else if (ques === 10){ // train police harder
+          if (anw == "yes"){security+=1;money-=1;happiness-=1}
+          if (anw == "no"){security-=1;money+=1;happiness+=1}
+        }
+          else if (ques === 11){ // diversity allowed 
+          if (anw == "yes"){happiness+=2;health-=1}
+          if (anw == "no"){happiness-=1}
+        }
+          else if (ques === 12){ //skip immunization
+          if (anw == "yes"){security-=1;happiness+=1;health-=1}
+          if (anw == "no"){happiness-=1;health+=1}
+        }
+          else if (ques === 13){ //1,000,000
+          if (anw == "yes"){security-=1;money-=1;happiness+=1}
+          if (anw == "no"){}
+        }
+          else if (ques === 14){ //more freedom
+          if (anw == "yes"){security-=1;happiness+=1}
+          if (anw == "no"){happiness-=1}
+        }
+          else if (ques === 15){ //eat veggies
+          if (anw == "yes"){happiness-=1;health+=1}
+          if (anw == "no"){happiness+=1;health-=1}
+        }
+          else if (ques === 16){ // police scared better weapons
+          if (anw == "yes"){security+=1;money-=1;happiness-=1}
+          if (anw == "no"){security-=1}
+        }
+          else if (ques === 17){ // raise
+          if (anw == "yes"){money-=1;happiness+=1}
+          if (anw == "no"){happiness-=1}
+        }
+          else if (ques === 18){ // football stadium
+          if (anw == "yes"){money-=1;happiness+=1}
+          if (anw == "no"){happiness-=1}
+        }
+          else if (ques === 19){//rob a bank
+          if (anw == "yes"){security-=1;money-=1;happiness-=1}
+          if (anw == "no"){}
+        }
+          else if (ques ===20){//how to hack
+          if (anw == "yes"){security-=1;money-=1;happiness+=1;health-=1}
+          if (anw == "no"){happiness-=1}
+        }
+        
+        if (happiness >10) {
+         document.getElementById("endgame").innerHTML = "Everyone got too happy and died of Joyrothitus";
+          player.style.display = "none";
+        buttons.style.display = "none";
+        score.style.display = "none";
+        }
+         else if (money >10) {
+         document.getElementById("endgame").innerHTML = "People left because of the rich government";
+          player.style.display = "none";
+        buttons.style.display = "none";
+        score.style.display = "none";
+        }
+        else  if (security >10) {
+         document.getElementById("endgame").innerHTML = "The police killed everyone";
+          player.style.display = "none";
+        buttons.style.display = "none";
+        score.style.display = "none";
+        }
+       else   if (health >10) {
+         document.getElementById("endgame").innerHTML= "People got too healthy that a new disease spreaded";
+          player.style.display = "none";
+        buttons.style.display = "none";
+        score.style.display = "none";
+        }
+       else   if (happiness <1) {
+         document.getElementById("endgame").innerHTML = "People got angry and left the city";
+          player.style.display = "none";
+        buttons.style.display = "none";
+        score.style.display = "none";
+        }
+       else   if (money <1) {
+         document.getElementById("endgame").innerHTML = "No money means no more toys for the kids. Kids start a war";
+          player.style.display = "none";
+        buttons.style.display = "none";
+        score.style.display = "none";
+        }
+       else   if (security <1) {
+         document.getElementById("endgame").innerHTML = "The Purge takes over";
+          player.style.display = "none";
+        buttons.style.display = "none";
+        score.style.display = "none";
+        }
+       else   if (health <1) {
+         document.getElementById("endgame").innerHTML = "Diseases soread and kills everyone ";
+          player.style.display = "none";
+        buttons.style.display = "none";
+        score.style.display = "none";
+        }
+        else {
+          document.getElementById("healthscore").innerHTML=health;
+          document.getElementById("securityscore").innerHTML=security;
+          document.getElementById("happinessscore").innerHTML=happiness;
+          document.getElementById("moneyscore").innerHTML=money;
+          scoring++;
+         document.getElementById("scoring").innerHTML="your score is "+scoring;
+          moveOut();
+        }
+      }
+         function moveIn() {
+            ques = (Math.floor(Math.random() * totalQs) + 1)-1;
+            //show btns
+            //move chqar, show char in
+            t();
+            //ask question
+          }
+          function moveOut() {
+               ques = Math.floor(Math.random() * totalQs-1) + 0;
+            //hide buttons
+            //move out,show charout
+            //
+            moveIn();
+          }
+        function s() {
+          //window.alert("heyo");
+          move += 10;
+          //$("#steven").css("left", move + "px");
+          document.getElementById("cbright").style.left = move+"px";
+          myTime = setTimeout("s()", 50);
+          if (move>190) {
+           	clearTimeout(myTime);
+            move=90;
+          }
+        }
+                
+           function t() {
+          //window.alert("heyo");
+          movetwo += 10;
+          //$("#steven").css("left", move + "px");
+          document.getElementById("cbleft").style.right = movetwo+"px";
+          myTime = setTimeout("t()", 50);
+          if (movetwo>250) {
+           	clearTimeout(myTime);
+            movetwo=0;
+              //document.getElementById("cbleft").style.display="none"; 
+             document.getElementById("question").innerHTML = questions[ques];
+            buttons.style.display = "block";
+
+             }
+        }
+                           
+                         
+      
+    </script>
+    
+    
+  </body>
+  
+  
+</html>

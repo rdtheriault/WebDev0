@@ -1,0 +1,102 @@
+<html>
+	<head>
+    	<script src="http://www.sagefirellc.com/images/snowstorm-min.js" type="text/javascript"></script>
+  <script src="http://www.sagefirellc.com/images/konami.js" type="text/javascript"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    	<style>
+   body
+   {
+    display: table-cell;
+    vertical-align: middle;
+   }
+   html, body
+   {
+  	height: 100%;
+   }
+   html
+   {
+    display: table;
+    margin: auto;
+   }
+        	#outer {
+            	display:flex;
+        	}
+        	#right {
+            	background-color:blue;
+        	}
+        	.inner {
+            	height:500px;
+            	width:500px;
+            	margin:10px;
+        	}
+        	.inner{
+            	border-style:solid;
+        	}
+   img {
+    height:100%;
+            	width:100%;
+   }
+   #image {
+    position:absolute;
+    bottom:0px;
+    right:0px;
+    visibility:hidden;
+    height:50px;
+    width:50px;
+   }
+    	</style>
+	</head>
+	<body>
+  <div id="image"><img id="move" src=""></div>
+  <div id="all" style="display:none;">
+   <button onClick= "goAway()"> Go Away! </button>
+   <div id="title">
+   </div>
+   <div id="outer">
+    <div id="left" class="inner">
+    </div>
+    <div id="right" class="inner">
+    </div>
+   </div>
+   <div id="footer">
+   </div>
+   Enter your name: <input type="text" id="userName"><button id="change" onclick="check()">Make the Magic Happen</button>
+  </div>
+  <button id="change" onclick="show()">Show me the mula</button>
+    	<script>
+        	var left = document.getElementById("left");
+   var right = document.getElementById("right");
+   function check(){
+       var userName = document.getElementById("userName").value;
+        document.getElementById("title").innerHTML = userName + " welcome";
+        
+       right.innerHTML = "<img src = 'https://i.ytimg.com/vi/GSSOiJnvodk/maxresdefault.jpg'/>";
+       left.innerHTML = "text";
+     if (userName=== "me"){
+        document.body.style.backgroundColor = "black";
+        }
+        else if (userName === "angel"){
+                document.body.style.backgroundColor = "blue";
+   }
+        else {
+                    document.body.style.backgroundColor = "violet";
+              }
+   }
+   function show() {
+            left.innerHTML = "<img src = 'https://i.ytimg.com/vi/5UN646yCysk/maxresdefault.jpg'/>";
+            right.innerHTML = "<img src = 'https://c2.staticflickr.com/8/7693/17123251389_bed3c3a1ba_b.jpg'/>";
+            document.getElementById("all").style.display = "block";
+   }
+   
+   function goAway() {
+    document.body.style.backgroundColor = "white";
+                document.getElementById("all").style.display = "none";
+
+   }
+   
+   var easter_egg = new Konami();
+   easter_egg.code = function() { window.alert("Hello World"); }
+   easter_egg.load();
+    	</script>
+	</body>
+</html>

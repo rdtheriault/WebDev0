@@ -1,0 +1,76 @@
+<html>
+  <head>
+    <title>
+    </title>
+  </head>
+  <body>
+    <div id="hello">
+	</div>
+    
+    <div id="welcome">
+    </div>
+    
+    <div id="goodbye">
+    </div>
+    <select id="name">
+      <option value="Tovey">Tovey<option>
+      <option value="Salinas">Salinas<option>
+      <option value="Palmer<3">Palmer<3<option>
+      <option value="Sepeni">Sepeni<option>
+      <option value="Ena">Ena<option>
+    </select>
+    <button id="btn">press</button>
+    <div id="four">
+      
+    </div>
+      
+    <script>
+      var nums =1;
+      for (var i = 0;i<10;i++){
+        document.getElementById("hello").innerHTML +=i.toString()+nums.toString()+"<br>";
+      }
+
+      var array = ["test1","test2","test3","test4"];
+      for (var i = 0; i < array.length; i++) {
+        document.getElementById("welcome").innerHTML += array[i]+"<br>";
+           }
+      var goodbye = ["tet1","tet2","tet3","tet4"];
+
+      for (var i = 0; i < goodbye.length; i++) {
+        document.getElementById("goodbye").innerHTML += goodbye[i]+"<br>";
+      }
+
+      var num = "Robert"; 
+        if (num=== "Robert") {
+
+          document.getElementById("goodbye").innerHTML = "one";
+          num++;
+		}
+     else if (num== "TY") {
+        document.getElementById("goodbye").innerHTML= "two";
+      }
+        else if (num== "Tovbug") {
+        document.getElementById("goodbye").innerHTML= "three";
+        }
+      var name = document.getElementById("name").value;
+      function test() {
+        document.getElementById("four").innerHTML += name + "<br>";
+        for (i = 0; i <10; i += 10) {
+          
+      }
+        for ( var i=1;i<11;i+=1) {
+          document.getElementById("four").innerHTML+=i+"<br>";
+      
+      
+          for ( i==5;i<10;i+=5) {
+            document.getElementById("four").innerHTML+=i+"<br>";
+      </script>
+</body>
+
+  
+
+
+    
+
+
+

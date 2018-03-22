@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<script src="http://www.sagefirellc.com/images/snowstorm-min.js" type="text/javascript"></script>
+  <script src="http://www.sagefirellc.com/images/konami.js" type="text/javascript"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    	<style>
+   body
+   {
+    display: table-cell;
+    vertical-align: middle;
+   }
+   html, body
+   {
+  	height: 100%;
+   }
+   html
+   {
+    display: table;
+    margin: auto;
+   }
+        	#outer {
+            	display:flex;
+        	}
+        	#right {
+            	background-color:blue;
+        	}
+        	.inner {
+            	height:500px;
+            	width:500px;
+            	margin:10px;
+        	}
+        	.inner{
+            	border-style:solid;
+        	}
+   img {
+    	height:30%;
+    	width:30%;
+   }
+   #image {
+    position:absolute;
+    bottom:0px;
+    right:0px;
+    visibility:hidden;
+    height:50px;
+    width:50px;
+   }
+   #name {
+   font-size:28px;
+    text-align:center;
+    Font-Family: Verdana;
+   }
+          #name1 {
+          font-size: 28px;
+          }
+    	</style>
+    	
+	<body>
+  <div id="image"><img id="move" src=""></div>
+  <div id="all" style="display:none;">
+      <button onclick="goAway()"> Go Away </button>
+   <div id="title">
+   </div>
+   <div id="outer">
+    <div id="left" class="inner">
+    </div>
+    <div id="right" class="inner">
+    </div>
+   </div>
+   <div id="footer">
+   </div>
+   Enter your name: <input type="text" id="userName"><button id="change" onclick="check()">Change Back</button>
+  </div>
+  <button id="change" onclick="show()">Change</button>
+    	<div id="Name"> <h1> <strong><em>Russell Carrington Wilson (Age 27)</em></strong> </h1></div>
+            <div id="Name1"><h2><strong>Married to Ciara (m. 2016)</strong></h2>
+       <p style="text-align:center;"> <img class="photo" src="http://www4.pictures.zimbio.com/gi/Russell+Wilson+Oakland+Raiders+v+Seattle+Seahawks+rZvS3zYgGhMl.jpg" width="125px" height="200px">
+        <img class="photo" src="http://img.wallpaperfolder.com/f/62510F9E3522/com-seattle-seahawks.jpg" width="125px" height="200px">
+        <img class="photo" src="https://s-media-cache-ak0.pinimg.com/736x/80/59/1e/80591e275e5b0603488db373270c77d7.jpg" width="125px" height="200px">
+        </div>
+        <div id="Name2">
+        <p style="text-align:center"><a target=blank href="http://www.usmagazine.com/celebrity-style/news/drool-over-ciara-and-russell-wilsons-official-wedding-photos-w212436">Images of Rusell Wilson & Ciara on their Wedding Day</a></p>
+        <h3><em><strong>Quarterback for the Seattle Seahawks</strong></em> (2012-Present)</h3>
+        <h4><strong><em>Early Life</em></strong></h4>
+        <p style="color:green;"><strong><em>Russell Wilson was born In Cincinnati, Ohio On November 29th, 1988. He went to Collegiate High School (in 2006 located in Richmond,Virginia), North Carolina State University (2007-2011), & University of Wisconsin-Madison (2011-2012)</em></strong></p>
+        <p></p>
+        <p style="color:Black;"></p>
+        <p style="color:Blue;">Russell Wilson's<strong> Dad (Harrison Wilson,III)</strong> played <strong>football and baseball at Dartmouth</strong> & was a <strong>wide reciever for the San Diego Chargers</strong> preseason squad in 1980,<strong> Harrison died </strong>(Age: 55)<strong> June 9th, 2010 from complications with Diabetes </strong><strong><em> Harrison Wilson,IV (Russell's Brother) played football and baseball at the University of Richmond. His sister Anna Wilson plays basketball for Stanford</em></strong></p>
+        <p style="color:Green;">Russell attended a Colegiate School (Preparatory School). His Junior (2005) year he threw 3,287 yards and 40 touchdowns, he also rushed 634 yards and 15 touchdowns. As a Senior (2006) he threw  for 3,009 yards, 34 touchdowns, and seven interceptions, he also rushed 1,132 yards and 18 touchdowns.</p>
+        </div>
+        <div id= "Name3">
+            <h5>Life with the Seattle Seahawks</h5>
+        <strong><p style="color:blue">On April 27th, 2012 he was selected by the Seattle Seahawks in the third round of the NFL Draft. The Seahawks endured significant negative criticism for their 2012 draft, and for selecting Russell Wilson in particular as the Seahawks had just signed free agent Matt Flynn.</p> </strong>
+        <p style="color:Green"><strong>He signed a ($2.99 million) four year contract with the Seattle Seahawks May 7th, 2012.</strong> He made his preseason debut against the Tennessee Titans on August 11, 2012 he also had his first preseason on August 24 against the Kansas City Chiefs.On August 26, 2012, Wilson was named the starting quarterback for the first regular season game after competing with Matt Flynn and Tarvaris Jackson for the position.</p>
+        
+       <strong><p style="color:black">On January 19, 2014, Wilson and the Seahawks defeated the San Francisco 49ers in the NFC Championship Game, 23–17, sending the Seahawks to Super Bowl XLVIII. Russell Wilson threw for 206 yards, 2 touchdowns, and no interceptions for a 123.1 passer rating in the 43–8 defeat over the Denver Broncos. He then became just the second black starting quarterback to win a Super Bowl, joining Super Bowl XXII winner Doug Williams. In addition to this, Wilson, at 5'11" tall, became the shortest quarterback to have ever won a Super Bowl, surpassing Len Dawson, Joe Theismann, and Drew Brees (all 6'0"). He also earned a bonus of $169,141.73 for the 2013 season through the NFL's Performance-Based Pay program.</p></strong>
+       </div>
+       <script>
+        	var left = document.getElementById("left");
+   var right = document.getElementById("right");
+   function check(){
+   }
+   function show() {
+    document.getElementById("Name").innerHTML ="Pete Carroll Coach For Seattle Seahawks";
+    document.getElementById("Name1").innerHTML ="<img src= 'http://www.sportsonearth.com/assets/images/4/2/0/70927420/cuts/carroll_pete_2wr8ybbt_x9io8mi5.jpg'>";
+    document.getElementById("Name2").innerHTML ="<img src= 'http://blog.thenewstribune.com/seahawks/files/2012/10/Wilson-Carroll.jpg'>";
+    document.getElementById("Name3").innerHTML ="<img src= 'https://echotimes.files.wordpress.com/2014/04/20140202_083002_super-bowl-football_heis.jpg'>";
+   }
+   
+   function goAway() {
+    document.getElementById("all").style.display="none";
+    document.body.style.backgroundColor="White"
+   }
+   
+   var easter_egg = new Konami();
+   easter_egg.code = function() { window.alert("Hello World"); }
+   easter_egg.load();
+         
+    	</script>
+       </body>
+</html>

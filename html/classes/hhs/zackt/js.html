@@ -1,0 +1,64 @@
+<html>
+  
+  <head>
+    
+    <style>
+      #title {
+        color: red;
+      }
+      #array {
+        color: black;
+      }
+      #what {
+        color: blue;
+      }
+      span.dis {
+        
+      }
+    </style>
+    
+  </head>
+  
+  <body>
+    
+    <h1 id='title' class='dis'>Title</h1>
+    <hr noshade id='what'>
+    <p><span class='dis'>This is a</span> Paragraph</p>
+    <p><span class='dis'>This is a</span> paragraph</p>
+    <p><span>tHiS iS a</span> PaRaGrApH</p>
+    <div id="array">
+    </div>
+    <img id='pic' src='https://cdn.meme.am/cache/images/folder874/600x600/17446874/spongebob-chicken-meme.jpg'><br>
+    <a id='link' href="https://www.teamvisionary.com/" target='_blank'><h2>Team Visionary!</h2></a>
+    <button id='btn'>Press for fun and games and maybe more you never know:)</button><br>
+    
+    <input type='text' id='input'>
+    
+    <script>
+		//var elDis = document.querySelectorAll("span.dis");
+      //for (var i=0; i < elDis.length; i++) {
+        //elDis[i].style.display = "none";
+      //}
+      document.getElementById('btn').addEventListener('click', buttonClick);
+      
+      function buttonClick() {
+        var input = document.getElementById('input').value;
+        if (isNaN(input)) {
+          document.getElementById('array').innerHTML = "<h1>not a number bro!</h1>";
+        } else if (input<11) {
+        //for (var i = 0; i < input; i++) {
+         //document.getElementById('array').innerHTML += i;
+         //}
+          document.getElementById('link').href = 'http://yahoo.com';
+          document.getElementById('pic').src = 'https://upload.wikimedia.org/wikipedia/commons/7/76/Coast_Garter_Snake.jpg';
+          document.getElementById('pic').style.width = '250px';
+        } else {
+          document.getElementById('array').innerHTML = "<h1>not less than 11</h1>";
+        }
+      }
+      
+    </script>
+    
+  </body>
+  
+</html>

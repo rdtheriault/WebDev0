@@ -1,0 +1,32 @@
+<html>
+  <head>
+  </head>
+  <body>
+    <div id="outer">
+      <div id="first">
+      </div>
+      <div id="second">
+      </div>
+      <div id="third">
+      </div>
+    </div>
+    
+    
+    <script>
+   
+      for (var i=1; i< 11; i++){
+      document.getElementById("first").innerHTML+= i*2 + "<br>";//good use of the times 2, make sure to indent
+        
+          if (i == 10) {
+        	document.getElementById("second").innerHTML += "You're half way there!";//this should be indented
+          }
+      }
+    
+      function name(){
+     	 document.getElementById("third").innerHTML+="Courtney";//this should be indented
+       }
+      name();
+     //great job! 9.9/10, just need to watch out for that indenting -0.1
+    </script>
+  </body>
+</html>

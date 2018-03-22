@@ -1,0 +1,91 @@
+<!DOCTYPE>
+<html>
+<head>
+  
+</head>
+<body>
+  <select id="name">
+    <option value ="1">Robert</option>
+  	<option value="Angel">Angel</option>
+    <option value="Zack">Zack</option>
+      <option value="Steve">Steve</option>       
+   </select>
+  <button id= "btn">Click me<button>
+<div id= "end">
+  
+  
+</div>
+  <div id= "middle">
+    
+  </div>
+  <div id= "first">
+    
+    
+    </div>
+  <div id= "three">
+  </div>
+    <div id = "five">
+      
+      </div>
+  <script>
+    var nums="";
+for(var i=0;i < 10;i++){
+ document.getElementById("end").innerHTML+= i.toString()+nums.toString()+"<br>";
+  
+  
+  
+};
+    var array= ["test1","test2","test3","test4",];
+    for(var i=0; i<array.length;i++){
+     document.getElementById("middle").innerHTML+= array[i]+"<br>";
+      
+      
+    }
+    var array= ["opt1","opt2","opt3","opt4",];
+    for(var i=0; i<array.length;i++){
+     document.getElementById("first").innerHTML+= array[i]+"<br>";
+      
+    }
+    var num= "Steve";
+    if(1 === "Robert"){
+     document.getElementById("three").innerHTML="one";
+      num++;
+    }
+   else if(num=="Angel"){
+     document.getElementById("three").innerHTML="two";
+   }
+    else if(num=="Zack"){
+     document.getElementById("three").innerHTML="three";
+   }
+    else {
+document.getElementById("three").innerHTML = "False";
+    }
+    document.getElementById("btn").addEventListener("click",test);
+   
+    function test(){
+      var name= document.getElementById("name").value;
+      document.getElementById("three").innerHTML+=name+"<br>"
+       for(var i=10;i < 10;i++){
+ document.getElementById("Steve").innerHTML+= i.toString()+nums.toString()+"<br>";        
+    }
+      
+    }
+    for(var i=1;i < 11;i++){
+          document.getElementById("three").innerHTML+=i;
+      if(num== 5){
+         document.getElementById("five").innerHTML="this is your number";
+      }
+          }
+    test();
+    
+</script> 
+  
+  
+  
+</body>  
+
+  
+  
+  
+  
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Putting JS in a webpage</title>
+        <style>
+            body 
+            {
+                display: table-cell;
+                vertical-align: middle;
+            }
+            html, body 
+            {
+               height: 100%;
+            }
+            html 
+            {
+                display: table;
+                margin: auto;
+            }
+			#right{
+			width:200px;
+			height:200px;
+			background-color:red;
+			display:none;
+			
+			}
+			#left{
+			width:200px;
+			height:200px;
+			background-color:blue;
+			display:none;
+			
+			}
+			#out{
+			display:flex;
+			}
+			#btn{
+			display:none;
+			}
+			
+        </style>
+
+    </head>
+    <body>
+	<div id="out">
+      <div id ="left"><img width="200px" src="https://tse2.mm.bing.net/th?id=OIP.SwdOA1YEHn9G4sYH0SZTrAEYDe&pid=15.1&P=0&w=218&h=174"></div>
+      <div id ="right"><img width="200px" src="http://www.slate.com/content/dam/slate/articles/news_and_politics/politics/2016/10/161017_POL_barack-obama.jpg.CROP.cq5dam_web_1280_1280_jpeg.jpg"></div>
+      <div>
+	  <button id="btn">show me the money!!!</button>
+	  <input id="guess" type="text">
+	  <button id="btn2">Guess</button><br>
+	  guess a number between 1-10
+	  <script src="myjs.js"></script>
+    <script>
+	document.getElementById("btn").addEventListener("click",showMoney);
+	function showMoney(){
+	document.getElementById("left").style.display = "block";
+	}
+	
+	document.getElementById("left").addEventListener("click",moreMoney)
+	function moreMoney(){
+	document.getElementById("right").style.display = "block";
+	}
+	document.getElementById("btn2").addEventListener("click",guess)
+	function guess(){
+	  var answer = ".5";
+	  var guess = document.getElementById("guess").value;
+	if (guess === answer){
+	 document.body.style.backgroundColor = "green";
+	 document.getElementById("btn2").style.display = "none";
+	 document.getElementById("guess").style.display = "none";
+	 document.getElementById("btn").style.display = "block";
+	 }
+	else{
+	document.body.style.backgroundColor = "red"
+	}
+	
+	}
+	document.getElementById("right").addEventListener("click",reset)
+	function reset (){
+	document.getElementById("btn2").style.display = "block";
+	document.getElementById("guess").style.display = "block";
+	document.getElementById("btn").style.display = "none";
+	document.getElementById("left").style.display = "none";
+	document.getElementById("right").style.display = "none";
+	document.style.display.backgroundColor = "white";
+	}
+	
+	
+	
+	</script>
+	</body>
+</html>

@@ -1,0 +1,131 @@
+<html>
+<head>
+ <style>
+  #head{
+   color:red; 
+  }
+   h1{
+   color: blue;  
+   }
+   .notMain{
+   color:green;  
+   }
+   
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script>
+ 
+    </script>
+  
+  <button id="btn">Do something</button>
+</head>
+<body>
+  <div id= "head"></div>
+  <h1>Header 1</h1>
+  <h1 class= "notMain"> Header 2</h1>
+  <h1 class ="notMain">Header 3</h1>
+  <h2 class = "notMain">End</h2>
+  <a id="link" href="https://www.google.com">Link</a>
+  <img src="image.png" id="img">
+  <form>
+    <select>
+      <option value="information">Option 1</option>
+      </select>
+    Enter Name<input type="text">
+  </form>
+ <form id="quiz">
+  <label>
+    What is this?<br>
+    <img src="../smile.jpg" alt="reptile"><br>
+    <select id="quiz-answer">
+      <option value="smile">Smile</option>
+      <option value="frown">Frown</option>
+      <option value="cry">Cry</option>
+    </select>
+   </label><br>
+   <button type="submit">Check Answer</button>
+   
+   
+   </form>
+   <div id="result"></div>
+  <form id="croc-form">
+    <label>
+      Species?
+      <select name="species">
+        <option value="freewater"> Freewater Crocodile </option>
+        <option value="saltwater"> Saltwater Crocodile </option>
+        <option value="american"> American Crocodile </option>
+      </select>
+    </label>
+    <button type="submit">Order</button>
+  </form>
+  <script>
+    $("#quiz").on("submit",function(e){
+   e.preventDefault();
+   var $answer= $("#quiz-answer");
+      
+      var crocSpecies = $(title).find("(name=species");
+   var answer=$answer.val();
+	if(answer==="smile"){
+     $("#result").text("Good Job");
+    }
+   else{
+     $("#result").text("Try again...");
+   }
+ });
+    var crocImages = {
+      "american": "https://www.google.com/search?q=american+crocodile&rlz=1CAHPZY_enUS730&espv=2&biw=1366&bih=655&source=lnms&tbm=isch&sa=X&ved=0ahUKEwidvram2urRAhUS72MKHQHhAokQ_AUIBigB&safe=active&ssui=on#imgrc=naKCsd1NMo7x0M%3A",
+      "seawater": "https://www.google.com/search?q=american+crocodile&rlz=1CAHPZY_enUS730&espv=2&biw=1366&bih=655&source=lnms&tbm=isch&sa=X&ved=0ahUKEwidvram2urRAhUS72MKHQHhAokQ_AUIBigB&safe=active&ssui=on#safe=active&tbm=isch&q=sea+water+crocodile&imgrc=llSk3QZY_oXLVM%3A",
+      "freewater"; "https://www.google.com/search?q=american+crocodile&rlz=1CAHPZY_enUS730&espv=2&biw=1366&bih=655&source=lnms&tbm=isch&sa=X&ved=0ahUKEwidvram2urRAhUS72MKHQHhAokQ_AUIBigB&safe=active&ssui=on#safe=active&tbm=isch&q=free+water+crocodile&imgrc=N-MO7IXzlsYrOM%3A"
+    };
+ 
+   // var header1=$("#head").text();
+  // $("h2").text("Hello<br>world");
+    //console.log(header1);
+    //header1.text(header1.text()+"!!");
+    
+    //$("h2").text(header1+"!!");
+    //$(".notMain").text("not main");
+    var newp= $("<span>");
+    newp.text("new text");
+     newp.addClass("notMain");
+    $("body").append(newp);
+    var $heading= $("#head");
+    $heading.html("Using jQuery again!");
+    var headingD=$heading[0];
+    var $headingJ=$(headingD);
+   // $headingJ.text("Next try");         
+    var $h1s= $("h1");
+    for(var i=0; i<$h1s.length;i++){
+    var element= $h1s[i];
+     var $h1=$(element);
+     // $h1.html($h1.html()+"..wowee!");
+    }
+    var changeMe= function(){
+      $(".notMain").css("color","purple");
+      
+    };
+    $("#btn").on("click",function(){
+     	changeMe();
+      
+      
+    });
+    $("body").on("click",function(event){
+      var $img=$("<img>")
+      .attr("src","../smile.jpg")
+      .css("position","absolute")
+      .css("top",event.pageY + "px")
+      .css("left",event.pageX+"px")
+      .width(100)
+      .appendTo("body");
+    });
+    
+  </script>
+  
+  </body>
+  
+  
+  
+  
+  
+</html>

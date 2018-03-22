@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <style>
+      #div {
+        display: none;
+      }
+      body {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <button id='money'>Gimme Da Money</button>
+    <div id='div'>
+    	<img id='pic' src='https://media.giphy.com/media/XpOnIoIDxsfTy/giphy.gif'><br>
+    	<img id='pic2' src='https://media.tenor.co/images/1a42e091772a75a596dc2aa5aeaeab80/tenor.gif'><br>
+      <div id='pic3'></div>
+    	<button id='numtwo'>All Da Money</button>
+    </div>
+    
+    <script>
+      function doSomething() {
+        document.getElementById("div").style.display = "block";
+      }
+      
+      document.getElementById('money').addEventListener("click", doSomething);
+      
+      function broski() {
+        document.getElementById('pic3').src = 'http://bestanimations.com/Money/money-animated-gif-1.gif';
+        document.body.style.backgroundColor = 'Cyan';
+      }
+      
+      document.getElementById('numtwo').addEventListener('click', broski);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,55 @@
+<html>
+    <head>
+       <style>
+         #title{
+             color:red
+         
+         }
+        span.dis {
+         
+     
+      
+        }
+      </style>
+ 
+ 
+
+ </head>
+<body>
+<h1 id="title">Title of page</h1>
+<p><span class="dis">This</span> is Paragraph 1</p>
+<p><span class="dis">This</span> is Paragraph 2</p>
+<p><span>This</span> is Paragraph 3</p>
+  <div id="array"></div>
+  
+  <img class="dis" id="picture" width="250px" src="https://static.pexels.com/photos/39517/rose-flower-blossom-bloom-39517.jpeg" alt="rose-flower-blossom-bloom-39517.jpeg (3482×2321)"/>
+  
+  <a href="https://google.com" id="link">Click Here</a>
+  <button id="btn">Press Me</button>
+  <input type="text" id="num">
+  <script>
+ var elDis=document.querySelectorAll("Span.dis");
+    for(var i=0;i<elDis.length; i++){
+       elDis[i].styledisplay
+    }
+  //document.querySelector("span.dis").style.display="none";
+    
+  document.getElementById("btn").addEventListener("click",btnClick);
+  function btnClick() {
+    var input=document.getElementById("num").value;
+    if(isNaN(input)){
+      document.getElementById("array").innerHTML="<h1>That is not a number</h1>"
+     }
+    else if (input<11) {
+    document.getElementById("picture").src="https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=&url=https%3A%2F%2Fwww.rodalesorganiclife.com%2Fgarden%2Fguide-starting-annual-flower-seeds&psig=AFQjCNH--ALhWyXJVZSqcouw8QjlAvkkPA&ust=1496517665030599"; 
+      document.getElementById("link").href="http://bing.com";      
+    }
+    else{
+        document.getElementById("array").innerHTML="that is not less than 11";
+    }  
+  }
+    ////validation
+  </script>
+
+ </body>
+</html>

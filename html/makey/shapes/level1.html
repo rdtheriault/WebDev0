@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title></title>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> 
+		<link rel="stylesheet" href="style.css">
+        
+        <script>
+          
+$(document).ready(function(){
+ 
+  var fry = ["image/square.png", "image/rectangle.png","image/circle.png","image/oval.png","image/diamond.png","image/triangle.png","image/trapezoid.png","image/parallelogram.png","image/octagon.png","image/heart.png","image/star.png"];
+  var shapes = ["square", "rectangle", "circle", "oval", "diamond", "triangle", "trapezoid", "parallelogram", "octogon", "heart", "star"];
+  var pick = Math.random() * (fry.length - 0) + 0;
+  var audio;
+  var one = "";
+  var two = "";
+  var three = "";
+  var four = "";
+  var answer = "";
+  var total = 0;//total in array
+  var now = 0;//holder for current array number
+  var mstrArry;//holds the array that is selected
+  var type = "";//holds the type of cards to be used
+  var ranNum = Math.floor(Math.random() * (fry.length - 0) + 0);
+  
+  
+//$('#up').attr('src', 'files/up.png');
+//$('#down').attr('src', 'files/down.png');
+//$('#right').attr('src', 'files/right.png');
+//$('#left').attr('src', 'files/left.png');
+//$('#master').attr('src', 'files/up.png');
+//$('#up').attr('src', 'files/x.png');
+
+	$(document).keydown(function(e){//up
+	    if (e.keyCode == 38 ) {
+	      checkColor(1, '#up'); 
+	      }         
+	});
+	
+	$(document).keydown(function(e){//down
+	    if (e.keyCode == 40 ) {
+	      checkColor(2, '#down');  
+	      }        
+	});
+
+	$(document).keydown(function(e){//right
+	    if (e.keyCode == 39 ) {
+	      checkColor(3, '#right'); 
+	      }         
+	});
+
+	$(document).keydown(function(e){//left
+	    if (e.keyCode == 37 ) {
+	      checkColor(4, '#left'); 
+	      }         
+	});
+
+	$(document).keydown(function(e){//space
+	    if (e.keyCode == 32 ) {
+	      pick = Math.floor((Math.random() * 4) + 1);    
+		reset();
+		changeMaster(pick);
+	    }
+	});
+
+
+
+	  $("#up").click(function(){
+		checkColor(1, '#up');
+	  });
+	
+	  $("#down").click(function(){
+		checkColor(2, '#down');
+	  });
+	  
+	  $("#right").click(function(){
+		checkColor(3, '#right');
+	  });
+	  
+	  $("#left").click(function(){
+		checkColor(4, '#left');
+	  });
+	  
+	  $("#master").click(function(){
+	  	  //var star = $('#master').prop('name');
+		  if (pick === pick){
+			pick = Math.floor((Math.random() * 4) + 1);    
+			reset();
+	 		changeMaster(pick);
+	 	  }
+	  });
+  
+  	$("#btn").click(function(){
+	      pick = Math.floor((Math.random() * 4) + 1);    
+		reset();
+ 		changeMaster(pick);
+  	});
+  
+  changeMaster();
+  function changeMaster(pick) {
+     ranNum = Math.floor(Math.random() * (fry.length - 0) + 0);
+     playAudio()
+     randomizer()
+  }
+  
+  function playAudio() { 
+    var holder = shapes[ranNum];
+    var sound = "audio/" + holder + ".mp3";
+     audio = new Audio(sound);
+     audio.play();
+    document.getElementById('master').innerHTML = holder.toUpperCase();;
+  }
+  playAudio();
+  
+  function reset() {
+    $("#up").css("border", "none");
+    $("#down").css("border", "none");
+    $("#right").css("border", "none");
+    $("#left").css("border", "none");
+    
+  }
+    
+  
+  
+  function checkColor(current, id){
+		
+        if (current !== answer) { $(id).css("border", "solid 5px gray");}
+        if (current === answer) { $(id).css("border", "solid 5px turquoise");}
+        
+  }
+  
+
+
+  
+    function translate(current){
+      	if (current === 1) { var up = "up"; return up;}
+      	if (current === 2) {var down = "down" ; return down}
+      	if (current === 3) {var right = "right" ; return right}
+      	if (current === 4) {var left = "left" ; return left}
+   }
+      
+
+
+
+  function randomizer(){
+  	one = "";
+	two = "";
+	three = "";
+    four = "";
+  	var rand = Math.floor((Math.random() * 4) + 1);//get location of correct answer
+    answer = rand;
+  	//if the random then put the correct answer in it, otherwise get another random answer
+  	if (rand == 1){
+      	one = fry[ranNum];
+        document.getElementById("up").innerHTML = "<img src='"+one+"'>";
+    }
+  	else {
+      	check(1);
+    }
+  	if (rand == 2){
+      	two = fry[ranNum];
+        document.getElementById("down").innerHTML ="<img src='"+two+"'>";
+    }
+  	else {
+      	check(2);
+    }
+  	if (rand == 3){
+      	three = fry[ranNum];
+        document.getElementById("right").innerHTML ="<img src='"+three+"'>";
+    }
+  	else {
+      	check(3);
+    }
+    if (rand == 4){
+      	four = fry[ranNum];
+        document.getElementById("left").innerHTML ="<img src='"+four+"'>";
+    }
+  	else {
+      	check(4);
+    }
+  }
+  
+  
+  
+  
+  
+  function check(num) {
+  	var rand = Math.floor((Math.random() * fry.length) + 1)-1;
+  	//if result of random answer equal to any of the other answers try again, else make it the answer.
+  	if (fry[rand] === one || fry[rand] === two || fry[rand] ===  three || fry[rand] === fry[ranNum]){
+     	 check(num);
+    }
+  	else {
+     	if (num == 1){
+          one = fry[rand];
+          document.getElementById("up").innerHTML ="<img src='"+one+"'>";
+        }
+        else if (num == 2){
+          two = fry[rand];
+          document.getElementById("down").innerHTML ="<img src='"+two+"'>";
+        }
+      	else if (num ==3){
+          three = fry[rand];
+          document.getElementById("right").innerHTML ="<img src='"+three+"'>";
+        }
+        else if (num ==4){
+          four = fry[rand];
+          document.getElementById("left").innerHTML ="<img src='"+four+"'>";
+        }
+    }
+  }
+
+
+
+
+});
+</script>
+        
+    </head>
+    <body>
+                <div id="btn" class="testBlock"> Next
+        </div>
+        
+        
+      <table style="text-align:center; padding:10px">
+	<tr>
+		<td></td>
+      <td colspan="2" style="text-align:center;"><div id="middle"><div id="master" name="red" class="square"></div></div></td>
+		<td></td>
+	</tr>
+	<tr>
+		
+		<td style="text-align:center;"><div id="up1" class="square2"></div></td>
+		<td style="text-align:center;"><div id="down1" class="square2"></div></td>
+		<td style="text-align:center;"><div id="right1" class="square2"></div></td>
+		<td style="text-align:center;"><div id="left1" class="square2"></div></td>
+	</tr>
+	<tr>
+      	<td style="text-align:center;"><div id="up" class="square">up</div> </td>
+		<td style="text-align:center;"><div id="down" class="square">down</div></td>
+		<td style="text-align:center;"><div id="right" class="square">right</div></td>
+		<td style="text-align:center;"><div id="left" class="square">left</div></td>
+	<tr>
+      </table>
+      
+    </body>
+</html>
+
+
+
+          
+
+
+

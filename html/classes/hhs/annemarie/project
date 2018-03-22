@@ -1,0 +1,76 @@
+<html>
+  <head>
+  <title>Dean Winchester</title>
+   <style>
+ 	
+body {
+    background: url(DeanWinchester.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat
+}
+
+   
+      </style>
+  
+  
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    </head>
+  <body> 
+    
+    
+    <div id="page">
+      <div id="logo">
+        <h1><a href="/" id="logo link">Dean Winchester</a></h1>
+          
+          </div>
+        <div id="nav">
+          <ul>
+          	
+          	<li><a href="#/home.html">Home</a></li>
+            <li><a href="#/about.html">About</a></li>
+              
+              </ul>
+            </div>
+            <div id="content">
+              <h2>Home</h2>
+   
+   <table>
+      <tr>
+      <th>About</th>
+      <th>Background</th>
+      </tr>
+      <tr>
+            
+            <td>This is a web page all about Dean Winchester. Dean is a <em>hunter</em>, but not the kind of hunter you think, 
+              he hunts monsters. He has a brother named Sam winchester and he hunts with him. Sam used to go to stanford 
+              but later ended up leaving to hunt with dean. Sam and Dean learned about monsters from their dad John Winchester,
+              he became a hunter after his wife Mary was killed by a montster. Now Dean travels with his brother across the 
+              country on the perptual hunt for monsters.</td>
+   
+              
+           
+                <td>Dean is 38 years old, he was born in Lawrence Kansas in the year 1979. He is trained to use almost every weapon 
+                imaginable. He has died aprox. 117 times and is currently still alive. Dean has never truly had a normal life, 
+                he has always been a hunter and everyday he is reminded of the mistakes he has made, he keeps a positve attitude
+                around his brother when possible but sam knows when dean isnt doing well. Dean and his brother are very close, 
+                and they are starting to be happier as they continue to svae the world.</td>
+      </tr>
+      </table>
+              
+              
+           </div>
+                <div id="footer">
+                  <p> Web Page made by <a href="/" target="_blank">Anne Marie Bartoschek</a>
+                  </p>
+                  </div>
+                  </div>
+                  </body>
+                  </html>
+              
+              
+        
+        
+      

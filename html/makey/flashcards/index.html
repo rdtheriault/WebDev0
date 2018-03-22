@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #outer {
+       display:flex; 
+      }
+      .card {
+        height:300px;
+        width:150px;
+        text-align:center;
+		margin:10px;
+      }
+      body 
+      {
+          display: table-cell;
+          vertical-align: middle;
+      }
+      html, body 
+      {
+         height: 100%;
+      }
+      html 
+      {
+          display: table;
+          margin: auto;
+      }
+    </style>
+  </head>
+        
+  <body>
+    <div id="btn">
+      <select id="choose">
+        <option value="colors">Colors</option>
+        <option value="shapes">Shapes</option>
+        <option value="nums">Numbers</option>
+        <option value="capLet">Capital Letters</option>
+        <option value="lowLet">Lower Case Letters</option>
+        <option value="fry1">Fry Words 1-10</option>
+        <option value="fry2">Fry Words 1120</option>
+        <option value="fry3">Fry Words 21-30</option>
+        <option value="fry4">Fry Words 31-40</option>
+        <option value="fry5">Fry Words 41-50</option>
+        <option value="fry6">Fry Words 51-60</option>
+        <option value="fry7">Fry Words 61-70</option>
+        <option value="fry8">Fry Words 71-80</option>
+        <option value="fry9">Fry Words 81-90</option>
+        <option value="fry10">Fry Words 91-100</option>
+        <option value="oneTOone10">One to One 1-10</option>
+      </select>
+      <button id="go">Select</button>
+    </div>
+	<div id="outer">
+      <div id="one" class="card"></div>
+      <div id="two" class="card"></div>
+      <div id="three" class="card"></div>
+    </div>
+    <script type='text/javascript' src='code.js'></script>
+  </body>
+</html>

@@ -1,0 +1,83 @@
+<!-- Team Guess -->
+
+
+<html>
+<head>
+<style>
+body
+  {
+   display: table-cell;
+   vertical-align: middle;
+  }
+  html, body
+  {
+ 	height: 100%;
+  }
+  html
+  {
+   display: table;
+   margin: auto;
+  }
+
+
+</style>
+</head>
+<body>
+
+
+<p id="info">
+Pick a number 1-1000
+</p>
+
+
+<input id="guess" type="text">
+
+
+</input>
+<button onclick="work()" id ="button1">Push my Button</button>
+<button onclick="reset()" id ="button2" style="display:none">Try again</button>
+<div id="footer">
+</div>
+
+
+<script>
+var x=Math.floor((Math.random() * 1000) +1);
+var score =0;;
+function work() {
+var number = document.getElementById("guess").value; 
+score ++;
+if (number === x) {
+		document.getElementById("info").innerHTML = "You’re Cool Bro"; 
+		document.getElementById("button1").style.display="none";
+		document.getElementById("button2").style.display="block";	
+		document.getElementById("footer").innerHTML = "score = "+ score;
+		document.body.style.backgroundColor = "green";
+}
+else if (number<x) {
+	 document.getElementById("info").innerHTML = "You’re too low bro";
+	document.getElementById("footer").innerHTML = "score = "+ score;
+}		
+
+
+else if (number>x) {
+	 document.getElementById("info").innerHTML = "You’re too high bro";
+	document.getElementById("footer").innerHTML = "score = "+ score;
+}				
+}
+
+
+function reset(){
+	document.body.style.backgroundColor = "white";
+	document.getElementById("info").innerHTML = "Pick a number 1-1000";
+	document.getElementById("footer").innerHTML = "";
+	x = Math.floor((Math.random() * 1000) +1);
+	document.getElementById("button1").style.display="block";
+	document.getElementById("button2").style.display="none";
+document.getElementById("guess").value="";
+score = 0;
+}	
+ 
+	
+</script>
+</body>
+</html>

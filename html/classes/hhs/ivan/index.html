@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Putting JS in a webpage</title>
+        <style>
+            body 
+            {
+                display: table-cell;
+                vertical-align: middle;
+            }
+            html, body 
+            {
+               height: 100%;
+            }
+            html 
+            {
+                display: table;
+                margin: auto;
+            }
+			#left {
+				width:200px;
+				height:200px;
+				background-color:blue;
+				display:none;
+
+			}
+			#right {
+				width:200px;
+				height:200px;
+				background-color:Purple;
+			    display:none;
+
+				}
+				#out {
+					display:flex;
+				}
+				#btn {
+					display:none;
+        </style>
+
+    </head>
+    <body>
+	<div id="out">
+		<div id="left"><img width="300px" src="https://sep.yimg.com/ay/collegefanfare/oakland-raiders-money-clip-f-2.jpg"></div>
+		
+			<div id="right"><img width="200px" src="https://advergroup.com/images/BLOG_IMAGES/money/100%20Dollar%20Bill%20006.jpg"></div>
+			</div>	
+			<button id="btn">Show Me The Money!!!!</button>
+			<input id="guess" type="type">
+			<button id="btn2">Guess</button><br>
+			Guess the buliding it's in Hermiston
+       <script src="myjs.js"></script>
+	   <script>
+			document.getElementById("btn").addEventListener("click",showMoney);
+			function showMoney() {
+				document.getElementById("left").style.display = "block";
+			}
+			document.getElementById("left").addEventListener("click",moreMoney);
+			function moreMoney() {
+				document.getElementById("right").style.display = "block";
+				}
+				document.getElementById("btn2").addEventListener("click",guess);
+				function guess() {
+					 var answer = "Hermiston High School";
+					 var guess = document.getElementById("guess").value;
+					 if (guess === answer){
+						 document.body.style.backgroundColor = "green";
+						 document.getElementById("btn2").style.display = "none";
+						 document.getElementById("guess").style.display = "none";
+						 document.getElementById("btn").style.display = "block";
+					 
+					 }
+					 else {
+						document.body.style.backgroundColor = "red";
+					 
+					 }
+					 				document.getElementById("right").addEventListener("click",reset);
+									function reset (){
+									 document.getElementById("btn2").style.display = "block";
+									document.getElementById("guess").style.display = "block";
+									document.getElementById("btn").style.display = "none";
+									 document.getElementById("left").style.display = "none";
+										document.getElementById("right").style.display = "none";
+										document.body.style.backgroundColor = "white";						
+										
+									
+									
+									}
+
+				}
+				
+				
+				
+				
+				
+				
+				
+				
+				
+	   </script>
+	   
+    </body>
+</html>

@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+
+
+body {
+
+background: #202121;
+
+}
+
+.center-on-page {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+h1 {
+  text-align: center;
+}
+/* Reset Selecti */
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background: #282544;
+  background-image: none;
+}
+/* Custom Select */
+.selecti {
+  position: relative;
+  display: block;
+  width: 20em;
+  height: 3em;
+  line-height: 2;
+  background: #2c3e50;
+  overflow: hidden;
+  border-radius: .25em;
+  font-size: 18px;
+  color: #d84f0f;
+}
+select {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0 0 0 .5em;
+  color: #fff;
+  cursor: pointer;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+}
+select::-ms-expand {
+  display: none;
+}
+/* Arrow */
+.selecti::after {
+  content: '\25BC';
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 30px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0 1em;
+  background: #663399;
+  pointer-events: none;
+}
+/* Transition */
+.selecti:hover::after {
+  color: #fff;
+}
+.selecti::after {
+  -webkit-transition: .25s all ease;
+  -o-transition: .25s all ease;
+  transition: .25s all ease;
+}
+
+.outeri {
+        width: 700px;
+        display: flex;
+        border: 5px solid black;
+        border-radius: 5px;
+      }
+      .conti {
+        display: flex;
+        
+      }
+      .colouri {
+        height: 50px;
+        border-radius: 5px;
+        width: 50px;
+        margin: 5px;
+      }
+      #color1 {
+        background-color: purple;
+      }
+      #color2 {
+        background-color: #bf9b30;
+      }
+      #color3 {
+        background-color: white;
+      }
+      #color4 {
+        background-color: black;
+      }
+      .dropdowni {
+        text-align: center;
+        padding-left: 20px;
+        padding-top: 8px;
+        font-family: 'Ubuntu', sans-serif;
+        color: #fc4e71;
+        
+      }
+      
+  .infoi {
+      width: 300px;
+      
+    }
+
+    #complete {
+
+cursor: pointer;
+transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-
+
+}
+
+
+#complete:hover {
+
+opacity: 0.4;
+
+
+}
+
+
+.datai {
+
+
+
+          font-size: 28px;
+}

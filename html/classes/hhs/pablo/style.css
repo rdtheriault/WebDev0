@@ -1,0 +1,14 @@
+ body{
+                font-family: 'Lemonada', cursive,'Open Sans', sans-serif;
+                background-color:rgb(53,89,99);
+   				
+ }
+#foto{
+  				width:400px;
+  				
+                border:10px groove rgb(112,186,179);
+ 
+}
+h1, p {
+				color:white;
+}

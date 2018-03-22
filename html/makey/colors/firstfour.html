@@ -1,0 +1,228 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title></title>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> 
+      <style>
+      	.square {
+      		width: 150px;
+        	height: 150px;
+          border-radius: 5px;
+        }
+        #up {
+          background-color: red;
+        }
+        #down {
+          background-color: #ff471a;
+        }
+        #left {
+          background-color: green;
+        }
+        #right {
+          background-color: blue;
+        }
+        #master {
+          background-color: red;
+        }
+        #middle {
+          display: flex;
+          width: 100%;
+          justify-content: center;
+        }
+        #btn {
+          font-size: 40px;
+          font-family: sans;
+        }
+        body {
+            display: table-cell;
+            vertical-align: middle;
+        }
+        html, body {
+           height: 100%;
+        }
+        html {
+            display: table;
+            margin: auto;
+        }
+      </style>
+        
+        <script>
+          
+          
+          
+          
+          
+          
+$(document).ready(function(){
+ 
+  
+  var pick = 1;
+	var audio;
+  
+  
+  
+  
+//$('#up').attr('src', 'files/up.png');
+//$('#down').attr('src', 'files/down.png');
+//$('#right').attr('src', 'files/right.png');
+//$('#left').attr('src', 'files/left.png');
+//$('#master').attr('src', 'files/up.png');
+//$('#up').attr('src', 'files/x.png');
+
+	$(document).keydown(function(e){//up
+	    if (e.keyCode == 38 ) {
+	      checkColor(1, '#up'); 
+	      }         
+	});
+	
+	$(document).keydown(function(e){//down
+	    if (e.keyCode == 40 ) {
+	      checkColor(2, '#down');  
+	      }        
+	});
+
+	$(document).keydown(function(e){//right
+	    if (e.keyCode == 39 ) {
+	      checkColor(3, '#right'); 
+	      }         
+	});
+
+	$(document).keydown(function(e){//left
+	    if (e.keyCode == 37 ) {
+	      checkColor(4, '#left'); 
+	      }         
+	});
+
+	$(document).keydown(function(e){//space
+	    if (e.keyCode == 32 ) {
+	      pick = Math.floor((Math.random() * 4) + 1);    
+		reset();
+		changeMaster(pick);
+	    }
+	});
+
+
+
+	  $("#up").click(function(){
+		checkColor(1, '#up');
+	  });
+	
+	  $("#down").click(function(){
+		checkColor(2, '#down');
+	  });
+	  
+	  $("#right").click(function(){
+		checkColor(3, '#right');
+	  });
+	  
+	  $("#left").click(function(){
+		checkColor(4, '#left');
+	  });
+	  
+	  $("#master").click(function(){
+	  	  //var star = $('#master').prop('name');
+		 
+			pick = Math.floor((Math.random() * 4) + 1);    
+			reset();
+	 		changeMaster(pick);
+	 	  
+	  });
+  
+  	$("#btn").click(function(){
+	      pick = Math.floor((Math.random() * 4) + 1);    
+		reset();
+ 		changeMaster(pick);
+  	});
+  
+  function changeMaster(pick) {
+   if (pick === 1) {
+   	$("#master").css("background-color", "red");
+     audio = new Audio('red.mp3');
+     audio.play();
+   } else if (pick === 2) {
+     $("#master").css("background-color", "#ff471a");
+     audio = new Audio('orange.mp3');
+     audio.play();
+   } else if (pick === 3) {
+     $("#master").css("background-color", "blue");
+     audio = new Audio('blue.mp3');
+     audio.play();
+   } else if (pick === 4) {
+     $("#master").css("background-color", "green");
+     audio = new Audio('green.mp3');
+     audio.play();
+   }
+   
+  }
+  
+  function reset() {
+    $("#up").css("background-color", "red");
+    $("#down").css("background-color", "#ff471a");
+    $("#right").css("background-color", "blue");
+    $("#left").css("background-color", "green");
+  }
+    
+  
+  
+  function checkColor(current, id){
+		
+        if (current !== pick) { $(id).css("background-color", "gray");}
+        if (current === pick) { $(id).css("background-color", "yellow");}
+        
+  }
+  
+
+
+  
+    function translate(current){
+      	if (current === 1) { var up = "up"; return up;}
+      	if (current === 2) {var down = "down" ; return down}
+      	if (current === 3) {var right = "right" ; return right}
+      	if (current === 4) {var left = "left" ; return left}
+   }
+      
+
+  
+
+  
+
+
+});
+</script>
+        
+    </head>
+    <body>
+                <div id="btn" class="testBlock"> Next
+        </div>
+        
+        
+      <table style="text-align:center;padding:10px">
+	<tr>
+		<td></td>
+      <td colspan="2" style="text-align:center;"><div id="middle"><div id="master" name="red" class="square"></div></div></td>
+		<td></td>
+	</tr>
+	<tr>
+		
+		<td style="text-align:center;"><div id="up1" class="square"></div></td>
+		<td style="text-align:center;"><div id="down1" class="square"></div></td>
+		<td style="text-align:center;"><div id="right1" class="square"></div></td>
+		<td style="text-align:center;"><div id="left1" class="square"></div></td>
+	</tr>
+	<tr>
+      	<td style="text-align:center;"><div id="up" class="square"></div> </td>
+		<td style="text-align:center;"><div id="down" class="square"></div></td>
+		<td style="text-align:center;"><div id="right" class="square"></div></td>
+		<td style="text-align:center;"><div id="left" class="square"></div></td>
+	<tr>
+      </table>
+    </body>
+</html>
+
+

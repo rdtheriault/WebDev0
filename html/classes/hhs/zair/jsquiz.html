@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <style>
+      
+      
+    </style>
+  </head>
+  <body id="body">
+    <h1 id="title">Llevame a volar</h1>
+    <!-- you need an <ul> around the <li> -0.1  -->
+    <ul>
+    <li><span class="list">Bailame</span></li>
+    <li><span class="list">Ahora dice</span></li>
+    <li><span class="list">felices los 4</span></li>
+    </ul>
+    <button id="attribute">click here</button>
+    <div id="text"></div>
+    <script>
+    // good start, still should be inside function. -0.1
+      function doSomething(){
+        document.getElementById("title").innerHTML = "Songs I like";
+        document.body.style.background="blue";
+        var elspan = document.body.style.background="red";
+        var elli = document.getElementsByTagName("li");
+        for (var i = 0; i < elli.length;i ++){//this is wher ethe array loop goes -0.1
+        	elli[i].style.color = "blue";
+      	}
+      
+        
+      }
+      document.getElementById("attribute").addEventListener("click",doSomething);
+      
+    </script>
+  </body>
+</html>
